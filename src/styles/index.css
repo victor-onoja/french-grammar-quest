@@ -1,0 +1,436 @@
+:root {
+  /* Afrofuturist Color Palette */
+  --bg-dark: #070714;
+  --bg-panel: rgba(15, 15, 30, 0.7);
+  --primary-cyan: #00F0FF;
+  --primary-magenta: #FF0055;
+  --primary-gold: #FFD700;
+  --text-main: #FFFFFF;
+  --text-muted: #A0A0C0;
+  --danger: #FF3333;
+  --success: #00FF99;
+
+  --font-body: 'Outfit', sans-serif;
+  --font-heading: 'Space Grotesk', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-dark);
+  background-image:
+    radial-gradient(circle at 15% 50%, rgba(0, 240, 255, 0.08), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(255, 0, 85, 0.08), transparent 25%),
+    linear-gradient(180deg, #070714 0%, #03030A 100%);
+  color: var(--text-main);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  letter-spacing: 0.5px;
+}
+
+/* Utilities */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.pad-2 {
+  padding: 2rem;
+}
+
+.rounded {
+  border-radius: 1rem;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.max-w-500 {
+  max-width: 500px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.text-sm {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, var(--primary-cyan), var(--primary-magenta));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+.text-glow {
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.5), 0 0 20px rgba(255, 0, 85, 0.5);
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* UI Shell */
+.glass-panel {
+  background: var(--bg-panel);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(10, 10, 20, 0.8);
+}
+
+.stat-pill {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Galaxy Map */
+.planets-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  align-items: center;
+  background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.01) 0, rgba(255, 255, 255, 0.01) 1px, transparent 1px, transparent 20px);
+}
+
+.planet-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 50px;
+  width: 90%;
+  max-width: 400px;
+  transition: transform 0.3s;
+}
+
+.planet-card.locked {
+  opacity: 0.5;
+  filter: grayscale(1);
+}
+
+.planet-card.unlocked:hover {
+  transform: scale(1.05) translateY(-5px) !important;
+}
+
+.planet-icon {
+  font-size: 2.5rem;
+}
+
+.planet-info {
+  text-align: left;
+}
+
+.planet-info h3 {
+  margin-bottom: 0.2rem;
+}
+
+.planet-info p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+/* Stars */
+.stars {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.star {
+  color: var(--text-muted);
+  font-size: 1.2rem;
+}
+
+.star.earned {
+  color: var(--primary-gold);
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.big-stars .star {
+  font-size: 3rem;
+}
+
+/* Buttons & Inputs */
+.btn {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-transform: uppercase;
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(1.02);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, var(--primary-cyan), var(--primary-magenta));
+  box-shadow: 0 4px 15px rgba(255, 0, 85, 0.3);
+}
+
+.glow-effect:hover {
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.5), 0 0 40px rgba(255, 0, 85, 0.3);
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.text-input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--primary-cyan);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+}
+
+.text-input:focus {
+  outline: none;
+  box-shadow: 0 0 10px var(--primary-cyan);
+}
+
+/* Exercises */
+.progress-bar-container {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-cyan), var(--primary-magenta));
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.option-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  text-transform: none;
+}
+
+.option-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.option-btn.correct {
+  background: var(--success);
+  color: black;
+  border-color: var(--success);
+}
+
+.option-btn.wrong {
+  background: var(--danger);
+  color: white;
+  border-color: var(--danger);
+}
+
+/* Feedback */
+.success-text {
+  color: var(--success);
+  font-weight: bold;
+  font-size: 1.2rem;
+  animation: popIn 0.3s;
+}
+
+.error-text {
+  color: var(--danger);
+  font-weight: bold;
+  font-size: 1.2rem;
+  animation: popIn 0.3s;
+}
+
+.correction-box {
+  background: rgba(255, 51, 51, 0.2);
+  padding: 1rem;
+  border-radius: 10px;
+  border-left: 4px solid var(--danger);
+}
+
+/* Boss */
+.boss-header {
+  border: 2px solid var(--primary-magenta);
+  box-shadow: inset 0 0 20px rgba(255, 0, 85, 0.2);
+}
+
+.timer-display {
+  font-size: 2rem;
+  font-family: var(--font-heading);
+  font-weight: bold;
+}
+
+.timer-display.danger {
+  color: var(--danger);
+}
+
+.text-blink {
+  animation: blink 1s infinite;
+}
+
+/* Animations */
+@keyframes popIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-10px);
+  }
+
+  75% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.shake {
+  animation: shake 0.3s cubic-bezier(.36, .07, .19, .97) both;
+}

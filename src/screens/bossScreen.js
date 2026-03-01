@@ -12,6 +12,15 @@ export function renderBossScreen(container, navigateTo, params) {
     let currentQIndex = 0;
     let timerId = null;
 
+    const updateTimerDisplay = () => {
+        const timerDisplay = document.querySelector('.timer-display');
+        if (timerDisplay) {
+            timerDisplay.textContent = `${timeLeft}s`;
+            if (timeLeft <= 10) timerDisplay.classList.add('danger', 'text-blink');
+            else timerDisplay.classList.remove('danger', 'text-blink');
+        }
+    };
+
     function renderBattle() {
         if (gameState.state.lives <= 0) {
             clearInterval(timerId);
@@ -48,6 +57,34 @@ export function renderBossScreen(container, navigateTo, params) {
 
         const inputEl = document.getElementById('boss-input');
         const submitBtn = document.getElementById('boss-submit');
+
+        const handleBossAnswer = (isCorrect) => {
+            const feedback = document.getElementById('boss-feedback');
+            feedback.classList.remove('hidden');
+            inputEl.disabled = true;
+            submitBtn.disabled = true;
+
+            if (isCorrect) {
+                container.querySelector('.boss-title').classList.add('shake');
+                feedback.innerHTML = '<div class="success-text">Direct Hit! +50 XP</div>';
+                gameState.addXP(50);
+                setTimeout(() => {
+                    currentQIndex++;
+                    renderBattle();
+                }, 1000);
+            } else {
+                const correctStr = Array.isArray(q.answer) ? q.answer[0] : q.answer;
+                feedback.innerHTML = `<div class="error-text">Missed! Correct: ${correctStr}</div>`;
+                gameState.loseLife();
+                timeLeft = Math.max(0, timeLeft - 5);
+                updateTimerDisplay();
+                setTimeout(() => {
+                    currentQIndex++;
+                    renderBattle();
+                }, 1500);
+            }
+        };
+
         const checkTypeAnswer = () => {
             const val = inputEl.value.trim().toLowerCase();
             let isCorrect = false;
@@ -67,39 +104,10 @@ export function renderBossScreen(container, navigateTo, params) {
         setTimeout(() => inputEl.focus(), 100);
     }
 
-    function handleBossAnswer(isCorrect) {
-        const feedback = document.getElementById('boss-feedback');
-        feedback.classList.remove('hidden');
-        document.getElementById('boss-input').disabled = true;
-        document.getElementById('boss-submit').disabled = true;
-
-        if (isCorrect) {
-            container.querySelector('.boss-title').classList.add('shake');
-            feedback.innerHTML = '<div class="success-text">Direct Hit! +50 XP</div>';
-            gameState.addXP(50);
-            setTimeout(() => {
-                currentQIndex++;
-                renderBattle();
-            }, 1000);
-        } else {
-            feedback.innerHTML = `<div class="error-text">Missed! Correct: ${q.answer}</div>`;
-            gameState.loseLife();
-            timeLeft = Math.max(0, timeLeft - 5);
-            setTimeout(() => {
-                currentQIndex++;
-                renderBattle();
-            }, 1500);
-        }
-    }
-
     function startTimer() {
         timerId = setInterval(() => {
             timeLeft--;
-            const timerDisplay = document.querySelector('.timer-display');
-            if (timerDisplay) {
-                timerDisplay.textContent = `${timeLeft}s`;
-                if (timeLeft <= 10) timerDisplay.classList.add('danger', 'text-blink');
-            }
+            updateTimerDisplay();
 
             if (timeLeft <= 0) {
                 clearInterval(timerId);

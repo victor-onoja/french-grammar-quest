@@ -34,11 +34,20 @@ export function renderGalaxyMap(container, navigateTo) {
           ${Array(3).fill(0).map((_, i) => `<span class="star ${i < starCount ? 'earned' : 'empty'}">★</span>`).join('')}
         </div>
       </div>
+      ${isUnlocked && level.vocabulary ? `
+        <div class="planet-actions">
+          <button class="btn btn-sm btn-outline dock-btn" title="Supply Dock (Vocabulary)">⚓</button>
+        </div>
+      ` : ''}
     `;
 
     if (isUnlocked) {
-      planetEl.addEventListener('click', () => {
-        navigateTo('lesson', { levelId: level.id });
+      planetEl.addEventListener('click', (e) => {
+        if (e.target.closest('.dock-btn')) {
+            navigateTo('vocab', { levelId: level.id });
+        } else {
+            navigateTo('lesson', { levelId: level.id });
+        }
       });
       planetEl.style.cursor = 'pointer';
     }

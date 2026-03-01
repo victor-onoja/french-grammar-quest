@@ -12,6 +12,10 @@ export const levels = [
       { id: "1-4", type: "translation", question: "They (f.) speak French.", answer: ["Elles parlent français.", "Elles parlent francais."], hint: "elles (they f.) + parler + français" },
       { id: "1-5", type: "fill-blank", question: "Tu ____ (aimer) le chocolat.", answer: "aimes", hint: "You like chocolate. Drop -er and add -es." }
     ],
+    vocabulary: [
+      { french: "à midi", english: "at noon" }, { french: "à minuit", english: "at midnight" }, { french: "aujourd’hui", english: "today" }, { french: "demain", english: "tomorrow" }, { french: "hier", english: "yesterday" }, { french: "après-demain", english: "the day after tomorrow" }, { french: "avant-hier", english: "the day before yesterday" }, { french: "le matin", english: "in the morning" }, { french: "l’après-midi", english: "in the afternoon" }, { french: "le soir", english: "in the evening" }, { french: "toujours", english: "always" }, { french: "souvent", english: "often" },
+      { french: "accepter", english: "to accept" }, { french: "aimer", english: "to like/love" }, { french: "annuler", english: "to cancel" }, { french: "apporter", english: "to bring" }, { french: "attraper", english: "to catch" }, { french: "augmenter", english: "to increase" }, { french: "bavarder", english: "to chat" }, { french: "casser", english: "to break" }, { french: "chercher", english: "to look for" }, { french: "commander", english: "to order" }, { french: "couper", english: "to cut" }, { french: "danser", english: "to dance" }, { french: "déjeuner", english: "to have lunch" }, { french: "demander", english: "to ask" }, { french: "dessiner", english: "to draw" }, { french: "donner", english: "to give" }, { french: "emprunter", english: "to borrow" }, { french: "enlever", english: "to remove" }, { french: "étudier", english: "to study" }, { french: "exprimer", english: "to express" }, { french: "gagner", english: "to win/earn" }, { french: "garder", english: "to keep" }, { french: "habiter", english: "to live" }, { french: "laver", english: "to wash" }, { french: "manger", english: "to eat" }, { french: "mériter", english: "to deserve" }, { french: "oublier", english: "to forget" }, { french: "porter", english: "to carry" }, { french: "prêter", english: "to lend" }, { french: "refuser", english: "to refuse" }, { french: "regarder", english: "to watch" }, { french: "saluer", english: "to greet" }, { french: "sauter", english: "to jump" }, { french: "tomber", english: "to fall" }, { french: "travailler", english: "to work" }, { french: "visiter", english: "to visit" }
+    ],
     boss: {
       intro: "Alien Overlord Verbo challenges your present tense mastery!",
       timeLimit: 30,
@@ -34,6 +38,10 @@ export const levels = [
       { id: "2-3", type: "fill-blank", question: "Il ____ (attendre) le bus.", answer: "attend", hint: "For 'il' with -re verbs, add nothing. Just drop -re." },
       { id: "2-4", type: "fill-blank", question: "Ils ____ (finir) leurs devoirs.", answer: "finissent", hint: "Type 1 -ir verb 'finir' plural ends in -issent." }
     ],
+    vocabulary: [
+      { french: "l’allemand (m.)", english: "German" }, { french: "l’anglais (m.)", english: "English" }, { french: "l’arabe (m.)", english: "Arabic" }, { french: "le chinois", english: "Chinese" }, { french: "le créole", english: "Creole" }, { french: "l’espagnol (m.)", english: "Spanish" }, { french: "le français", english: "French" }, { french: "l’hindi (m.)", english: "Hindi" }, { french: "l’italien (m.)", english: "Italian" }, { french: "le japonais", english: "Japanese" },
+      { french: "finir", english: "to finish" }, { french: "choisir", english: "to choose" }, { french: "accomplir", english: "to accomplish" }, { french: "bâtir", english: "to build" }, { french: "remplir", english: "to fill" }, { french: "réussir", english: "to succeed" }, { french: "sortir", english: "to go out" }, { french: "partir", english: "to leave" }, { french: "dormir", english: "to sleep" }, { french: "servir", english: "to serve" }, { french: "vendre", english: "to sell" }, { french: "attendre", english: "to wait" }, { french: "perdre", english: "to lose" }, { french: "répondre", english: "to answer" }, { french: "entendre", english: "to hear" }, { french: "prendre", english: "to take" }, { french: "comprendre", english: "to understand" }, { french: "apprendre", english: "to learn" }
+    ],
     boss: {
         intro: "The Irregular Entity attacks! Defend with your endings.",
         timeLimit: 30,
@@ -55,6 +63,144 @@ export const levels = [
         { id: "3-2", type: "fill-blank", question: "Elle ___ (avoir) un chat.", answer: "a", hint: "Third person singular of avoir." },
         { id: "3-3", type: "fill-blank", question: "Nous ___ (être) contents.", answer: "sommes", hint: "We are." }
     ],
+    vocabulary: [
+      {
+            "french": "agréable",
+            "english": "pleasant"
+            },
+      {
+            "french": "amusant(e)",
+            "english": "funny"
+            },
+      {
+            "french": "beau, bel, belle",
+            "english": "beautiful"
+            },
+      {
+            "french": "bon, bonne",
+            "english": "good"
+            },
+      {
+            "french": "charmant(e)",
+            "english": "charming"
+            },
+      {
+            "french": "cher, chère",
+            "english": "expensive"
+            },
+      {
+            "french": "créatif, créative",
+            "english": "creative"
+            },
+      {
+            "french": "efficace",
+            "english": "efficient"
+            },
+      {
+            "french": "frais, fraîche",
+            "english": "fresh, cool"
+            },
+      {
+            "french": "gentil(le)",
+            "english": "kind, nice"
+            },
+      {
+            "french": "grand(e)",
+            "english": "tall"
+            },
+      {
+            "french": "heureux, heureuse",
+            "english": "happy, content"
+            },
+      {
+            "french": "jeune",
+            "english": "young"
+            },
+      {
+            "french": "libre",
+            "english": "free"
+            },
+      {
+            "french": "nouveau, nouvel, nouvelle",
+            "english": "new"
+            },
+      {
+            "french": "petit(e)",
+            "english": "small"
+            },
+      {
+            "french": "sec, sèche",
+            "english": "dry"
+            },
+      {
+            "french": "sympathique",
+            "english": "nice, friendly"
+            },
+      {
+            "french": "vieux, vieil, vieille",
+            "english": "old"
+            },
+      {
+            "french": "être",
+            "english": "to be"
+            },
+      {
+            "french": "avoir",
+            "english": "to have"
+            },
+      {
+            "french": "savoir",
+            "english": "to know (facts)"
+            },
+      {
+            "french": "connaître",
+            "english": "to know (people/places)"
+            },
+      {
+            "french": "pouvoir",
+            "english": "can, to be able to"
+            },
+      {
+            "french": "vouloir",
+            "english": "to want"
+            },
+      {
+            "french": "apercevoir",
+            "english": "to perceive"
+            },
+      {
+            "french": "décevoir",
+            "english": "to disappoint"
+            },
+      {
+            "french": "émouvoir",
+            "english": "to move (emotion)"
+            },
+      {
+            "french": "prévoir",
+            "english": "to foresee"
+            },
+      {
+            "french": "recevoir",
+            "english": "to receive"
+            },
+      {
+            "french": "valoir",
+            "english": "to be worth"
+            },
+      {
+            "french": "voir",
+            "english": "to see"
+            },
+      {
+            "french": "falloir",
+            "english": "to be necessary"
+            },
+      {
+            "french": "pleuvoir",
+            "english": "to rain"
+            }
+],
     boss: {
         intro: "The Twin Dragons of Essencia await!",
         timeLimit: 25,
@@ -76,6 +222,124 @@ export const levels = [
         { id: "4-2", type: "translation", question: "Type this perfectly: Nous allons faire un voyage en avril. We are going to go on a trip in April.", answer: ["Nous allons faire un voyage en avril. We are going to go on a trip in April."] },
         { id: "4-3", type: "translation", question: "Type this perfectly: Elle va apprendre le chinois. She is going to learn Chinese.", answer: ["Elle va apprendre le chinois. She is going to learn Chinese."] }
     ],
+    vocabulary: [
+      {
+            "french": "lundi",
+            "english": "Monday"
+            },
+      {
+            "french": "mardi",
+            "english": "Tuesday"
+            },
+      {
+            "french": "mercredi",
+            "english": "Wednesday"
+            },
+      {
+            "french": "jeudi",
+            "english": "Thursday"
+            },
+      {
+            "french": "vendredi",
+            "english": "Friday"
+            },
+      {
+            "french": "samedi",
+            "english": "Saturday"
+            },
+      {
+            "french": "dimanche",
+            "english": "Sunday"
+            },
+      {
+            "french": "janvier",
+            "english": "January"
+            },
+      {
+            "french": "février",
+            "english": "February"
+            },
+      {
+            "french": "mars",
+            "english": "March"
+            },
+      {
+            "french": "avril",
+            "english": "April"
+            },
+      {
+            "french": "mai",
+            "english": "May"
+            },
+      {
+            "french": "juin",
+            "english": "June"
+            },
+      {
+            "french": "juillet",
+            "english": "July"
+            },
+      {
+            "french": "août",
+            "english": "August"
+            },
+      {
+            "french": "septembre",
+            "english": "September"
+            },
+      {
+            "french": "octobre",
+            "english": "October"
+            },
+      {
+            "french": "novembre",
+            "english": "November"
+            },
+      {
+            "french": "décembre",
+            "english": "December"
+            },
+      {
+            "french": "le printemps",
+            "english": "spring"
+            },
+      {
+            "french": "l’été",
+            "english": "summer"
+            },
+      {
+            "french": "l’automne",
+            "english": "fall"
+            },
+      {
+            "french": "l’hiver",
+            "english": "winter"
+            },
+      {
+            "french": "aller",
+            "english": "to go"
+            },
+      {
+            "french": "venir",
+            "english": "to come"
+            },
+      {
+            "french": "devenir",
+            "english": "to become"
+            },
+      {
+            "french": "revenir",
+            "english": "to come back"
+            },
+      {
+            "french": "tenir",
+            "english": "to hold"
+            },
+      {
+            "french": "faire",
+            "english": "to do/make"
+            }
+],
     boss: {
         intro: "The guardian of Mouvance demands perfection!",
         timeLimit: 30,
@@ -96,6 +360,100 @@ export const levels = [
         { id: "5-2", type: "translation", question: "Type this perfectly: Il y a un chat sur le canapé. Th ere is a cat on the sofa.", answer: ["Il y a un chat sur le canapé. Th ere is a cat on the sofa."] },
         { id: "5-3", type: "translation", question: "Type this perfectly: Il n’y a plus rien dans le frigo. Th ere is nothing left in the fridge.", answer: ["Il n’y a plus rien dans le frigo. Th ere is nothing left in the fridge."] }
     ],
+    vocabulary: [
+      {
+            "french": "une voiture",
+            "english": "a car"
+            },
+      {
+            "french": "un autobus",
+            "english": "a bus"
+            },
+      {
+            "french": "un taxi",
+            "english": "a cab"
+            },
+      {
+            "french": "un train",
+            "english": "a train"
+            },
+      {
+            "french": "un avion",
+            "english": "a plane"
+            },
+      {
+            "french": "une navette",
+            "english": "a shuttle"
+            },
+      {
+            "french": "la circulation",
+            "english": "traffic"
+            },
+      {
+            "french": "embarquer",
+            "english": "to board"
+            },
+      {
+            "french": "débarquer",
+            "english": "to get off"
+            },
+      {
+            "french": "atterrir",
+            "english": "to land"
+            },
+      {
+            "french": "décoller",
+            "english": "to take off"
+            },
+      {
+            "french": "manquer le train",
+            "english": "to miss the train"
+            },
+      {
+            "french": "conduire",
+            "english": "to drive"
+            },
+      {
+            "french": "tomber en panne",
+            "english": "to break down"
+            },
+      {
+            "french": "faire le plein",
+            "english": "to fill up"
+            },
+      {
+            "french": "monter",
+            "english": "to go up/get on"
+            },
+      {
+            "french": "descendre",
+            "english": "to go down/get off"
+            },
+      {
+            "french": "voyager",
+            "english": "to travel"
+            },
+      {
+            "french": "devoir",
+            "english": "to have to/must"
+            },
+      {
+            "french": "peindre",
+            "english": "to paint"
+            },
+      {
+            "french": "craindre",
+            "english": "to fear"
+            },
+      {
+            "french": "plaindre",
+            "english": "to pity"
+            },
+      {
+            "french": "éteindre",
+            "english": "to extinguish"
+            }
+],
     boss: {
         intro: "The guardian of Le Fardeau demands perfection!",
         timeLimit: 30,
@@ -116,6 +474,124 @@ export const levels = [
         { id: "6-2", type: "translation", question: "Type this perfectly: Je me couche à onze heures. I go to bed at eleven.", answer: ["Je me couche à onze heures. I go to bed at eleven."] },
         { id: "6-3", type: "translation", question: "Type this perfectly: Il s’assoit sur un banc . He sits down on a bench.", answer: ["Il s’assoit sur un banc . He sits down on a bench."] }
     ],
+    vocabulary: [
+      {
+            "french": "la peau",
+            "english": "skin"
+            },
+      {
+            "french": "le visage",
+            "english": "face"
+            },
+      {
+            "french": "la tête",
+            "english": "head"
+            },
+      {
+            "french": "les cheveux",
+            "english": "hair"
+            },
+      {
+            "french": "les yeux",
+            "english": "eyes"
+            },
+      {
+            "french": "le nez",
+            "english": "nose"
+            },
+      {
+            "french": "la bouche",
+            "english": "mouth"
+            },
+      {
+            "french": "les lèvres",
+            "english": "lips"
+            },
+      {
+            "french": "l'oreille",
+            "english": "ear"
+            },
+      {
+            "french": "le dos",
+            "english": "back"
+            },
+      {
+            "french": "le bras",
+            "english": "arm"
+            },
+      {
+            "french": "le coude",
+            "english": "elbow"
+            },
+      {
+            "french": "la main",
+            "english": "hand"
+            },
+      {
+            "french": "le doigt",
+            "english": "finger"
+            },
+      {
+            "french": "l'ongle",
+            "english": "nail"
+            },
+      {
+            "french": "la hanche",
+            "english": "hip"
+            },
+      {
+            "french": "la taille",
+            "english": "waist"
+            },
+      {
+            "french": "la jambe",
+            "english": "leg"
+            },
+      {
+            "french": "le genou",
+            "english": "knee"
+            },
+      {
+            "french": "la cheville",
+            "english": "ankle"
+            },
+      {
+            "french": "le pied",
+            "english": "foot"
+            },
+      {
+            "french": "se lever",
+            "english": "to get up"
+            },
+      {
+            "french": "se laver",
+            "english": "to wash"
+            },
+      {
+            "french": "s'habiller",
+            "english": "to get dressed"
+            },
+      {
+            "french": "se reposer",
+            "english": "to rest"
+            },
+      {
+            "french": "se promener",
+            "english": "to walk"
+            },
+      {
+            "french": "s'amuser",
+            "english": "to have fun"
+            },
+      {
+            "french": "se dépêcher",
+            "english": "to hurry"
+            },
+      {
+            "french": "s'endormir",
+            "english": "to fall asleep"
+            }
+],
     boss: {
         intro: "The guardian of Miroir demands perfection!",
         timeLimit: 30,
@@ -136,6 +612,104 @@ export const levels = [
         { id: "7-2", type: "translation", question: "Type this perfectly: Il a vendu sa voiture. He sold his car.", answer: ["Il a vendu sa voiture. He sold his car."] },
         { id: "7-3", type: "translation", question: "Type this perfectly: Il n’a pas vendu sa voiture. He did not sell his car.", answer: ["Il n’a pas vendu sa voiture. He did not sell his car."] }
     ],
+    vocabulary: [
+      {
+            "french": "le cinéma",
+            "english": "cinema"
+            },
+      {
+            "french": "le film",
+            "english": "film/movie"
+            },
+      {
+            "french": "le documentaire",
+            "english": "documentary"
+            },
+      {
+            "french": "le metteur en scène",
+            "english": "director"
+            },
+      {
+            "french": "tourner un film",
+            "english": "to shoot a movie"
+            },
+      {
+            "french": "le tournage",
+            "english": "shooting (film)"
+            },
+      {
+            "french": "le théâtre",
+            "english": "theater"
+            },
+      {
+            "french": "la pièce de théâtre",
+            "english": "play"
+            },
+      {
+            "french": "l'intrigue",
+            "english": "plot"
+            },
+      {
+            "french": "l'acteur/actrice",
+            "english": "actor/actress"
+            },
+      {
+            "french": "le comédien/comédienne",
+            "english": "actor/actress (theater)"
+            },
+      {
+            "french": "la vedette",
+            "english": "star"
+            },
+      {
+            "french": "les coulisses",
+            "english": "backstage"
+            },
+      {
+            "french": "les décors",
+            "english": "sets"
+            },
+      {
+            "french": "jouer un rôle",
+            "english": "to play a role"
+            },
+      {
+            "french": "sous-titré",
+            "english": "subtitled"
+            },
+      {
+            "french": "doublé",
+            "english": "dubbed"
+            },
+      {
+            "french": "avoir (eu)",
+            "english": "to have (had)"
+            },
+      {
+            "french": "être (été)",
+            "english": "to be (been)"
+            },
+      {
+            "french": "faire (fait)",
+            "english": "to do (done)"
+            },
+      {
+            "french": "prendre (pris)",
+            "english": "to take (taken)"
+            },
+      {
+            "french": "mettre (mis)",
+            "english": "to put (put)"
+            },
+      {
+            "french": "voir (vu)",
+            "english": "to see (seen)"
+            },
+      {
+            "french": "boire (bu)",
+            "english": "to drink (drunk)"
+            }
+],
     boss: {
         intro: "The guardian of Mémoire demands perfection!",
         timeLimit: 30,
@@ -156,6 +730,84 @@ export const levels = [
         { id: "8-2", type: "translation", question: "Type this perfectly: Il faisait trop chaud. It was too hot.", answer: ["Il faisait trop chaud. It was too hot."] },
         { id: "8-3", type: "translation", question: "Type this perfectly: Il avait faim. He was hungry.", answer: ["Il avait faim. He was hungry."] }
     ],
+    vocabulary: [
+      {
+            "french": "les vacances",
+            "english": "vacation"
+            },
+      {
+            "french": "faire un voyage",
+            "english": "to take a trip"
+            },
+      {
+            "french": "un pèlerinage",
+            "english": "pilgrimage"
+            },
+      {
+            "french": "à la mer",
+            "english": "by the sea"
+            },
+      {
+            "french": "à la plage",
+            "english": "at the beach"
+            },
+      {
+            "french": "à la campagne",
+            "english": "in the country"
+            },
+      {
+            "french": "à la montagne",
+            "english": "in the mountains"
+            },
+      {
+            "french": "le paysage",
+            "english": "landscape"
+            },
+      {
+            "french": "dans le parc",
+            "english": "in the park"
+            },
+      {
+            "french": "randonner",
+            "english": "to go hiking"
+            },
+      {
+            "french": "escalader",
+            "english": "to climb"
+            },
+      {
+            "french": "une étape",
+            "english": "stopover"
+            },
+      {
+            "french": "explorer",
+            "english": "to explore"
+            },
+      {
+            "french": "une visite guidée",
+            "english": "guided tour"
+            },
+      {
+            "french": "visiter",
+            "english": "to visit (place)"
+            },
+      {
+            "french": "rendre visite à",
+            "english": "to visit (person)"
+            },
+      {
+            "french": "accueillir",
+            "english": "to welcome"
+            },
+      {
+            "french": "un festival",
+            "english": "festival"
+            },
+      {
+            "french": "les loisirs",
+            "english": "leisure time"
+            }
+],
     boss: {
         intro: "The guardian of Nostalgia demands perfection!",
         timeLimit: 30,
@@ -176,6 +828,88 @@ export const levels = [
         { id: "9-2", type: "translation", question: "Type this perfectly: Il nous dira lorsqu’il faudra parler. He’ll tell us when we have to talk.", answer: ["Il nous dira lorsqu’il faudra parler. He’ll tell us when we have to talk."] },
         { id: "9-3", type: "translation", question: "Type this perfectly: Elle vous préviendra dès qu’elle aura She’ll inform you as soon as she gets the results.", answer: ["Elle vous préviendra dès qu’elle aura She’ll inform you as soon as she gets the results."] }
     ],
+    vocabulary: [
+      {
+            "french": "un élève",
+            "english": "pupil"
+            },
+      {
+            "french": "un étudiant",
+            "english": "student"
+            },
+      {
+            "french": "un professeur",
+            "english": "teacher"
+            },
+      {
+            "french": "un cours",
+            "english": "course"
+            },
+      {
+            "french": "un examen",
+            "english": "exam"
+            },
+      {
+            "french": "un stage",
+            "english": "internship"
+            },
+      {
+            "french": "apprendre",
+            "english": "to learn"
+            },
+      {
+            "french": "enseigner",
+            "english": "to teach"
+            },
+      {
+            "french": "étudier",
+            "english": "to study"
+            },
+      {
+            "french": "suivre un cours",
+            "english": "to take a class"
+            },
+      {
+            "french": "les devoirs",
+            "english": "homework"
+            },
+      {
+            "french": "passer un examen",
+            "english": "to take an exam"
+            },
+      {
+            "french": "réussir",
+            "english": "to pass/succeed"
+            },
+      {
+            "french": "échouer",
+            "english": "to fail"
+            },
+      {
+            "french": "parler couramment",
+            "english": "to speak fluently"
+            },
+      {
+            "french": "être rouillé",
+            "english": "to be rusty"
+            },
+      {
+            "french": "un CV",
+            "english": "resume"
+            },
+      {
+            "french": "faire l'école buissonnière",
+            "english": "to play hooky"
+            },
+      {
+            "french": "recevoir son diplôme",
+            "english": "to graduate"
+            },
+      {
+            "french": "une note",
+            "english": "grade"
+            }
+],
     boss: {
         intro: "The guardian of Demain demands perfection!",
         timeLimit: 30,
@@ -196,6 +930,84 @@ export const levels = [
         { id: "10-2", type: "translation", question: "Type this perfectly: Je m’étais évanouie dans la pharmacie. I had fainted in the pharmacy.", answer: ["Je m’étais évanouie dans la pharmacie. I had fainted in the pharmacy."] },
         { id: "10-3", type: "translation", question: "Type this perfectly: Vous vous étiez promenés le long du You had walked along the Saint-Martin canal.", answer: ["Vous vous étiez promenés le long du You had walked along the Saint-Martin canal."] }
     ],
+    vocabulary: [
+      {
+            "french": "une pharmacie",
+            "english": "pharmacy"
+            },
+      {
+            "french": "un pharmacien",
+            "english": "pharmacist"
+            },
+      {
+            "french": "une ordonnance",
+            "english": "prescription"
+            },
+      {
+            "french": "un médicament",
+            "english": "medicine"
+            },
+      {
+            "french": "un remède",
+            "english": "remedy"
+            },
+      {
+            "french": "un sirop",
+            "english": "syrup"
+            },
+      {
+            "french": "un traitement",
+            "english": "treatment"
+            },
+      {
+            "french": "des effets secondaires",
+            "english": "side effects"
+            },
+      {
+            "french": "un cachet/une gélule",
+            "english": "pill/capsule"
+            },
+      {
+            "french": "un analgésique",
+            "english": "painkiller"
+            },
+      {
+            "french": "une toux",
+            "english": "cough"
+            },
+      {
+            "french": "tousser",
+            "english": "to cough"
+            },
+      {
+            "french": "avoir un rhume",
+            "english": "to have a cold"
+            },
+      {
+            "french": "avoir la grippe",
+            "english": "to have the flu"
+            },
+      {
+            "french": "avoir mal",
+            "english": "to have pain"
+            },
+      {
+            "french": "être allergique",
+            "english": "to be allergic"
+            },
+      {
+            "french": "une douleur",
+            "english": "pain"
+            },
+      {
+            "french": "souffrir",
+            "english": "to suffer"
+            },
+      {
+            "french": "conseiller",
+            "english": "to advise"
+            }
+],
     boss: {
         intro: "The guardian of L'Ancien Temps demands perfection!",
         timeLimit: 30,
@@ -216,6 +1028,160 @@ export const levels = [
         { id: "11-2", type: "translation", question: "Type this perfectly: Copyright © 200 8 by Annie H eminwa y. Click here for terms of use.", answer: ["Copyright © 200 8 by Annie H eminwa y. Click here for terms of use."] },
         { id: "11-3", type: "translation", question: "Type this perfectly: Dans de telles circonstances, que In such circumstances, what would you do?", answer: ["Dans de telles circonstances, que In such circumstances, what would you do?"] }
     ],
+    vocabulary: [
+      {
+            "french": "un animal",
+            "english": "animal"
+            },
+      {
+            "french": "un agneau",
+            "english": "lamb"
+            },
+      {
+            "french": "un aigle",
+            "english": "eagle"
+            },
+      {
+            "french": "un âne",
+            "english": "donkey"
+            },
+      {
+            "french": "une baleine",
+            "english": "whale"
+            },
+      {
+            "french": "un boeuf",
+            "english": "ox"
+            },
+      {
+            "french": "un canard",
+            "english": "duck"
+            },
+      {
+            "french": "un chameau",
+            "english": "camel"
+            },
+      {
+            "french": "un chat",
+            "english": "cat"
+            },
+      {
+            "french": "un cheval",
+            "english": "horse"
+            },
+      {
+            "french": "une chèvre",
+            "english": "goat"
+            },
+      {
+            "french": "un chien",
+            "english": "dog"
+            },
+      {
+            "french": "un cochon",
+            "english": "pig"
+            },
+      {
+            "french": "une colombe",
+            "english": "dove"
+            },
+      {
+            "french": "un coq",
+            "english": "rooster"
+            },
+      {
+            "french": "un crocodile",
+            "english": "crocodile"
+            },
+      {
+            "french": "un dauphin",
+            "english": "dolphin"
+            },
+      {
+            "french": "un écureuil",
+            "english": "squirrel"
+            },
+      {
+            "french": "un éléphant",
+            "english": "elephant"
+            },
+      {
+            "french": "une girafe",
+            "english": "giraffe"
+            },
+      {
+            "french": "une grenouille",
+            "english": "frog"
+            },
+      {
+            "french": "un lion",
+            "english": "lion"
+            },
+      {
+            "french": "un loup",
+            "english": "wolf"
+            },
+      {
+            "french": "un mouton",
+            "english": "sheep"
+            },
+      {
+            "french": "un oiseau",
+            "english": "bird"
+            },
+      {
+            "french": "un ours",
+            "english": "bear"
+            },
+      {
+            "french": "un pingouin",
+            "english": "penguin"
+            },
+      {
+            "french": "un poisson",
+            "english": "fish"
+            },
+      {
+            "french": "une poule",
+            "english": "hen"
+            },
+      {
+            "french": "un renard",
+            "english": "fox"
+            },
+      {
+            "french": "un requin",
+            "english": "shark"
+            },
+      {
+            "french": "un serpent",
+            "english": "snake"
+            },
+      {
+            "french": "un singe",
+            "english": "monkey"
+            },
+      {
+            "french": "une souris",
+            "english": "mouse"
+            },
+      {
+            "french": "un tigre",
+            "english": "tiger"
+            },
+      {
+            "french": "une tortue",
+            "english": "turtle"
+            },
+      {
+            "french": "une vache",
+            "english": "cow"
+            },
+      {
+            "french": "un zèbre",
+            "english": "zebra"
+            }
+],
     boss: {
         intro: "The guardian of Mirage demands perfection!",
         timeLimit: 30,
@@ -236,6 +1202,108 @@ export const levels = [
         { id: "12-2", type: "translation", question: "Type this perfectly: Nous voulons une table près de la cheminée. We want a table by the fi replace.", answer: ["Nous voulons une table près de la cheminée. We want a table by the fi replace."] },
         { id: "12-3", type: "translation", question: "Type this perfectly: Je voudrais vous parler . I would like to speak with you.", answer: ["Je voudrais vous parler . I would like to speak with you."] }
     ],
+    vocabulary: [
+      {
+            "french": "les instruments",
+            "english": "instruments"
+            },
+      {
+            "french": "l'accordéon",
+            "english": "accordion"
+            },
+      {
+            "french": "l'alto",
+            "english": "viola"
+            },
+      {
+            "french": "la basse",
+            "english": "bass"
+            },
+      {
+            "french": "la batterie",
+            "english": "drums"
+            },
+      {
+            "french": "les castagnettes",
+            "english": "castanets"
+            },
+      {
+            "french": "la clarinette",
+            "english": "clarinet"
+            },
+      {
+            "french": "le clavecin",
+            "english": "harpsichord"
+            },
+      {
+            "french": "le cor",
+            "english": "horn"
+            },
+      {
+            "french": "la contrebasse",
+            "english": "double bass"
+            },
+      {
+            "french": "la cymbale",
+            "english": "cymbal"
+            },
+      {
+            "french": "la flûte",
+            "english": "flute"
+            },
+      {
+            "french": "la guitare",
+            "english": "guitar"
+            },
+      {
+            "french": "l'harmonica",
+            "english": "harmonica"
+            },
+      {
+            "french": "la harpe",
+            "english": "harp"
+            },
+      {
+            "french": "le hautbois",
+            "english": "oboe"
+            },
+      {
+            "french": "le piano",
+            "english": "piano"
+            },
+      {
+            "french": "le saxophone",
+            "english": "saxophone"
+            },
+      {
+            "french": "le synthétiseur",
+            "english": "synthesizer"
+            },
+      {
+            "french": "le tambour",
+            "english": "drum"
+            },
+      {
+            "french": "le trombone",
+            "english": "trombone"
+            },
+      {
+            "french": "la trompette",
+            "english": "trumpet"
+            },
+      {
+            "french": "le violon",
+            "english": "violin"
+            },
+      {
+            "french": "le violoncelle",
+            "english": "cello"
+            },
+      {
+            "french": "le xylophone",
+            "english": "xylophone"
+            }
+],
     boss: {
         intro: "The guardian of Volonté demands perfection!",
         timeLimit: 30,
@@ -256,6 +1324,104 @@ export const levels = [
         { id: "13-2", type: "translation", question: "Type this perfectly: Je veux que tu achètes cet ordinateur. I want you to buy this computer.", answer: ["Je veux que tu achètes cet ordinateur. I want you to buy this computer."] },
         { id: "13-3", type: "translation", question: "Type this perfectly: Vous désirez suivre un cours You want to take a computer science class.", answer: ["Vous désirez suivre un cours You want to take a computer science class."] }
     ],
+    vocabulary: [
+      {
+            "french": "un ordinateur",
+            "english": "computer"
+            },
+      {
+            "french": "une souris",
+            "english": "mouse"
+            },
+      {
+            "french": "une touche",
+            "english": "key"
+            },
+      {
+            "french": "un clavier",
+            "english": "keyboard"
+            },
+      {
+            "french": "un écran",
+            "english": "screen"
+            },
+      {
+            "french": "cliquer",
+            "english": "to click"
+            },
+      {
+            "french": "imprimer",
+            "english": "to print"
+            },
+      {
+            "french": "une imprimante",
+            "english": "printer"
+            },
+      {
+            "french": "l'informatique",
+            "english": "computer science"
+            },
+      {
+            "french": "un internaute",
+            "english": "web user"
+            },
+      {
+            "french": "une banque de données",
+            "english": "data bank"
+            },
+      {
+            "french": "une base de données",
+            "english": "database"
+            },
+      {
+            "french": "une disquette",
+            "english": "floppy disk"
+            },
+      {
+            "french": "une page d'accueil",
+            "english": "home page"
+            },
+      {
+            "french": "la Toile",
+            "english": "the Web"
+            },
+      {
+            "french": "un disque dur",
+            "english": "hard drive"
+            },
+      {
+            "french": "un logiciel",
+            "english": "software"
+            },
+      {
+            "french": "numérique",
+            "english": "digital"
+            },
+      {
+            "french": "numériser",
+            "english": "to digitize"
+            },
+      {
+            "french": "sauvegarder",
+            "english": "to save"
+            },
+      {
+            "french": "se connecter",
+            "english": "to log on"
+            },
+      {
+            "french": "surfer sur Internet",
+            "english": "to surf the Net"
+            },
+      {
+            "french": "télécharger",
+            "english": "to download"
+            },
+      {
+            "french": "un site Web",
+            "english": "website"
+            }
+],
     boss: {
         intro: "The guardian of Le Doute demands perfection!",
         timeLimit: 30,
@@ -276,6 +1442,164 @@ export const levels = [
         { id: "14-2", type: "translation", question: "Type this perfectly: J'étudie nitive mood.", answer: ["J'étudie nitive mood."] },
         { id: "14-3", type: "translation", question: "Type this perfectly: J'étudie nitive mood.", answer: ["J'étudie nitive mood."] }
     ],
+    vocabulary: [
+      {
+            "french": "ajouter",
+            "english": "to add"
+            },
+      {
+            "french": "assaisonner",
+            "english": "to season"
+            },
+      {
+            "french": "bouillir",
+            "english": "to boil"
+            },
+      {
+            "french": "braiser",
+            "english": "to braise"
+            },
+      {
+            "french": "broyer",
+            "english": "to grind"
+            },
+      {
+            "french": "caraméliser",
+            "english": "to caramelize"
+            },
+      {
+            "french": "couper",
+            "english": "to cut"
+            },
+      {
+            "french": "cuire",
+            "english": "to cook"
+            },
+      {
+            "french": "décortiquer",
+            "english": "to shell"
+            },
+      {
+            "french": "écailler",
+            "english": "to scale"
+            },
+      {
+            "french": "écraser",
+            "english": "to crush"
+            },
+      {
+            "french": "écumer",
+            "english": "to skim"
+            },
+      {
+            "french": "émincer",
+            "english": "to slice thinly"
+            },
+      {
+            "french": "épicer",
+            "english": "to spice"
+            },
+      {
+            "french": "éplucher",
+            "english": "to peel"
+            },
+      {
+            "french": "faire la cuisine",
+            "english": "to cook"
+            },
+      {
+            "french": "faire revenir",
+            "english": "to brown"
+            },
+      {
+            "french": "faire sauter",
+            "english": "to sauté"
+            },
+      {
+            "french": "farcir",
+            "english": "to stuff"
+            },
+      {
+            "french": "flamber",
+            "english": "to flambé"
+            },
+      {
+            "french": "frire",
+            "english": "to fry"
+            },
+      {
+            "french": "garnir",
+            "english": "to garnish"
+            },
+      {
+            "french": "glacer",
+            "english": "to glaze"
+            },
+      {
+            "french": "gratiner",
+            "english": "to brown/gratin"
+            },
+      {
+            "french": "griller",
+            "english": "to grill"
+            },
+      {
+            "french": "hacher",
+            "english": "to chop"
+            },
+      {
+            "french": "macérer",
+            "english": "to macerate"
+            },
+      {
+            "french": "mariner",
+            "english": "to marinate"
+            },
+      {
+            "french": "mettre au four",
+            "english": "to put in oven"
+            },
+      {
+            "french": "mijoter",
+            "english": "to simmer"
+            },
+      {
+            "french": "paner",
+            "english": "to bread"
+            },
+      {
+            "french": "pétrir",
+            "english": "to knead"
+            },
+      {
+            "french": "piler",
+            "english": "to crush"
+            },
+      {
+            "french": "pocher",
+            "english": "to poach"
+            },
+      {
+            "french": "râper",
+            "english": "to grate"
+            },
+      {
+            "french": "réduire",
+            "english": "to reduce"
+            },
+      {
+            "french": "rôtir",
+            "english": "to roast"
+            },
+      {
+            "french": "tremper",
+            "english": "to soak"
+            },
+      {
+            "french": "verser",
+            "english": "to pour"
+            }
+],
     boss: {
         intro: "The guardian of L'Origine demands perfection!",
         timeLimit: 30,
@@ -296,6 +1620,160 @@ export const levels = [
         { id: "15-2", type: "translation", question: "Type this perfectly: Elle m’a dit de ne pas mettre She told me not to put any oil in.", answer: ["Elle m’a dit de ne pas mettre She told me not to put any oil in."] },
         { id: "15-3", type: "translation", question: "Type this perfectly: Elle a entendu le coq chanter . She heard the rooster crowing .", answer: ["Elle a entendu le coq chanter . She heard the rooster crowing ."] }
     ],
+    vocabulary: [
+      {
+            "french": "jouer",
+            "english": "to play"
+            },
+      {
+            "french": "un joueur/joueuse",
+            "english": "player"
+            },
+      {
+            "french": "un adversaire",
+            "english": "opponent"
+            },
+      {
+            "french": "une équipe",
+            "english": "team"
+            },
+      {
+            "french": "gagner",
+            "english": "to win"
+            },
+      {
+            "french": "remporter une victoire",
+            "english": "to win"
+            },
+      {
+            "french": "battre",
+            "english": "to beat"
+            },
+      {
+            "french": "un vainqueur",
+            "english": "winner"
+            },
+      {
+            "french": "un gagnant",
+            "english": "winner"
+            },
+      {
+            "french": "un perdant",
+            "english": "loser"
+            },
+      {
+            "french": "un match",
+            "english": "game"
+            },
+      {
+            "french": "manquer",
+            "english": "to miss"
+            },
+      {
+            "french": "courir",
+            "english": "to run"
+            },
+      {
+            "french": "sauter",
+            "english": "to jump"
+            },
+      {
+            "french": "lancer",
+            "english": "to throw"
+            },
+      {
+            "french": "s'entraîner",
+            "english": "to train"
+            },
+      {
+            "french": "un entraîneur",
+            "english": "trainer"
+            },
+      {
+            "french": "le base-ball",
+            "english": "baseball"
+            },
+      {
+            "french": "le basket-ball",
+            "english": "basketball"
+            },
+      {
+            "french": "la boxe",
+            "english": "boxing"
+            },
+      {
+            "french": "le cyclisme",
+            "english": "cycling"
+            },
+      {
+            "french": "le football",
+            "english": "soccer"
+            },
+      {
+            "french": "le football américain",
+            "english": "football"
+            },
+      {
+            "french": "le golf",
+            "english": "golf"
+            },
+      {
+            "french": "le jogging",
+            "english": "jogging"
+            },
+      {
+            "french": "la lutte",
+            "english": "wrestling"
+            },
+      {
+            "french": "la natation",
+            "english": "swimming"
+            },
+      {
+            "french": "le patinage",
+            "english": "ice skating"
+            },
+      {
+            "french": "la plongée",
+            "english": "diving"
+            },
+      {
+            "french": "le ski",
+            "english": "skiing"
+            },
+      {
+            "french": "la descente",
+            "english": "downhill skiing"
+            },
+      {
+            "french": "le ski de fond",
+            "english": "cross-country skiing"
+            },
+      {
+            "french": "le ski nautique",
+            "english": "waterskiing"
+            },
+      {
+            "french": "le tennis",
+            "english": "tennis"
+            },
+      {
+            "french": "la voile",
+            "english": "sailing"
+            },
+      {
+            "french": "un stade",
+            "english": "stadium"
+            },
+      {
+            "french": "une raquette",
+            "english": "racket"
+            },
+      {
+            "french": "un ballon",
+            "english": "ball"
+            }
+],
     boss: {
         intro: "The guardian of Le Flux demands perfection!",
         timeLimit: 30,
@@ -316,6 +1794,148 @@ export const levels = [
         { id: "16-2", type: "translation", question: "Type this perfectly: Je rempla çai le comédien malade. I replaced the sick actor.", answer: ["Je rempla çai le comédien malade. I replaced the sick actor."] },
         { id: "16-3", type: "translation", question: "Type this perfectly: Il parta gea sa fortune. He shared his fortune.", answer: ["Il parta gea sa fortune. He shared his fortune."] }
     ],
+    vocabulary: [
+      {
+            "french": "l'art",
+            "english": "art"
+            },
+      {
+            "french": "un musée",
+            "english": "museum"
+            },
+      {
+            "french": "une collection",
+            "english": "collection"
+            },
+      {
+            "french": "collectionner",
+            "english": "to collect"
+            },
+      {
+            "french": "un collectionneur",
+            "english": "collector"
+            },
+      {
+            "french": "une galerie",
+            "english": "gallery"
+            },
+      {
+            "french": "une visite guidée",
+            "english": "guided tour"
+            },
+      {
+            "french": "un conservateur",
+            "english": "curator"
+            },
+      {
+            "french": "une exposition",
+            "english": "exhibition"
+            },
+      {
+            "french": "les beaux-arts",
+            "english": "fine arts"
+            },
+      {
+            "french": "une toile",
+            "english": "canvas"
+            },
+      {
+            "french": "une peinture",
+            "english": "painting"
+            },
+      {
+            "french": "un tableau",
+            "english": "painting"
+            },
+      {
+            "french": "une aquarelle",
+            "english": "watercolor"
+            },
+      {
+            "french": "une gravure",
+            "english": "etching"
+            },
+      {
+            "french": "un dessin",
+            "english": "drawing"
+            },
+      {
+            "french": "une sculpture",
+            "english": "sculpture"
+            },
+      {
+            "french": "une statue",
+            "english": "statue"
+            },
+      {
+            "french": "une nature morte",
+            "english": "still life"
+            },
+      {
+            "french": "un chef-d'oeuvre",
+            "english": "masterpiece"
+            },
+      {
+            "french": "une photographie",
+            "english": "photograph"
+            },
+      {
+            "french": "un vernissage",
+            "english": "opening"
+            },
+      {
+            "french": "peindre",
+            "english": "to paint"
+            },
+      {
+            "french": "dessiner",
+            "english": "to draw"
+            },
+      {
+            "french": "sculpter",
+            "english": "to sculpt"
+            },
+      {
+            "french": "un peintre",
+            "english": "painter"
+            },
+      {
+            "french": "un paysagiste",
+            "english": "landscape painter"
+            },
+      {
+            "french": "un portraitiste",
+            "english": "portrait painter"
+            },
+      {
+            "french": "une palette",
+            "english": "palette"
+            },
+      {
+            "french": "un pinceau",
+            "english": "paintbrush"
+            },
+      {
+            "french": "un chevalet",
+            "english": "easel"
+            },
+      {
+            "french": "un dessinateur",
+            "english": "sketcher"
+            },
+      {
+            "french": "un sculpteur",
+            "english": "sculptor"
+            },
+      {
+            "french": "un photographe",
+            "english": "photographer"
+            },
+      {
+            "french": "un atelier",
+            "english": "studio"
+            }
+],
     boss: {
         intro: "The guardian of Le Grimoire demands perfection!",
         timeLimit: 30,
@@ -336,6 +1956,148 @@ export const levels = [
         { id: "17-2", type: "translation", question: "Type this perfectly: Il s’est vu contraint d’accepter. He found himself forced to accept.", answer: ["Il s’est vu contraint d’accepter. He found himself forced to accept."] },
         { id: "17-3", type: "translation", question: "Type this perfectly: Ils se sont laissés infl uencer très Th ey let themselves be infl uenced very easily.", answer: ["Ils se sont laissés infl uencer très Th ey let themselves be infl uenced very easily."] }
     ],
+    vocabulary: [
+      {
+            "french": "la police",
+            "english": "police"
+            },
+      {
+            "french": "le policier",
+            "english": "police officer"
+            },
+      {
+            "french": "arriver sur les lieux",
+            "english": "arrive at scene"
+            },
+      {
+            "french": "une fusillade",
+            "english": "shoot-out"
+            },
+      {
+            "french": "prendre la fuite",
+            "english": "to flee"
+            },
+      {
+            "french": "poursuivre",
+            "english": "to pursue"
+            },
+      {
+            "french": "attraper",
+            "english": "to catch"
+            },
+      {
+            "french": "arrêter",
+            "english": "to arrest"
+            },
+      {
+            "french": "passer les menottes",
+            "english": "to handcuff"
+            },
+      {
+            "french": "voler",
+            "english": "to steal"
+            },
+      {
+            "french": "un vol",
+            "english": "theft"
+            },
+      {
+            "french": "cambrioler",
+            "english": "to burglarize"
+            },
+      {
+            "french": "un cambriolage",
+            "english": "burglary"
+            },
+      {
+            "french": "un vol à l'étalage",
+            "english": "shoplifting"
+            },
+      {
+            "french": "une agression",
+            "english": "assault"
+            },
+      {
+            "french": "le harcèlement",
+            "english": "harassment"
+            },
+      {
+            "french": "le blanchiment d'argent",
+            "english": "money laundering"
+            },
+      {
+            "french": "le chantage",
+            "english": "blackmail"
+            },
+      {
+            "french": "l'escroquerie",
+            "english": "fraud"
+            },
+      {
+            "french": "un escroc",
+            "english": "crook"
+            },
+      {
+            "french": "un meurtre",
+            "english": "murder"
+            },
+      {
+            "french": "un assassin",
+            "english": "murderer"
+            },
+      {
+            "french": "un meurtrier",
+            "english": "murderer"
+            },
+      {
+            "french": "un attentat",
+            "english": "terrorist attack"
+            },
+      {
+            "french": "un détournement",
+            "english": "hijacking"
+            },
+      {
+            "french": "un témoin",
+            "english": "witness"
+            },
+      {
+            "french": "un témoignage",
+            "english": "testimony"
+            },
+      {
+            "french": "témoigner",
+            "english": "to testify"
+            },
+      {
+            "french": "prévenir la police",
+            "english": "call the police"
+            },
+      {
+            "french": "les empreintes",
+            "english": "fingerprints"
+            },
+      {
+            "french": "l'ADN",
+            "english": "DNA"
+            },
+      {
+            "french": "l'accusé",
+            "english": "accused"
+            },
+      {
+            "french": "être condamné à",
+            "english": "be sentenced to"
+            },
+      {
+            "french": "une amende",
+            "english": "fine"
+            },
+      {
+            "french": "une peine",
+            "english": "sentence"
+            }
+],
     boss: {
         intro: "The guardian of L'Éclipse demands perfection!",
         timeLimit: 30,
@@ -356,6 +2118,132 @@ export const levels = [
         { id: "18-2", type: "translation", question: "Type this perfectly: Tu travailles pour France 2. You are working for France 2.", answer: ["Tu travailles pour France 2. You are working for France 2."] },
         { id: "18-3", type: "translation", question: "Type this perfectly: Il pleut à Londres. It is raining in London .", answer: ["Il pleut à Londres. It is raining in London ."] }
     ],
+    vocabulary: [
+      {
+            "french": "la politique",
+            "english": "politics"
+            },
+      {
+            "french": "le pouvoir",
+            "english": "power"
+            },
+      {
+            "french": "le gouvernement",
+            "english": "government"
+            },
+      {
+            "french": "gouverner",
+            "english": "to govern"
+            },
+      {
+            "french": "le politique",
+            "english": "politician"
+            },
+      {
+            "french": "la gauche",
+            "english": "left wing"
+            },
+      {
+            "french": "la droite",
+            "english": "right wing"
+            },
+      {
+            "french": "le centre",
+            "english": "center"
+            },
+      {
+            "french": "le parti",
+            "english": "party"
+            },
+      {
+            "french": "la coalition",
+            "english": "coalition"
+            },
+      {
+            "french": "l'élection",
+            "english": "election"
+            },
+      {
+            "french": "la voix",
+            "english": "vote/voice"
+            },
+      {
+            "french": "le premier tour",
+            "english": "first round"
+            },
+      {
+            "french": "élire",
+            "english": "to elect"
+            },
+      {
+            "french": "être élu",
+            "english": "to be elected"
+            },
+      {
+            "french": "voter",
+            "english": "to vote"
+            },
+      {
+            "french": "le droit de vote",
+            "english": "right to vote"
+            },
+      {
+            "french": "l'électeur",
+            "english": "voter"
+            },
+      {
+            "french": "le scrutin",
+            "english": "ballot"
+            },
+      {
+            "french": "le bulletin de vote",
+            "english": "ballot paper"
+            },
+      {
+            "french": "le suffrage universel",
+            "english": "universal suffrage"
+            },
+      {
+            "french": "la réforme",
+            "english": "reform"
+            },
+      {
+            "french": "gagner les élections",
+            "english": "win elections"
+            },
+      {
+            "french": "perdre les élections",
+            "english": "lose elections"
+            },
+      {
+            "french": "le sondage",
+            "english": "poll"
+            },
+      {
+            "french": "la démocratie",
+            "english": "democracy"
+            },
+      {
+            "french": "la monarchie",
+            "english": "monarchy"
+            },
+      {
+            "french": "le multipartisme",
+            "english": "multiparty system"
+            },
+      {
+            "french": "la parité",
+            "english": "equality"
+            },
+      {
+            "french": "l'abstention",
+            "english": "abstention"
+            },
+      {
+            "french": "boycotter",
+            "english": "to boycott"
+            }
+],
     boss: {
         intro: "The guardian of L'Écho demands perfection!",
         timeLimit: 30,
@@ -376,6 +2264,116 @@ export const levels = [
         { id: "19-2", type: "translation", question: "Type this perfectly: Je veux que tu achètes cet ordinateur. I want you to buy this computer.", answer: ["Je veux que tu achètes cet ordinateur. I want you to buy this computer."] },
         { id: "19-3", type: "translation", question: "Type this perfectly: Vous désirez suivre un cours You want to take a computer science class.", answer: ["Vous désirez suivre un cours You want to take a computer science class."] }
     ],
+    vocabulary: [
+      {
+            "french": "un nom",
+            "english": "name"
+            },
+      {
+            "french": "un prénom",
+            "english": "first name"
+            },
+      {
+            "french": "un surnom",
+            "english": "nickname"
+            },
+      {
+            "french": "épeler",
+            "english": "to spell"
+            },
+      {
+            "french": "s'appeler",
+            "english": "to be named"
+            },
+      {
+            "french": "l'état civil",
+            "english": "civil status"
+            },
+      {
+            "french": "la date de naissance",
+            "english": "birth date"
+            },
+      {
+            "french": "le lieu de naissance",
+            "english": "birthplace"
+            },
+      {
+            "french": "une naissance",
+            "english": "birth"
+            },
+      {
+            "french": "un mariage",
+            "english": "marriage"
+            },
+      {
+            "french": "un décès",
+            "english": "death"
+            },
+      {
+            "french": "une adresse",
+            "english": "address"
+            },
+      {
+            "french": "une carte d'identité",
+            "english": "ID card"
+            },
+      {
+            "french": "un passeport",
+            "english": "passport"
+            },
+      {
+            "french": "un permis de conduire",
+            "english": "driver's license"
+            },
+      {
+            "french": "un certificat",
+            "english": "certificate"
+            },
+      {
+            "french": "célibataire",
+            "english": "single"
+            },
+      {
+            "french": "marié",
+            "english": "married"
+            },
+      {
+            "french": "séparé",
+            "english": "separated"
+            },
+      {
+            "french": "divorcé",
+            "english": "divorced"
+            },
+      {
+            "french": "veuf/veuve",
+            "english": "widower/widow"
+            },
+      {
+            "french": "une parenté",
+            "english": "kinship"
+            },
+      {
+            "french": "un lien de parenté",
+            "english": "family tie"
+            },
+      {
+            "french": "un arbre généalogique",
+            "english": "family tree"
+            },
+      {
+            "french": "un ancêtre",
+            "english": "ancestor"
+            },
+      {
+            "french": "signer",
+            "english": "to sign"
+            },
+      {
+            "french": "cocher",
+            "english": "to check off"
+            }
+],
     boss: {
         intro: "The guardian of Le Commandement demands perfection!",
         timeLimit: 30,
@@ -396,6 +2394,176 @@ export const levels = [
         { id: "20-2", type: "translation", question: "Type this perfectly: Nous avons vu des lapins dans le jardin. We saw  rabbits in the garden.", answer: ["Nous avons vu des lapins dans le jardin. We saw  rabbits in the garden."] },
         { id: "20-3", type: "translation", question: "Type this perfectly: Il a acheté des rideaux pour le salon. He bought  curtains for the living room.", answer: ["Il a acheté des rideaux pour le salon. He bought  curtains for the living room."] }
     ],
+    vocabulary: [
+      {
+            "french": "la terre",
+            "english": "earth"
+            },
+      {
+            "french": "une planète",
+            "english": "planet"
+            },
+      {
+            "french": "un pays",
+            "english": "country"
+            },
+      {
+            "french": "un continent",
+            "english": "continent"
+            },
+      {
+            "french": "une capitale",
+            "english": "capital"
+            },
+      {
+            "french": "une ville",
+            "english": "city"
+            },
+      {
+            "french": "un village",
+            "english": "village"
+            },
+      {
+            "french": "une rue",
+            "english": "street"
+            },
+      {
+            "french": "une ruelle",
+            "english": "alley"
+            },
+      {
+            "french": "une impasse",
+            "english": "dead end"
+            },
+      {
+            "french": "un plan de la ville",
+            "english": "city map"
+            },
+      {
+            "french": "un arrondissement",
+            "english": "district"
+            },
+      {
+            "french": "une région",
+            "english": "region"
+            },
+      {
+            "french": "une province",
+            "english": "province"
+            },
+      {
+            "french": "un état",
+            "english": "state"
+            },
+      {
+            "french": "un royaume",
+            "english": "kingdom"
+            },
+      {
+            "french": "le désert",
+            "english": "desert"
+            },
+      {
+            "french": "une frontière",
+            "english": "border"
+            },
+      {
+            "french": "une carte",
+            "english": "map"
+            },
+      {
+            "french": "une route",
+            "english": "road"
+            },
+      {
+            "french": "une autoroute",
+            "english": "highway"
+            },
+      {
+            "french": "une côte",
+            "english": "coast"
+            },
+      {
+            "french": "une plaine",
+            "english": "plain"
+            },
+      {
+            "french": "une vallée",
+            "english": "valley"
+            },
+      {
+            "french": "une montagne",
+            "english": "mountain"
+            },
+      {
+            "french": "une colline",
+            "english": "hill"
+            },
+      {
+            "french": "une île",
+            "english": "island"
+            },
+      {
+            "french": "un pont",
+            "english": "bridge"
+            },
+      {
+            "french": "la mer",
+            "english": "sea"
+            },
+      {
+            "french": "un océan",
+            "english": "ocean"
+            },
+      {
+            "french": "une rivière",
+            "english": "river"
+            },
+      {
+            "french": "un fleuve",
+            "english": "river (to sea)"
+            },
+      {
+            "french": "un ruisseau",
+            "english": "stream"
+            },
+      {
+            "french": "le nord",
+            "english": "north"
+            },
+      {
+            "french": "le sud",
+            "english": "south"
+            },
+      {
+            "french": "l'est",
+            "english": "east"
+            },
+      {
+            "french": "l'ouest",
+            "english": "west"
+            },
+      {
+            "french": "un peuple",
+            "english": "people"
+            },
+      {
+            "french": "une tribu",
+            "english": "tribe"
+            },
+      {
+            "french": "autochtone",
+            "english": "native"
+            },
+      {
+            "french": "étranger",
+            "english": "foreign"
+            },
+      {
+            "french": "inconnu",
+            "english": "unknown"
+            }
+],
     boss: {
         intro: "The guardian of L'Identité demands perfection!",
         timeLimit: 30,
@@ -416,6 +2584,132 @@ export const levels = [
         { id: "21-2", type: "translation", question: "Type this perfectly: Il est assis sur la chaise. It is sitting on the chair.", answer: ["Il est assis sur la chaise. It is sitting on the chair."] },
         { id: "21-3", type: "translation", question: "Type this perfectly: Elle est très polluée. It is very polluted.", answer: ["Elle est très polluée. It is very polluted."] }
     ],
+    vocabulary: [
+      {
+            "french": "un acteur/actrice",
+            "english": "actor/actress"
+            },
+      {
+            "french": "un architecte",
+            "english": "architect"
+            },
+      {
+            "french": "un artiste",
+            "english": "artist"
+            },
+      {
+            "french": "un avocat",
+            "english": "lawyer"
+            },
+      {
+            "french": "un coiffeur",
+            "english": "hairdresser"
+            },
+      {
+            "french": "un commerçant",
+            "english": "shopkeeper"
+            },
+      {
+            "french": "un comptable",
+            "english": "accountant"
+            },
+      {
+            "french": "un cuisinier",
+            "english": "cook"
+            },
+      {
+            "french": "un dentiste",
+            "english": "dentist"
+            },
+      {
+            "french": "un directeur",
+            "english": "manager"
+            },
+      {
+            "french": "un écrivain",
+            "english": "writer"
+            },
+      {
+            "french": "un homme d'affaires",
+            "english": "businessman"
+            },
+      {
+            "french": "un fleuriste",
+            "english": "florist"
+            },
+      {
+            "french": "un infirmier",
+            "english": "nurse"
+            },
+      {
+            "french": "un informaticien",
+            "english": "IT specialist"
+            },
+      {
+            "french": "un ingénieur",
+            "english": "engineer"
+            },
+      {
+            "french": "un journaliste",
+            "english": "journalist"
+            },
+      {
+            "french": "un mannequin",
+            "english": "model"
+            },
+      {
+            "french": "un médecin",
+            "english": "doctor"
+            },
+      {
+            "french": "un metteur en scène",
+            "english": "director"
+            },
+      {
+            "french": "un musicien",
+            "english": "musician"
+            },
+      {
+            "french": "un ouvrier",
+            "english": "worker"
+            },
+      {
+            "french": "un pharmacien",
+            "english": "pharmacist"
+            },
+      {
+            "french": "un photographe",
+            "english": "photographer"
+            },
+      {
+            "french": "un pilote",
+            "english": "pilot"
+            },
+      {
+            "french": "un plombier",
+            "english": "plumber"
+            },
+      {
+            "french": "un pompier",
+            "english": "firefighter"
+            },
+      {
+            "french": "un professeur",
+            "english": "teacher"
+            },
+      {
+            "french": "un rédacteur",
+            "english": "editor"
+            },
+      {
+            "french": "une sage-femme",
+            "english": "midwife"
+            },
+      {
+            "french": "un serveur",
+            "english": "waiter"
+            }
+],
     boss: {
         intro: "The guardian of Le Substitut demands perfection!",
         timeLimit: 30,
@@ -436,6 +2730,108 @@ export const levels = [
         { id: "22-2", type: "translation", question: "Type this perfectly: Il a acheté des chemises blanches . He bought some white shirts.", answer: ["Il a acheté des chemises blanches . He bought some white shirts."] },
         { id: "22-3", type: "translation", question: "Type this perfectly: Elle a plus de temps que Valérie. She has more time than Valérie.", answer: ["Elle a plus de temps que Valérie. She has more time than Valérie."] }
     ],
+    vocabulary: [
+      {
+            "french": "beige",
+            "english": "beige"
+            },
+      {
+            "french": "blanc",
+            "english": "white"
+            },
+      {
+            "french": "bleu",
+            "english": "blue"
+            },
+      {
+            "french": "bleu ciel",
+            "english": "sky blue"
+            },
+      {
+            "french": "bleu clair",
+            "english": "light blue"
+            },
+      {
+            "french": "bleu foncé",
+            "english": "dark blue"
+            },
+      {
+            "french": "bleu marine",
+            "english": "navy blue"
+            },
+      {
+            "french": "bordeaux",
+            "english": "burgundy"
+            },
+      {
+            "french": "gris",
+            "english": "gray"
+            },
+      {
+            "french": "jaune",
+            "english": "yellow"
+            },
+      {
+            "french": "marron",
+            "english": "brown"
+            },
+      {
+            "french": "noir",
+            "english": "black"
+            },
+      {
+            "french": "ocre",
+            "english": "ochre"
+            },
+      {
+            "french": "orange",
+            "english": "orange"
+            },
+      {
+            "french": "rose",
+            "english": "pink"
+            },
+      {
+            "french": "rouge",
+            "english": "red"
+            },
+      {
+            "french": "vert",
+            "english": "green"
+            },
+      {
+            "french": "vert olive",
+            "english": "olive green"
+            },
+      {
+            "french": "violet",
+            "english": "purple"
+            },
+      {
+            "french": "à carreaux",
+            "english": "checked"
+            },
+      {
+            "french": "à rayures",
+            "english": "striped"
+            },
+      {
+            "french": "à fleurs",
+            "english": "flowered"
+            },
+      {
+            "french": "à pois",
+            "english": "polka-dotted"
+            },
+      {
+            "french": "à volants",
+            "english": "flounced"
+            },
+      {
+            "french": "à plis",
+            "english": "pleated"
+            }
+],
     boss: {
         intro: "The guardian of L'Aura demands perfection!",
         timeLimit: 30,
@@ -456,6 +2852,128 @@ export const levels = [
         { id: "23-2", type: "translation", question: "Type this perfectly: Nous aimons votre chien et vous aimez We like your dog and you like ours.", answer: ["Nous aimons votre chien et vous aimez We like your dog and you like ours."] },
         { id: "23-3", type: "translation", question: "Type this perfectly: Vous prenez vos billets et nous prenons You take your tickets and we take ours.", answer: ["Vous prenez vos billets et nous prenons You take your tickets and we take ours."] }
     ],
+    vocabulary: [
+      {
+            "french": "une famille",
+            "english": "family"
+            },
+      {
+            "french": "un adulte",
+            "english": "adult"
+            },
+      {
+            "french": "un mari",
+            "english": "husband"
+            },
+      {
+            "french": "une femme",
+            "english": "wife"
+            },
+      {
+            "french": "un père",
+            "english": "father"
+            },
+      {
+            "french": "une mère",
+            "english": "mother"
+            },
+      {
+            "french": "un fils",
+            "english": "son"
+            },
+      {
+            "french": "une fille",
+            "english": "daughter"
+            },
+      {
+            "french": "un enfant",
+            "english": "child"
+            },
+      {
+            "french": "un bébé",
+            "english": "baby"
+            },
+      {
+            "french": "un frère",
+            "english": "brother"
+            },
+      {
+            "french": "une soeur",
+            "english": "sister"
+            },
+      {
+            "french": "aîné",
+            "english": "eldest"
+            },
+      {
+            "french": "cadet",
+            "english": "youngest"
+            },
+      {
+            "french": "benjamin",
+            "english": "youngest child"
+            },
+      {
+            "french": "un parent",
+            "english": "relative"
+            },
+      {
+            "french": "un oncle",
+            "english": "uncle"
+            },
+      {
+            "french": "une tante",
+            "english": "aunt"
+            },
+      {
+            "french": "un cousin",
+            "english": "cousin"
+            },
+      {
+            "french": "un beau-père",
+            "english": "father-in-law"
+            },
+      {
+            "french": "une belle-mère",
+            "english": "mother-in-law"
+            },
+      {
+            "french": "un beau-frère",
+            "english": "brother-in-law"
+            },
+      {
+            "french": "une belle-soeur",
+            "english": "sister-in-law"
+            },
+      {
+            "french": "un neveu",
+            "english": "nephew"
+            },
+      {
+            "french": "une nièce",
+            "english": "niece"
+            },
+      {
+            "french": "un grand-père",
+            "english": "grandfather"
+            },
+      {
+            "french": "une grand-mère",
+            "english": "grandmother"
+            },
+      {
+            "french": "un petit-fils",
+            "english": "grandson"
+            },
+      {
+            "french": "une petite-fille",
+            "english": "granddaughter"
+            },
+      {
+            "french": "les petits-enfants",
+            "english": "grandchildren"
+            }
+],
     boss: {
         intro: "The guardian of L'Index demands perfection!",
         timeLimit: 30,
@@ -476,6 +2994,144 @@ export const levels = [
         { id: "24-2", type: "translation", question: "Type this perfectly: Je lui ai demandé de ne pas faire I asked her not to fry the fi sh.", answer: ["Je lui ai demandé de ne pas faire I asked her not to fry the fi sh."] },
         { id: "24-3", type: "translation", question: "Type this perfectly: Elle m’a dit de ne pas mettre She told me not to put any oil in.", answer: ["Elle m’a dit de ne pas mettre She told me not to put any oil in."] }
     ],
+    vocabulary: [
+      {
+            "french": "marchander",
+            "english": "to bargain"
+            },
+      {
+            "french": "un meuble",
+            "english": "furniture"
+            },
+      {
+            "french": "une chaise",
+            "english": "chair"
+            },
+      {
+            "french": "un tabouret",
+            "english": "stool"
+            },
+      {
+            "french": "une table",
+            "english": "table"
+            },
+      {
+            "french": "une table basse",
+            "english": "coffee table"
+            },
+      {
+            "french": "un fauteuil",
+            "english": "armchair"
+            },
+      {
+            "french": "un canapé",
+            "english": "sofa"
+            },
+      {
+            "french": "un buffet",
+            "english": "sideboard"
+            },
+      {
+            "french": "un lit",
+            "english": "bed"
+            },
+      {
+            "french": "un placard",
+            "english": "closet"
+            },
+      {
+            "french": "une penderie",
+            "english": "wardrobe"
+            },
+      {
+            "french": "une armoire",
+            "english": "wardrobe"
+            },
+      {
+            "french": "une armoire à pharmacie",
+            "english": "medicine cabinet"
+            },
+      {
+            "french": "une lampe",
+            "english": "lamp"
+            },
+      {
+            "french": "une lampe de chevet",
+            "english": "bedside lamp"
+            },
+      {
+            "french": "un miroir",
+            "english": "mirror"
+            },
+      {
+            "french": "une coiffeuse",
+            "english": "dressing table"
+            },
+      {
+            "french": "un vase",
+            "english": "vase"
+            },
+      {
+            "french": "un secrétaire",
+            "english": "writing desk"
+            },
+      {
+            "french": "une commode",
+            "english": "chest of drawers"
+            },
+      {
+            "french": "un coffre",
+            "english": "chest"
+            },
+      {
+            "french": "une bibliothèque",
+            "english": "bookcase"
+            },
+      {
+            "french": "une étagère",
+            "english": "shelf"
+            },
+      {
+            "french": "un tapis",
+            "english": "rug"
+            },
+      {
+            "french": "une horloge",
+            "english": "clock"
+            },
+      {
+            "french": "un rideau",
+            "english": "curtain"
+            },
+      {
+            "french": "cher",
+            "english": "expensive"
+            },
+      {
+            "french": "bon marché",
+            "english": "cheap"
+            },
+      {
+            "french": "un antiquaire",
+            "english": "antiques dealer"
+            },
+      {
+            "french": "un marché aux puces",
+            "english": "flea market"
+            },
+      {
+            "french": "une vente aux enchères",
+            "english": "auction"
+            },
+      {
+            "french": "faire une offre",
+            "english": "to bid"
+            },
+      {
+            "french": "baisser le prix",
+            "english": "lower the price"
+            }
+],
     boss: {
         intro: "The guardian of Le Lien demands perfection!",
         timeLimit: 30,
@@ -496,6 +3152,116 @@ export const levels = [
         { id: "25-2", type: "translation", question: "Type this perfectly: Nous sommes partis le lendemain . We left the day aft er.", answer: ["Nous sommes partis le lendemain . We left the day aft er."] },
         { id: "25-3", type: "translation", question: "Type this perfectly: Il assiste rarement aux réunions. He rarely attends meetings.", answer: ["Il assiste rarement aux réunions. He rarely attends meetings."] }
     ],
+    vocabulary: [
+      {
+            "french": "une agence de voyages",
+            "english": "travel agency"
+            },
+      {
+            "french": "un antiquaire",
+            "english": "antiques dealer"
+            },
+      {
+            "french": "une banque",
+            "english": "bank"
+            },
+      {
+            "french": "une bijouterie",
+            "english": "jewelry store"
+            },
+      {
+            "french": "un boucher",
+            "english": "butcher"
+            },
+      {
+            "french": "un boulanger",
+            "english": "baker"
+            },
+      {
+            "french": "un bureau de tabac",
+            "english": "tobacco shop"
+            },
+      {
+            "french": "un coiffeur",
+            "english": "hairdresser"
+            },
+      {
+            "french": "une confiserie",
+            "english": "candy store"
+            },
+      {
+            "french": "un cordonnier",
+            "english": "shoemaker"
+            },
+      {
+            "french": "un épicier",
+            "english": "grocer"
+            },
+      {
+            "french": "un fleuriste",
+            "english": "florist"
+            },
+      {
+            "french": "un horloger",
+            "english": "watchmaker"
+            },
+      {
+            "french": "un kiosque à journaux",
+            "english": "newsstand"
+            },
+      {
+            "french": "un magasin",
+            "english": "store"
+            },
+      {
+            "french": "un magasin de chaussures",
+            "english": "shoe store"
+            },
+      {
+            "french": "un marchand",
+            "english": "merchant"
+            },
+      {
+            "french": "une librairie",
+            "english": "bookstore"
+            },
+      {
+            "french": "un opticien",
+            "english": "optician"
+            },
+      {
+            "french": "une papeterie",
+            "english": "stationery store"
+            },
+      {
+            "french": "une pharmacie",
+            "english": "pharmacy"
+            },
+      {
+            "french": "un pâtissier",
+            "english": "pastry cook"
+            },
+      {
+            "french": "une poissonnerie",
+            "english": "fish market"
+            },
+      {
+            "french": "une quincaillerie",
+            "english": "hardware store"
+            },
+      {
+            "french": "un salon de coiffure",
+            "english": "hair salon"
+            },
+      {
+            "french": "un supermarché",
+            "english": "supermarket"
+            },
+      {
+            "french": "un pressing",
+            "english": "dry cleaner"
+            }
+],
     boss: {
         intro: "The guardian of La Mesure demands perfection!",
         timeLimit: 30,
@@ -516,6 +3282,108 @@ export const levels = [
         { id: "26-2", type: "translation", question: "Type this perfectly: Elle a fi ni par accepter. She fi nally accepted.", answer: ["Elle a fi ni par accepter. She fi nally accepted."] },
         { id: "26-3", type: "translation", question: "Type this perfectly: Écrire les nombres suivants en toutes lettres.", answer: ["Écrire les nombres suivants en toutes lettres."] }
     ],
+    vocabulary: [
+      {
+            "french": "l'accès haut-débit",
+            "english": "high-speed access"
+            },
+      {
+            "french": "un administrateur",
+            "english": "admin"
+            },
+      {
+            "french": "une adresse URL",
+            "english": "URL"
+            },
+      {
+            "french": "une adresse IP",
+            "english": "IP address"
+            },
+      {
+            "french": "une bibliothèque numérique",
+            "english": "digital library"
+            },
+      {
+            "french": "un blog",
+            "english": "blog"
+            },
+      {
+            "french": "un domaine",
+            "english": "domain"
+            },
+      {
+            "french": "une fenêtre",
+            "english": "window"
+            },
+      {
+            "french": "un fil RSS",
+            "english": "RSS feed"
+            },
+      {
+            "french": "une FAQ",
+            "english": "FAQ"
+            },
+      {
+            "french": "un fournisseur d'accès",
+            "english": "ISP"
+            },
+      {
+            "french": "glisser-déposer",
+            "english": "drag and drop"
+            },
+      {
+            "french": "un internaute",
+            "english": "web user"
+            },
+      {
+            "french": "un moteur de recherche",
+            "english": "search engine"
+            },
+      {
+            "french": "naviguer",
+            "english": "to browse"
+            },
+      {
+            "french": "une page d'accueil",
+            "english": "home page"
+            },
+      {
+            "french": "une page Web",
+            "english": "web page"
+            },
+      {
+            "french": "un pirate",
+            "english": "hacker"
+            },
+      {
+            "french": "rechercher",
+            "english": "to search"
+            },
+      {
+            "french": "un site Web",
+            "english": "website"
+            },
+      {
+            "french": "un serveur",
+            "english": "server"
+            },
+      {
+            "french": "un signet",
+            "english": "bookmark"
+            },
+      {
+            "french": "surfer",
+            "english": "to surf"
+            },
+      {
+            "french": "la Toile",
+            "english": "Web"
+            },
+      {
+            "french": "le Web 2.0",
+            "english": "Web 2.0"
+            }
+],
     boss: {
         intro: "The guardian of L'Infini demands perfection!",
         timeLimit: 30,
@@ -536,6 +3404,152 @@ export const levels = [
         { id: "27-2", type: "translation", question: "Type this perfectly: Il commence à pleuvoir. It’s starting to rain.", answer: ["Il commence à pleuvoir. It’s starting to rain."] },
         { id: "27-3", type: "translation", question: "Type this perfectly: Elle a commencé par se présenter. She started by introducing herself.", answer: ["Elle a commencé par se présenter. She started by introducing herself."] }
     ],
+    vocabulary: [
+      {
+            "french": "un aspirateur",
+            "english": "vacuum cleaner"
+            },
+      {
+            "french": "une assiette",
+            "english": "plate"
+            },
+      {
+            "french": "un bol",
+            "english": "bowl"
+            },
+      {
+            "french": "une cafetière",
+            "english": "coffee pot"
+            },
+      {
+            "french": "une casserole",
+            "english": "pan"
+            },
+      {
+            "french": "un congélateur",
+            "english": "freezer"
+            },
+      {
+            "french": "un couteau",
+            "english": "knife"
+            },
+      {
+            "french": "une cuillère",
+            "english": "spoon"
+            },
+      {
+            "french": "une cuisinière",
+            "english": "stove"
+            },
+      {
+            "french": "un four",
+            "english": "oven"
+            },
+      {
+            "french": "un four à micro-ondes",
+            "english": "microwave"
+            },
+      {
+            "french": "une fourchette",
+            "english": "fork"
+            },
+      {
+            "french": "un grille-pain",
+            "english": "toaster"
+            },
+      {
+            "french": "un lave-vaisselle",
+            "english": "dishwasher"
+            },
+      {
+            "french": "une louche",
+            "english": "ladle"
+            },
+      {
+            "french": "une nappe",
+            "english": "tablecloth"
+            },
+      {
+            "french": "un ouvre-boîtes",
+            "english": "can opener"
+            },
+      {
+            "french": "un plateau",
+            "english": "tray"
+            },
+      {
+            "french": "une poêle",
+            "english": "frying pan"
+            },
+      {
+            "french": "un réfrigérateur",
+            "english": "fridge"
+            },
+      {
+            "french": "une serviette",
+            "english": "napkin"
+            },
+      {
+            "french": "une soucoupe",
+            "english": "saucer"
+            },
+      {
+            "french": "une tasse",
+            "english": "cup"
+            },
+      {
+            "french": "une théière",
+            "english": "teapot"
+            },
+      {
+            "french": "un tire-bouchon",
+            "english": "corkscrew"
+            },
+      {
+            "french": "un verre",
+            "english": "glass"
+            },
+      {
+            "french": "commencer",
+            "english": "to start"
+            },
+      {
+            "french": "décider",
+            "english": "to decide"
+            },
+      {
+            "french": "demander",
+            "english": "to ask"
+            },
+      {
+            "french": "donner",
+            "english": "to give"
+            },
+      {
+            "french": "jouer",
+            "english": "to play"
+            },
+      {
+            "french": "parler",
+            "english": "to speak"
+            },
+      {
+            "french": "croire",
+            "english": "to believe"
+            },
+      {
+            "french": "tenir",
+            "english": "to hold"
+            },
+      {
+            "french": "rêver",
+            "english": "to dream"
+            },
+      {
+            "french": "manquer",
+            "english": "to miss"
+            }
+],
     boss: {
         intro: "The guardian of L'Oméga demands perfection!",
         timeLimit: 30,

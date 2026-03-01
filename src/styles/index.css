@@ -506,3 +506,59 @@ h4 {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
 }
+
+/* Matching Game */
+.matching-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.matching-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.match-item {
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.match-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.match-item.selected {
+    border-color: var(--primary-cyan);
+    background: rgba(0, 240, 255, 0.2);
+    box-shadow: 0 0 10px var(--primary-cyan);
+}
+
+.match-item.matched {
+    opacity: 0.3;
+    pointer-events: none;
+    border-color: var(--success);
+    background: rgba(0, 255, 153, 0.1);
+}
+
+.wrong-shake {
+    animation: shake 0.4s;
+    border-color: var(--danger) !important;
+    background: rgba(255, 51, 51, 0.2) !important;
+}
+
+.primary-cyan-text {
+    color: var(--primary-cyan);
+}
+
+.h-2 { height: 2rem; }

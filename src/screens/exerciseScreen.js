@@ -19,6 +19,15 @@ export function renderExerciseScreen(container, navigateTo, params) {
     }
   });
 
+  const ruleHtml = level.rule ? `
+    <details class="rule-card glass-panel mb-2">
+      <summary class="rule-summary">📖 Grammar Rule</summary>
+      <ul class="rule-list">
+        ${level.rule.map(r => `<li>${r}</li>`).join('')}
+      </ul>
+    </details>
+  ` : '';
+
   function renderCurrentExercise() {
     if (gameState.state.lives <= 0) {
       navigateTo('results', { levelId, success: false, reason: 'lives' });
@@ -38,7 +47,7 @@ export function renderExerciseScreen(container, navigateTo, params) {
         <div class="progress-bar-container mb-2">
           <div class="progress-bar" style="width: ${progressPercent}%"></div>
         </div>
-        
+        ${ruleHtml}
         <div class="glass-panel pad-2 rounded mb-2 text-center">
           <h3 class="mb-2">${ex.question}</h3>
           <div id="interactive-area" class="mb-2"></div>
@@ -106,11 +115,13 @@ export function renderExerciseScreen(container, navigateTo, params) {
       const correctStr = Array.isArray(ex.answer) ? ex.answer[0] : (ex.type === 'mcq' ? ex.displayOptions[ex.correctDisplayIndex] : ex.answer);
 
       let hintHtml = ex.hint ? `<p class="hint-text text-sm">${ex.hint}</p>` : '';
+      let explanationHtml = ex.explanation ? `<p class="explanation-text text-sm mt-1">💡 ${ex.explanation}</p>` : '';
 
       feedback.innerHTML = `
         <div class="error-text mb-1">Incorrect.</div>
         <div class="correction-box">Correct: <strong>${correctStr}</strong></div>
         ${hintHtml}
+        ${explanationHtml}
         <button id="next-btn" class="btn btn-primary mt-1">CONTINUE</button>
       `;
 

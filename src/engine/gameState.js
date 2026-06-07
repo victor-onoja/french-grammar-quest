@@ -12,7 +12,8 @@ export class GameState {
             lives: 3,
             stars: {},       // levelId -> 1,2,3
             streaks: 0,
-            vocabCompleted: {} // levelId -> true
+            vocabCompleted: {}, // levelId -> true
+            vocabMissed: {}     // levelId -> [{french, english}, ...]
         };
     }
 
@@ -73,6 +74,23 @@ export class GameState {
 
     isVocabCompleted(levelId) {
         return !!(this.state.vocabCompleted && this.state.vocabCompleted[levelId]);
+    }
+
+    saveMissedVocab(levelId, words) {
+        this.state.vocabMissed = this.state.vocabMissed || {};
+        this.state.vocabMissed[levelId] = words;
+        this.saveState();
+    }
+
+    getMissedVocab(levelId) {
+        return (this.state.vocabMissed && this.state.vocabMissed[levelId]) || [];
+    }
+
+    clearMissedVocab(levelId) {
+        if (this.state.vocabMissed) {
+            delete this.state.vocabMissed[levelId];
+            this.saveState();
+        }
     }
 
     isLevelBeaten(levelId) {

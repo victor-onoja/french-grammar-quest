@@ -23,6 +23,7 @@ export function renderVocabularyScreen(container, navigateTo, params) {
     let currentWordIndex = 0; // within chunk
     let testScore = 0;
     let shuffledVocab = []; // for final test
+    let missedWords = []; // spaced repetition: words missed this session
 
     function render() {
         container.innerHTML = ''; // Clear
@@ -140,7 +141,10 @@ export function renderVocabularyScreen(container, navigateTo, params) {
                             setTimeout(() => {
                                 if (currentChunkIndex === chunks.length - 1) {
                                     mode = 'final-test';
-                                    shuffledVocab = [...fullVocab].sort(() => Math.random() - 0.5);
+                                    // Prepend previously missed words to front of test
+                                    const prevMissed = gameState.getMissedVocab(levelId);
+                                    const rest = [...fullVocab].sort(() => Math.random() - 0.5);
+                                    shuffledVocab = [...prevMissed, ...rest];
                                     currentWordIndex = 0;
                                 } else {
                                     currentChunkIndex++;
@@ -219,6 +223,7 @@ export function renderVocabularyScreen(container, navigateTo, params) {
                     render();
                 }, 800);
             } else {
+                missedWords.push(word);
                 feedbackEl.innerHTML = `<div class="error-text">Incorrect. It is: <strong>${word.french}</strong></div>`;
                 setTimeout(() => {
                     currentWordIndex++;
@@ -238,6 +243,16 @@ export function renderVocabularyScreen(container, navigateTo, params) {
         if (passed) {
             gameState.addXP(xpGained);
             gameState.completeVocab(levelId);
+            gameState.clearMissedVocab(levelId);
+        } else {
+            // Deduplicate missed words before saving (same word may appear from prev + this session)
+            const seen = new Set();
+            const unique = missedWords.filter(w => {
+                if (seen.has(w.french)) return false;
+                seen.add(w.french);
+                return true;
+            });
+            if (unique.length > 0) gameState.saveMissedVocab(levelId, unique);
         }
 
         container.innerHTML = `

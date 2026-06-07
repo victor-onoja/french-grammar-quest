@@ -542,6 +542,42 @@ h4 {
     font-size: 0.9rem;
 }
 
+/* Rule Card */
+.rule-card {
+    border-radius: 10px;
+    border: 1px solid rgba(0, 240, 255, 0.2);
+    overflow: hidden;
+}
+
+.rule-summary {
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--primary-cyan);
+    list-style: none;
+    user-select: none;
+}
+
+.rule-summary::-webkit-details-marker { display: none; }
+
+.rule-list {
+    padding: 0.5rem 1rem 1rem 2rem;
+    margin: 0;
+}
+
+.rule-list li {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 0.4rem;
+    line-height: 1.4;
+}
+
+.explanation-text {
+    color: var(--primary-cyan);
+    opacity: 0.9;
+}
+
 /* Matching Game */
 .matching-grid {
     display: grid;

@@ -2,6 +2,7 @@ export const levels = [
   {
     id: 1,
     title: "Le Présent: -er Verbs",
+    rule: ["Drop -er, add endings: -e/-es/-e/-ons/-ez/-ent", "je parle, tu parles, il parle, nous parlons, vous parlez, ils parlent", "Tip: je/tu/il/elle forms sound the same — only -ons and -ez change the sound"],
     planet: "Zeta Prime",
     description: "The gateway to the Galaxie Française. Master the regular -er verbs.",
     lesson: `<h2>The Present Tense of Regular -er Verbs</h2><p>To conjugate regular -er verbs in the present tense, drop the <strong>-er</strong> and add:</p><ul><li><strong>je</strong> (I) -> <strong>-e</strong> (je parle)</li><li><strong>tu</strong> (you) -> <strong>-es</strong> (tu parles)</li><li><strong>il/elle/on</strong> (he/she/we) -> <strong>-e</strong> (il parle)</li><li><strong>nous</strong> (we) -> <strong>-ons</strong> (nous parlons)</li><li><strong>vous</strong> (you) -> <strong>-ez</strong> (vous parlez)</li><li><strong>ils/elles</strong> (they) -> <strong>-ent</strong> (ils parlent)</li></ul><p class="vocab-tip"><em>Tip:</em> "parler" means "to speak". "chanter" means "to sing".</p>`,
@@ -29,6 +30,7 @@ export const levels = [
   {
     id: 2,
     title: "-ir and -re Verbs",
+    rule: ["-ir verbs (type 1): -is/-is/-it/-issons/-issez/-issent", "-re verbs: drop -re, add -s/-s/nothing/-ons/-ez/-ent", "Exception: partir/sortir/dormir use short endings: -s/-s/-t"],
     planet: "Nebula Secundus",
     description: "Venture deeper. Tackle the -ir and -re verbal forms.",
     lesson: `<h2>Regular -ir and -re Verbs</h2><p>For Type 1 <strong>-ir</strong> verbs like <em>choisir</em> (to choose):</p><ul><li>je <strong>-is</strong>, tu <strong>-is</strong>, il <strong>-it</strong></li><li>nous <strong>-issons</strong>, vous <strong>-issez</strong>, ils <strong>-issent</strong></li></ul><p>For regular <strong>-re</strong> verbs like <em>vendre</em> (to sell):</p><ul><li>je <strong>-s</strong>, tu <strong>-s</strong>, il <strong>[nothing]</strong></li><li>nous <strong>-ons</strong>, vous <strong>-ez</strong>, ils <strong>-ent</strong></li></ul>`,
@@ -55,6 +57,7 @@ export const levels = [
   {
     id: 3,
     title: "Être and Avoir",
+    rule: ["etre: suis / es / est / sommes / etes / sont", "avoir: ai / as / a / avons / avez / ont", "Both are irregular — they must be memorized cold"],
     planet: "Essencia",
     description: "The core forces of the universe: To Be and To Have.",
     lesson: `<h2>The verbs Être and Avoir</h2><div style="display: flex; gap: 2rem;"><div><p><strong>Être</strong></p><ul><li>Je <strong>suis</strong></li><li>Tu <strong>es</strong></li><li>Il/Elle <strong>est</strong></li><li>Nous <strong>sommes</strong></li><li>Vous <strong>êtes</strong></li><li>Ils/Elles <strong>sont</strong></li></ul></div><div><p><strong>Avoir</strong></p><ul><li>J'<strong>ai</strong></li><li>Tu <strong>as</strong></li><li>Il/Elle <strong>a</strong></li><li>Nous <strong>avons</strong></li><li>Vous <strong>avez</strong></li><li>Ils/Elles <strong>ont</strong></li></ul></div></div>`,
@@ -214,6 +217,7 @@ export const levels = [
   {
     id: 4,
     title: "More Irregular Verbs",
+    rule: ["faire: fais/fais/fait/faisons/faites/font", "aller: vais/vas/va/allons/allez/vont", "vouloir/pouvoir pattern: veux/veut/veulent, peux/peut/peuvent"],
     planet: "Mouvance",
     description: "Master the rules and syntax of More irregular verbs.",
     lesson: `<h2>More irregular verbs</h2><p>·4· Copyright © 200 8 by Annie H eminwa y. Click here for terms of use.   More irregular verbs 35The immediate future tense Aller is also used to form the immediate future. So, to talk about what you are going to do, use  aller in the present indicative followed immediately by a verb in the infi nitive. Je vais acheter une voiture en mai. I am going to buy a car in May. Nous allons faire un voyage en avril. We are going to go on a trip in April. Elle va apprendre le chinois. She is going to learn Chinese. Ils vont bientôt déménager . Th ey’re going to move soon. Th is construction can replace the present in colloquial speech. Vous déjeunez avec nous? Are you having lunch with us? Vous allez déjeuner avec nous? Are you going to have lunch with us? Est-ce que tu acceptes leur off re? Are you...</p>`,
@@ -355,6 +359,7 @@ export const levels = [
   {
     id: 5,
     title: "Devoir And Its Many Facets",
+    rule: ["devoir conjugates: dois/dois/doit/devons/devez/doivent", "devoir + infinitive = must/have to: Je dois partir", "Also means to owe: Je te dois 10 euros"],
     planet: "Le Fardeau",
     description: "Master the rules and syntax of Devoir and its many facets.",
     lesson: `<h2>Devoir and its many facets</h2><p>45  46 practice makes perfect Complete French Grammar Il y a (there is, there are ) Il y a is an impersonal expression that means both there is and there are. Il y a un chat sur le canapé. Th ere is a cat on the sofa. Il n’y a plus rien dans le frigo. Th ere is nothing left in the fridge. Il y a is used in a variety of expressions. Qu’est-ce qu’ il y a ? What’s the matter? Il n’y a qu’à leur dire. Just tell them. Il y avait une fois... Once upon a time . . . Il y a cinquante kilomètres d’ici à Paris. It’s fi ft y kilometers from here to Paris. Il y en a qui feraient mieux de se taire. Some people would do better to keep quiet. Il s’agit de (it is a matter of, it’s about ) Il s’agit de (it is a matter of, it’s about ) is a fi xed expression that introduces the subject of a work  (book, fi l...</p>`,
@@ -472,6 +477,7 @@ export const levels = [
   {
     id: 6,
     title: "Pronominal Verbs",
+    rule: ["Add a reflexive pronoun (me/te/se/nous/vous/se) before the verb", "je me leve, tu te leves, il se leve, nous nous levons", "The subject acts on itself — 'I wash myself', 'she gets up'"],
     planet: "Miroir",
     description: "Master the rules and syntax of Pronominal verbs.",
     lesson: `<h2>Pronominal verbs</h2><p>Several diff erent types of verbs are included in the pronominals: the refl exive , the  reciprocal , the passive , and the subjective . Too many? Not at all! As you study the  diff erent types, you’ll discover the subtleties of each. How to identify pronominal  verbs? Pronominal verbs are verbs that are preceded in the infi nitive and in con- jugated forms by the pronouns me, te, se, nous , vous , se. Let’s start with the refl ex- ive verbs. Reﬂ exive verbs Th e action of a refl exive verb is, for the most part, refl ected back on the subject,  the action being done to oneself. Th e pronouns me, te, se drop the e before mute  h or a vowel. je me lève I get up nous nous levons we get up tu te lèves you get up vous vous levez you get up il/elle se lève he/she gets up ils/elles se lèvent the...</p>`,
@@ -613,6 +619,7 @@ export const levels = [
   {
     id: 7,
     title: "The Passé Composé",
+    rule: ["Formula: avoir or etre (present) + past participle", "Most verbs take avoir. DR MRS VANDERTRAMP verbs take etre", "With etre: the past participle agrees with the subject in gender/number"],
     planet: "Mémoire",
     description: "Master the rules and syntax of The passé composé.",
     lesson: `<h2>The passé composé</h2><p>Th ere are several forms that can be used to talk about the past in French. Th e most  common is the passé composé , called in English the compound past or the pres- ent perfect. Th e passé composé is one of the tenses colloquially used in French to  talk about past events. It refers to a single action in the past. It is built of two parts:  the auxiliary or helping verb, avoir or être, /H11001 a past participle. The past participle of regular verbs Th e past participle is formed by adding an ending to the verb stem. Regular past  participles take the following endings: -er verbs take -é: parler (to speak ) /L50478 parlé (spoken ) -ir verbs take -i: choisir (to choose ) /L50478 choisi (chosen ) -re verbs take -u: entendre (to hear ) /L50478 entendu (heard ) Note that the passé composé can ...</p>`,
@@ -734,6 +741,7 @@ export const levels = [
   {
     id: 8,
     title: "The Imparfait",
+    rule: ["Stem = nous present tense minus -ons. Endings: -ais/-ais/-ait/-ions/-iez/-aient", "Use for: past habits (every day), ongoing background, descriptions", "Contrast with passe compose: imparfait = was happening, PC = it happened"],
     planet: "Nostalgia",
     description: "Master the rules and syntax of The imparfait.",
     lesson: `<h2>The imparfait</h2><p>The imparfait Th e uses of the imparfait (imperfect ) are some of the most diffi cult aspects of  French grammar to master. While the passé composé is used to talk abo u t an  action that took place on a specifi c occasion in the past, the imparfait plays a dif- ferent role. It is used to describe a state of mind and being in the past as well as  continuous, repeated, or habitual past actions. T o form the imperfect, take the nous form of the present tense and remove  the -ons ending, which gives you the stem. Th en add the imparfait endings ( -ais,  -ais, -ait, -ions , -iez , -aient ) to this stem. For example: parler to speak nous parlons /L50478 parl- je parlais I spoke nous parlions we spoke tu parlais you spoke vous parliez you spoke il/elle parlait he/she spoke ils/elles parlaient th...</p>`,
@@ -835,6 +843,7 @@ export const levels = [
   {
     id: 9,
     title: "The Futur Simple",
+    rule: ["Add to the infinitive: -ai/-as/-a/-ons/-ez/-ont (keep -re verbs: vendr-ai)", "Irregular stems: etre→ser, avoir→aur, aller→ir, faire→fer, pouvoir→pourr", "Use for definite future plans and if-then (Si...futur simple)"],
     planet: "Demain",
     description: "Master the rules and syntax of The futur simple.",
     lesson: `<h2>The futur simple</h2><p>and  thefutur antérieur The futur simple You have become acquainted with the future in Chapter 4 when you studied the  futur immédiat . French has two other future constructions: the futur simple and  the futur antérieur . To form t he futur simple of most verbs, use the infi nitive as  the stem and add the endings -ai, -as, -a, -ons , -ez, -ont . For -re verbs, drop the e  from the infi nitive before adding the endings. Here are some examples: décider to decide je décider ai I’ll decide nous décider ons we’ll decide tu décider as you’ll decide vous décider ez you’ll decide il/elle décider a he’ll/she’ll decide ils/elles décider ont they’ll decide choisir to choose je choisir ai I’ll choose nous choisir ons we’ll choose tu choisir as you’ll choose vous choisir ez you’ll choose il/elle choi...</p>`,
@@ -940,6 +949,7 @@ export const levels = [
   {
     id: 10,
     title: "The Plus-Que-Parfait",
+    rule: ["Formula: avoir or etre (imparfait) + past participle", "j'avais mange, il etait parti", "Use for 'had done' — an action completed before another past action"],
     planet: "L'Ancien Temps",
     description: "Master the rules and syntax of The plus-que-parfait.",
     lesson: `<h2>The plus-que-parfait</h2><p>Th e plus-que-parfait (pluperfect ) indicates a past action that happened before  another past action started (in English, had done ). It can be seen as “past” past  tense.  Formation of the plus-que-parfait To form t he plus-que-parfait , use the forms of avoir or être in the imparfait /H11001  the past participle of the main verb.  Let’s review the imparfait of the auxiliaries être and avoir : être to be j’étais I was nous étions we were tu étais you were vous étiez you were il/elle était he/she was ils/elles étaient they were avoir to have j’avais I had nous avions we had tu avais you had vous aviez you had il/elle avait he/she had ils/elles avaient they had Il avait toujours fi ni avant He had always fi nished before  les autres. the others. Tu avais oublié l’anniversaire de You had fo...</p>`,
@@ -1041,6 +1051,7 @@ export const levels = [
   {
     id: 11,
     title: "Present Conditional",
+    rule: ["Same irregular stems as futur simple, but add imparfait endings", "Endings: -ais/-ais/-ait/-ions/-iez/-aient → je parlerais, il serait", "Use for: polite requests, hypotheticals, reported speech"],
     planet: "Mirage",
     description: "Master the rules and syntax of present conditional.",
     lesson: `<h2>Present conditional</h2><p>and the past conditional·11· The present conditional Th e présent du conditionnel (present conditional ) has many uses we’ll explore in  this chapter. It is formed by adding the endings of the imperfect to the future stem  of the verb. For -er and -ir verbs, the future stem is the entire infi nitive form. For  -re verbs, drop the fi nal -e from the infi nitive before adding the conditional end- ings. As you saw in Chapter 9, a number of irregular verbs have an irregular future stem. Th is same stem is used to form the present conditional. mettre to put je mettrais I would put nous mettrions we would put tu mettrais you would put vous mettriez you would put il/elle mettrait he/she would put ils/elles mettraient they would put faire to do je ferais I would do nous ferions we would do tu fera...</p>`,
@@ -1218,6 +1229,7 @@ export const levels = [
   {
     id: 12,
     title: "Could",
+    rule: ["'could' = conditional of pouvoir: pourrais/pourrais/pourrait/pourrions/pourriez/pourraient", "Polite request: Pourriez-vous m'aider? (Could you help me?)", "Hypothesis: Si j'avais le temps, je pourrais venir"],
     planet: "Volonté",
     description: "Master the rules and syntax of Could.",
     lesson: `<h2>Could</h2><p>you solve this problem? Pourriez -vous annuler notre vol? Could you cancel our fl ight? Th e verb vouloir (to want ) is used to express wishes and desires. It is also used for a polite  request in the conditional form. je veux I want nous voulons we want tu veux you want vous voulez you want il/elle veut he/she wants ils/elles veulent they want Elle veut une augmentation. She wants a raise. Nous voulons une table près de la cheminée. We want a table by the fi replace. Je voudrais vous parler . I would like to speak with you. 3·9EXERCICE  Mettre au présent les verbes entre parenthèses.  1. Nous (vouloir) une chambre qui donne sur le jardin.  2. Je (ne pas pouvoir) assister à la réunion à quinze heures. 3. Je (vouloir) vous parler avant jeudi. 4. Nous (pouvoir) envoyer les documents par la p...</p>`,
@@ -1343,6 +1355,7 @@ export const levels = [
   {
     id: 13,
     title: "Present Subjunctive",
+    rule: ["Stem = ils present tense minus -ent. Endings: -e/-es/-e/-ions/-iez/-ent", "Triggered by: vouloir que, falloir que, bien que, pour que, douter que", "Key irregulars: etre (soit), avoir (ait), aller (aille), faire (fasse)"],
     planet: "Le Doute",
     description: "Master the rules and syntax of present subjunctive.",
     lesson: `<h2>Present subjunctive</h2><p>Th e subjunctive is a mood, not a tense. Th e mood of a verb determines how one  views an event. You have already studied verb tenses in the indicative mood ( le  présent , l’imparfait , and le futur ), stating objective facts, and in the conditional  mood, relating to possibilities. In Chapter 19 we will study the imperative mood  that gives commands. Th e subjunctive is another mood that refers to someone’s  opinion or deals with hypothetical actions. For most verbs, the present of the subjunctive is formed by adding the sub- junctive endings (- e, -es, -e, -ions , -iez , -ent ) to the stem. Th e stem for je, tu, il/ elle, ils/elles is found by dropping the -ent ending from the third-person plural  present indicative form ( ils/elles ). Note that the sound of the verb will be the same  f...</p>`,
@@ -1464,6 +1477,7 @@ export const levels = [
   {
     id: 14,
     title: "Nitive Mood",
+    rule: ["ne...pas surrounds the conjugated verb: je ne mange pas", "ne...plus (no more), ne...jamais (never), ne...rien (nothing), ne...que (only)", "In passe compose, ne...pas wraps the auxiliary: je n'ai pas mange"],
     planet: "L'Origine",
     description: "Master the rules and syntax of nitive mood.",
     lesson: `<h2>Nitive mood</h2><p>The inﬁ nitif présent You will come across the infi nitif , the infi nitive mood, on many occasions. It is  used more frequently in French than in English. Th e infi nitif can be used as the  subject of a verb. (Note that the...</p>`,
@@ -1645,6 +1659,7 @@ export const levels = [
   {
     id: 15,
     title: "Present Participle",
+    rule: ["Present participle = nous present stem (minus -ons) + -ant", "parlons→parlant, finissons→finissant, prenons→prenant", "en + participle = while doing: en parlant (while speaking), en mangeant"],
     planet: "Le Flux",
     description: "Master the rules and syntax of present participle.",
     lesson: `<h2>Present participle</h2><p>is used in English instead.) Faire la cuisine est son passe- Cooking is his favorite pastime. temps favori. Suivre des cours de cuisine est Taking cooking classes is fun. amusant. Voyager par le train est rapide. Traveling by train is fast. Apprendre une langue étrangère Learning a foreign language is very est très utile. useful. Th e infi nitif is also used for general instructions, prescriptions, public  notices, and proverbs (where the imperative is oft en used in English). Prendre une fois par jour. Take once a day. Ne pas se pencher par la fenêtre. Do not lean out of the window. Ne pas marcher sur la pelouse. Keep off the lawn. Lire le mode d’emploi avant Read the instructions before using. utilisation. Since a verb in the infi nitive mood is not conjugated, the negation ( ne… pas )  ...</p>`,
@@ -1822,6 +1837,7 @@ export const levels = [
   {
     id: 16,
     title: "Passé Simple",
+    rule: ["-er verbs: -ai/-as/-a/-ames/-ates/-erent", "-ir/-re verbs: -is/-is/-it/-imes/-ites/-irent", "Literary tense — seen in novels, not used in spoken French"],
     planet: "Le Grimoire",
     description: "Master the rules and syntax of passé simple.",
     lesson: `<h2>Passé simple</h2><p>Th e passé simple (simple past, historical past ) is a verb tense used mainly in writ- ten French, for literary and historical material. It may also be heard during a for- mal speech. It is the equivalent of the passé composé , used to recount a specifi c  action in the past. When relating events, quality newspapers use the passé simple  for refi nement. Scandal sheets will oft en use it to convey a sense of drama. When  reading French literature of all periods, you will need to recognize the passé sim- ple to get a full appreciation of the text. Formation of the passé simple Th e passé simple of regular -er verbs is formed by adding the endings -ai, -as, -a,  -âmes , -âtes , -èrent to the infi nitive stem. répéter to repeat je répét ai I repeated nous répét âmes we repeated tu répét as yo...</p>`,
@@ -1987,6 +2003,7 @@ export const levels = [
   {
     id: 17,
     title: "Passive Voice",
+    rule: ["Formula: etre (conjugated) + past participle + par + agent", "La lettre est ecrite par Marie (The letter is written by Marie)", "The participle agrees in gender and number with the grammatical subject"],
     planet: "L'Éclipse",
     description: "Master the rules and syntax of passive voice.",
     lesson: `<h2>Passive voice</h2><p>A sentence can either be in the active or the passive voice. In the active voice, the  subject performs the action, while in the voix passive (passive voice ), the subject is  acted upon. Th at is, in the passive voice, the subject and the object exchange roles.  Be aware that the passive voice is much more common in English than in French. In French, one tends to use the active voice. Compare the active and the passive voices. The active voice: Les croisés envahissent le pays. Th e crusaders are invading the   country. La souris mange le fromage. Th e mouse eats the cheese. The passive voice: Le pays est envahi par les croisés. Th e country is being invaded by   the crusaders. Le fromage est mangé par la souris. Th e cheese is being eaten by   the mouse. Formation of the passive voice Th ...</p>`,
@@ -2152,6 +2169,7 @@ export const levels = [
   {
     id: 18,
     title: "Indirect Speech",
+    rule: ["Direct to Indirect: present becomes imparfait, futur becomes conditionnel", "Il a dit qu'il mangeait (He said he was eating)", "Time words shift: aujourd'hui→ce jour-la, demain→le lendemain"],
     planet: "L'Écho",
     description: "Master the rules and syntax of Indirect speech.",
     lesson: `<h2>Indirect speech</h2><p>Indirect speech is used, both in English and in French, to relate conversational  exchanges or information in the third person. Direct speech versus indirect speech I n d i r e c t s p e e c h ( le discours direct ), one says something or asks a question  directly. Quentin demande: Quentin asks:  « Où allez-vous? » “Where are you going?” Pierre dit: Pierre says:  « Le président est à Milan. » “Th e president is in Milan.” In indirect speech ( le discours indirect ), the words of one or more people  are reported or a question is asked indirectly. Th ere are no quotation marks. Quentin demande où vous allez . Quentin is asking where you are   going. Pierre dit que le président est Pierre is saying that the president à Milan . is in Milan. Verbs in the main clause of indirect speech are follo...</p>`,
@@ -2301,6 +2319,7 @@ export const levels = [
   {
     id: 19,
     title: "Imperative Mood",
+    rule: ["Use tu/nous/vous forms without the subject pronoun", "-er verbs: drop the final -s from tu form: parle! (not parles!)", "Negative: ne + verb + pas → Ne parle pas! / N'y allez pas!"],
     planet: "Le Commandement",
     description: "Master the rules and syntax of imperative mood.",
     lesson: `<h2>Imperative mood</h2><p>that gives commands. Th e subjunctive is another mood that refers to someone’s  opinion or deals with hypothetical actions. For most verbs, the present of the subjunctive is formed by adding the sub- junctive endings (- e, -es, -e, -ions , -iez , -ent ) to the stem. Th e stem for je, tu, il/ elle, ils/elles is found by dropping the -ent ending from the third-person plural  present indicative form ( ils/elles ). Note that the sound of the verb will be the same  for all these persons. Let’s look at the verb penser (to think ). Th e third-person plural: ils/elles  pensent . Th e stem: pens- je pens e I speak tu pens es you speak il/elle pens e he/she speaks ils/elles pens ent they speak Th e stem for the nous and vous subjunctive forms is found by dropping the  -ons from the fi rst-person plu...</p>`,
@@ -2434,6 +2453,7 @@ export const levels = [
   {
     id: 20,
     title: "Articles And Nouns",
+    rule: ["Definite (le/la/l'/les): specific, known nouns", "Indefinite (un/une/des): non-specific nouns — 'a', 'some'", "Partitive (du/de la/de l'): a portion of a mass noun — du pain, de l'eau"],
     planet: "L'Identité",
     description: "Master the rules and syntax of Articles and nouns.",
     lesson: `<h2>Articles and nouns</h2><p>The deﬁ nite article with nouns Let’s fi rst look at the defi nite article. All nouns in French have a gender: masculine  or feminine, whether they refer to a person, an animal, a thing, or an abstract  notion. While English has only one defi nite article the, French uses le for mascu- line nouns and la for feminine nouns. Le and la are shortened to l’ before a singu- lar noun or adjective that begins with a vowel sound. Th e plural les is used for  both masculine and feminine. Masculine le village the village le pont the bridge Feminine la ville the city la région the region Plural les villages (m.pl.) the villages les villes (f.pl.) the cities Le and la become l’ in front of singular nouns starting with a vowel or a  mute h. Masculine l’océan the ocean l’ami the friend Feminine l’île the...</p>`,
@@ -2627,6 +2647,7 @@ export const levels = [
   {
     id: 21,
     title: "All The Pronouns",
+    rule: ["Subject: je/tu/il/elle/nous/vous/ils/elles", "Direct object (COD): me/te/le/la/nous/vous/les — replaces who/what", "Indirect object (COI): me/te/lui/nous/vous/leur — replaces a + person"],
     planet: "Le Substitut",
     description: "Master the rules and syntax of All the pronouns.",
     lesson: `<h2>All the pronouns</h2><p>Subject pronouns Th ere are many types of pronouns in French. Let’s start with the subject pronouns  you have already used when conjugating verbs. je I tu you (singular familiar) il he, it (masculine) elle she, it (feminine) on one, we, they, people nous we vous you (singular formal and all plurals) ils they (masculine, or mixed masculine and feminine) elles they (feminine) Th e third-person pronouns apply to people, animals, or things. Bertrand est chirurgien. Bertrand is a surgeon. Il est chirurgien . He is a surgeon . Les trois sœurs jouent dans le salon. Th e three sisters are playing in   the living room. Elles jouent dans le salon . Th ey are playing in the living   room. Le chat est assis sur la chaise. Th e cat is sitting on the chair. Il est assis sur la chaise. It is sitting on t...</p>`,
@@ -2776,6 +2797,7 @@ export const levels = [
   {
     id: 22,
     title: "Adjectives And Comparisons",
+    rule: ["Adjectives agree with noun: grand/grande, grands/grandes", "Comparative: plus/moins/aussi + adj + que → plus grand que (taller than)", "Superlative: le/la/les plus + adj → le plus grand (the tallest)"],
     planet: "L'Aura",
     description: "Master the rules and syntax of Adjectives and comparisons.",
     lesson: `<h2>Adjectives and comparisons</h2><p>185Je déteste mon vieux canapé . I hate my old couch. Cette vieille maison est à vendre. Th is old house is for sale. Ce jeune chef est vraiment doué. Th is young chef is really talented. Cette jeune femme est écrivain. Th is young woman is a writer. Beware: Some adjectives have diff erent meanings, depending on whether they precede or follow  the noun. son ancien mari her former husband une statue ancienne an antique statue ma chère Carole my dear Carole un cadeau cher an expensive gift  Notre pauvre chien! Our poor dog! des pays pauvres poor countries sa propre idée his own idea une nappe propre a clean tablecloth une sale aff aire a nasty business une fenêtre sale a dirty window un grand homme an important man une femme grande a tall woman le dernier métro the last subway train l’an der...</p>`,
@@ -2901,6 +2923,7 @@ export const levels = [
   {
     id: 23,
     title: "Demonstrative Adjectives",
+    rule: ["ce (masc), cet (masc before vowel/h), cette (fem), ces (plural)", "cet homme, cette femme, ces enfants", "Add -ci (near) or -la (far) for contrast: ce livre-ci vs ce livre-la"],
     planet: "L'Index",
     description: "Master the rules and syntax of Demonstrative adjectives.",
     lesson: `<h2>Demonstrative adjectives</h2><p>and pronouns Demonstrative adjectives Sometimes you need to be very specifi c when identifying things. To do so, you use  demonstrative adjectives ( this, that, these, those ). In French, demonstratives, like  all adjectives, agree in gender and number with the noun they modify. Masculine singular ce livre this book cet auteur this author cet homme this man Note that the demonstrative adjective ce adds a - t before a masculine singu- lar noun that starts with a vowel or a mute h (cet appartement, cet arbre ). Feminine singular cette lampe this lamp cette télévision this television cette histoire this story Masculine and feminine plural ces cahiers (m.pl.) these notebooks ces arbres (m.pl.) these trees ces chemises (f.pl.) these shirts ces homards (m.pl.) these lobsters To make a distinctio...</p>`,
@@ -3046,6 +3069,7 @@ export const levels = [
   {
     id: 24,
     title: "Relative Pronouns",
+    rule: ["qui = subject (who/that does the action in the relative clause)", "que = direct object (that/whom — the object of the clause)", "dont = of which/whose, ou = where or when (place/time expressions)"],
     planet: "Le Lien",
     description: "Master the rules and syntax of Relative pronouns.",
     lesson: `<h2>Relative pronouns</h2><p>qui and que can sometimes be followed by the subjunctive. If there is  some doubt about the existence of someone or the possible realization of something, the subjunc-tive may be used aft er the relative pronoun. Connaîtriez-vous quelqu’un qui sache Would you know someone who can speak parler le chinois couramment? Chinese fl uently? Il cherche quelqu’un qui puisse créer He is looking for someone who can create a un logiciel pour son entreprise. piece of soft ware for his company. 13·4EXERCICE  Indicatif ou subjonctif?  1. Il dit que leur page d’accueil (être) attrayante.  2. Elle doute qu’il (faire) chaud demain. 3. Ils sont heureux que leurs enfants (pouvoir) aller en Europe cet été. 4. Je pense que Maud (avoir) raison. 5. Je veux que tu (faire) la présentation jeudi. 6. Tu ne crois pas ...</p>`,
@@ -3207,6 +3231,7 @@ export const levels = [
   {
     id: 25,
     title: "Adverbs And Expressions",
+    rule: ["Form many adverbs: feminine adjective + -ment (lent→lente→lentement)", "Common irregulars: bien, mal, vite, beaucoup, peu, tres, trop", "Position: after verb in simple tenses; after auxiliary in compound tenses"],
     planet: "La Mesure",
     description: "Master the rules and syntax of Adverbs and expressions.",
     lesson: `<h2>Adverbs and expressions</h2><p>of time, frequency,  and location Adverbs and expressions of time Th e following expressions are useful when talking about time: aujourd’hui today demain tomorrow hier yesterday  après-demain the day aft er tomorrow avant-hier the day before yesterday dans trois jours in three days (from today) dans une quinzaine in two weeks dans un mois in a month dans un an in a year la semaine prochaine next week la semaine dernière last week Il ira en France dans un an . He’ll go to France in a year. Je t’appellerai après-demain . I’ll call you the day aft er   tomorrow. Th e adverbs listed above are ordinarily used when you are speaking directly  to people, in what is known as direct style or direct speech. If you are discussing  past and future events, or telling a story, you are more likely to use ...</p>`,
@@ -3340,6 +3365,7 @@ export const levels = [
   {
     id: 26,
     title: "Numbers",
+    rule: ["70 = soixante-dix (60+10), 80 = quatre-vingts (4x20), 90 = quatre-vingt-dix", "Ordinals: premier/premiere, then add -ieme to cardinal (deuxieme, troisieme)", "Collective nouns: une dizaine (~10), une douzaine (12), une centaine (~100)"],
     planet: "L'Infini",
     description: "Master the rules and syntax of Numbers.",
     lesson: `<h2>Numbers</h2><p>The numbers 0 to 50 Let’s start with numbers from 0 to 50. Although consonants are generally silent in  French, they are pronounced in the following numbers: cinq , six, sept , huit , neuf ,  dix. With sept , the -p- is silent, but the fi nal - t is pronounced. Th e fi nal - x in six  and dix is pronounced like an s. When the numbers cinq , six, huit , and dix are followed by a word beginning  with a consonant, their fi nal consonant is mute (silent). zéro zero vingt twenty un one vingt et un twenty-one deux two vingt-deux twenty-two trois three vingt-trois twenty-three quatre four vingt-quatre twenty-four cinq fi ve vingt-cinq twenty-fi ve six six vingt-six twenty-six sept seven vingt-sept twenty-seven huit eight vingt-huit twenty-eight neuf nine vingt-neuf twenty-nine dix ten trente thir...</p>`,
@@ -3465,6 +3491,7 @@ export const levels = [
   {
     id: 27,
     title: "Pot Pourri",
+    rule: ["Key tense review: present, passe compose, imparfait, futur, conditionnel, subjonctif", "Subjunctive triggers: vouloir que, falloir que, bien que, pour que", "Pitfalls: participle agreement with etre, reflexive accords, ne...que = only"],
     planet: "L'Oméga",
     description: "Master the rules and syntax of Pot pourri.",
     lesson: `<h2>Pot pourri</h2><p>·27· Copyright © 200 8 by Annie H eminwa y. Click here for terms of use.  commencer to begin, to start J’ai commencé un nouveau livre. I started a new book. Tu as bien commencé l’année? Did you start the year on the right foot? Il commence à pleuvoir. It’s starting to rain. Tout à coup, il a commencé à pleurer. Suddenly, he started crying. Elle a commencé par se présenter. She started by introducing herself. On va commencer par des escargots. We’ll start with snails. décider to decide C’est décidé . It’s (has been) decided. J’ai décidé d’ aller au cinéma. I decided to go to the movies. Nous avons décidé d ’aller au Japon. We decided to go to Japan. Ils se sont enfi n décidés à se marier. Th ey fi nally decided to get (got around to   getting) married. Décide-toi! Make up your mind! demande...</p>`,

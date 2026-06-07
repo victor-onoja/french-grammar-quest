@@ -1,5 +1,6 @@
 import { levels } from '../data/levels.js';
 import { gameState } from '../engine/gameState.js';
+import { checkAnswer } from '../engine/answerUtils.js';
 
 export function renderExerciseScreen(container, navigateTo, params) {
   const levelId = params.levelId;
@@ -70,15 +71,7 @@ export function renderExerciseScreen(container, navigateTo, params) {
       const inputEl = document.getElementById('answer-input');
 
       const checkTypeAnswer = () => {
-        const val = inputEl.value.trim().toLowerCase();
-        let isCorrect = false;
-
-        if (Array.isArray(ex.answer)) {
-          isCorrect = ex.answer.some(a => a.toLowerCase() === val);
-        } else {
-          isCorrect = (val === ex.answer.toLowerCase());
-        }
-        handleAnswer(isCorrect, null, ex.answer);
+        handleAnswer(checkAnswer(inputEl.value, ex.answer), null, ex.answer);
       };
 
       submitBtn.onclick = checkTypeAnswer;

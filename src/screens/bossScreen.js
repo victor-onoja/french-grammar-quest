@@ -1,5 +1,6 @@
 import { levels } from '../data/levels.js';
 import { gameState } from '../engine/gameState.js';
+import { checkAnswer } from '../engine/answerUtils.js';
 
 export function renderBossScreen(container, navigateTo, params) {
     const levelId = params.levelId;
@@ -66,7 +67,9 @@ export function renderBossScreen(container, navigateTo, params) {
 
             if (isCorrect) {
                 container.querySelector('.boss-title').classList.add('shake');
-                feedback.innerHTML = '<div class="success-text">Direct Hit! +50 XP</div>';
+                timeLeft = Math.min(timeLeft + 10, boss.timeLimit);
+                updateTimerDisplay();
+                feedback.innerHTML = '<div class="success-text">Direct Hit! +50 XP ⏱️ +10s</div>';
                 gameState.addXP(50);
                 setTimeout(() => {
                     currentQIndex++;
@@ -86,15 +89,7 @@ export function renderBossScreen(container, navigateTo, params) {
         };
 
         const checkTypeAnswer = () => {
-            const val = inputEl.value.trim().toLowerCase();
-            let isCorrect = false;
-
-            if (Array.isArray(q.answer)) {
-                isCorrect = q.answer.some(a => a.toLowerCase() === val);
-            } else {
-                isCorrect = (val === q.answer.toLowerCase());
-            }
-            handleBossAnswer(isCorrect);
+            handleBossAnswer(checkAnswer(inputEl.value, q.answer));
         };
 
         submitBtn.onclick = checkTypeAnswer;

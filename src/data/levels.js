@@ -218,9 +218,11 @@ export const levels = [
     description: "Master the rules and syntax of More irregular verbs.",
     lesson: `<h2>More irregular verbs</h2><p>·4· Copyright © 200 8 by Annie H eminwa y. Click here for terms of use.   More irregular verbs 35The immediate future tense Aller is also used to form the immediate future. So, to talk about what you are going to do, use  aller in the present indicative followed immediately by a verb in the infi nitive. Je vais acheter une voiture en mai. I am going to buy a car in May. Nous allons faire un voyage en avril. We are going to go on a trip in April. Elle va apprendre le chinois. She is going to learn Chinese. Ils vont bientôt déménager . Th ey’re going to move soon. Th is construction can replace the present in colloquial speech. Vous déjeunez avec nous? Are you having lunch with us? Vous allez déjeuner avec nous? Are you going to have lunch with us? Est-ce que tu acceptes leur off re? Are you...</p>`,
     exercises: [
-        { id: "4-1", type: "translation", question: "Type this perfectly: Je vais acheter une voiture en mai. I am going to buy a car in May.", answer: ["Je vais acheter une voiture en mai. I am going to buy a car in May."] },
-        { id: "4-2", type: "translation", question: "Type this perfectly: Nous allons faire un voyage en avril. We are going to go on a trip in April.", answer: ["Nous allons faire un voyage en avril. We are going to go on a trip in April."] },
-        { id: "4-3", type: "translation", question: "Type this perfectly: Elle va apprendre le chinois. She is going to learn Chinese.", answer: ["Elle va apprendre le chinois. She is going to learn Chinese."] }
+      { id: "4-1", type: "mcq", question: "How do you say 'I go'?", options: ["Je vais", "Je vas", "Je vai", "J'alle"], answer: 0, explanation: "Aller is irregular: je vais, tu vas, il va, nous allons, vous allez, ils vont." },
+      { id: "4-2", type: "fill-blank", question: "Nous ____ (aller) au marché demain.", answer: "allons", hint: "Nous allons = We go. The immediate future uses aller + infinitive." },
+      { id: "4-3", type: "mcq", question: "To say 'She is going to study', use:", options: ["Elle va étudier", "Elle aller étudier", "Elle vais étudier", "Elle étudier va"], answer: 0, explanation: "Immediate future = aller (conjugated) + infinitive." },
+      { id: "4-4", type: "fill-blank", question: "Qu'est-ce qu'il ____ (faire) ce soir?", answer: "fait", hint: "Faire is irregular: je fais, tu fais, il fait, nous faisons, vous faites, ils font." },
+      { id: "4-5", type: "translation", question: "Translate: We are going to go on a trip in April.", answer: ["Nous allons faire un voyage en avril."], hint: "Use aller + infinitive for the immediate future." }
     ],
     vocabulary: [
       {
@@ -344,8 +346,9 @@ export const levels = [
         intro: "The guardian of Mouvance demands perfection!",
         timeLimit: 30,
         questions: [
-            { type: "translation", question: "Type this perfectly: Ils vont bientôt déménager . Th ey’re going to move soon.", answer: ["Ils vont bientôt déménager . Th ey’re going to move soon."] },
-            { type: "translation", question: "Type this perfectly: Vous déjeunez avec nous? Are you having lunch with us?", answer: ["Vous déjeunez avec nous? Are you having lunch with us?"] }
+            { type: "fill-blank", question: "Ils ____ (aller) bientôt déménager.", answer: "vont" },
+            { type: "fill-blank", question: "Il ____ (faire) du sport le weekend.", answer: "fait" },
+            { type: "fill-blank", question: "Nous ____ (aller) voir un film ce soir.", answer: "allons" }
         ]
     }
   },
@@ -356,9 +359,11 @@ export const levels = [
     description: "Master the rules and syntax of Devoir and its many facets.",
     lesson: `<h2>Devoir and its many facets</h2><p>45  46 practice makes perfect Complete French Grammar Il y a (there is, there are ) Il y a is an impersonal expression that means both there is and there are. Il y a un chat sur le canapé. Th ere is a cat on the sofa. Il n’y a plus rien dans le frigo. Th ere is nothing left in the fridge. Il y a is used in a variety of expressions. Qu’est-ce qu’ il y a ? What’s the matter? Il n’y a qu’à leur dire. Just tell them. Il y avait une fois... Once upon a time . . . Il y a cinquante kilomètres d’ici à Paris. It’s fi ft y kilometers from here to Paris. Il y en a qui feraient mieux de se taire. Some people would do better to keep quiet. Il s’agit de (it is a matter of, it’s about ) Il s’agit de (it is a matter of, it’s about ) is a fi xed expression that introduces the subject of a work  (book, fi l...</p>`,
     exercises: [
-        { id: "5-1", type: "translation", question: "Type this perfectly: Il y a is an impersonal expression that means both there is and there are.", answer: ["Il y a is an impersonal expression that means both there is and there are."] },
-        { id: "5-2", type: "translation", question: "Type this perfectly: Il y a un chat sur le canapé. Th ere is a cat on the sofa.", answer: ["Il y a un chat sur le canapé. Th ere is a cat on the sofa."] },
-        { id: "5-3", type: "translation", question: "Type this perfectly: Il n’y a plus rien dans le frigo. Th ere is nothing left in the fridge.", answer: ["Il n’y a plus rien dans le frigo. Th ere is nothing left in the fridge."] }
+      { id: "5-1", type: "mcq", question: "What does 'Il y a un chat sur le canapé' mean?", options: ["There is a cat on the sofa", "He has a cat on the sofa", "There is a sofa for the cat", "A cat is on the floor"], answer: 0, explanation: "'Il y a' means 'there is' or 'there are'." },
+      { id: "5-2", type: "fill-blank", question: "Je ____ (devoir) partir maintenant.", answer: "dois", hint: "Devoir: je dois, tu dois, il doit, nous devons, vous devez, ils doivent." },
+      { id: "5-3", type: "mcq", question: "Which is correct for 'You must study'?", options: ["Tu dois étudier", "Tu devoir étudier", "Tu doit étudier", "Tu devez étudier"], answer: 0, explanation: "Tu dois = you must. Devoir is conjugated for each subject." },
+      { id: "5-4", type: "fill-blank", question: "____ beaucoup d'étudiants dans cette classe. (There are many students...)", answer: "Il y a", hint: "Use 'il y a' for both 'there is' and 'there are'." },
+      { id: "5-5", type: "mcq", question: "Nous ____ finir ce travail avant vendredi.", options: ["devons", "doit", "devoir", "dois"], answer: 0, explanation: "Nous devons = we must. The nous form of devoir is devons." }
     ],
     vocabulary: [
       {
@@ -458,8 +463,9 @@ export const levels = [
         intro: "The guardian of Le Fardeau demands perfection!",
         timeLimit: 30,
         questions: [
-            { type: "translation", question: "Type this perfectly: Il y a is used in a variety of expressions.", answer: ["Il y a is used in a variety of expressions."] },
-            { type: "translation", question: "Type this perfectly: Il n’y a qu’à leur dire. Just tell them.", answer: ["Il n’y a qu’à leur dire. Just tell them."] }
+            { type: "fill-blank", question: "Tu ____ (devoir) partir maintenant.", answer: "dois" },
+            { type: "fill-blank", question: "Il y ____ beaucoup de monde ici.", answer: "a" },
+            { type: "fill-blank", question: "Elle ____ (devoir) appeler ses parents.", answer: "doit" }
         ]
     }
   },
@@ -470,9 +476,11 @@ export const levels = [
     description: "Master the rules and syntax of Pronominal verbs.",
     lesson: `<h2>Pronominal verbs</h2><p>Several diff erent types of verbs are included in the pronominals: the refl exive , the  reciprocal , the passive , and the subjective . Too many? Not at all! As you study the  diff erent types, you’ll discover the subtleties of each. How to identify pronominal  verbs? Pronominal verbs are verbs that are preceded in the infi nitive and in con- jugated forms by the pronouns me, te, se, nous , vous , se. Let’s start with the refl ex- ive verbs. Reﬂ exive verbs Th e action of a refl exive verb is, for the most part, refl ected back on the subject,  the action being done to oneself. Th e pronouns me, te, se drop the e before mute  h or a vowel. je me lève I get up nous nous levons we get up tu te lèves you get up vous vous levez you get up il/elle se lève he/she gets up ils/elles se lèvent the...</p>`,
     exercises: [
-        { id: "6-1", type: "translation", question: "Type this perfectly: Il se lève à sept heures. He gets up at seven.", answer: ["Il se lève à sept heures. He gets up at seven."] },
-        { id: "6-2", type: "translation", question: "Type this perfectly: Je me couche à onze heures. I go to bed at eleven.", answer: ["Je me couche à onze heures. I go to bed at eleven."] },
-        { id: "6-3", type: "translation", question: "Type this perfectly: Il s’assoit sur un banc . He sits down on a bench.", answer: ["Il s’assoit sur un banc . He sits down on a bench."] }
+      { id: "6-1", type: "mcq", question: "How do you say 'I get up at 7'?", options: ["Je me lève à sept heures", "Je lève à sept heures", "Je me lever à sept heures", "Je se lève à sept heures"], answer: 0, explanation: "Reflexive verbs need a pronoun: me, te, se, nous, vous, se." },
+      { id: "6-2", type: "fill-blank", question: "Elle ____ lave les mains. (She washes her hands.)", answer: "se", hint: "The reflexive pronoun for il/elle is 'se'." },
+      { id: "6-3", type: "fill-blank", question: "Nous ____ (se coucher) à onze heures.", answer: "nous couchons", hint: "Se coucher: je me couche, nous nous couchons, vous vous couchez." },
+      { id: "6-4", type: "mcq", question: "Which sentence is grammatically correct?", options: ["Ils s'aiment beaucoup", "Ils aiment se beaucoup", "Ils se aiment beaucoup", "Ils aiment beaucoup se"], answer: 0, explanation: "The reflexive pronoun (se → s' before vowel) goes before the verb." },
+      { id: "6-5", type: "translation", question: "Translate: You do not rest enough. (tu form)", answer: ["Tu ne te reposes pas assez."], hint: "Use the pronominal verb 'se reposer' in negative form." }
     ],
     vocabulary: [
       {
@@ -596,8 +604,9 @@ export const levels = [
         intro: "The guardian of Miroir demands perfection!",
         timeLimit: 30,
         questions: [
-            { type: "translation", question: "Type this perfectly: Tu ne te reposes pas assez. You do not rest enough.", answer: ["Tu ne te reposes pas assez. You do not rest enough."] },
-            { type: "translation", question: "Type this perfectly: Ils s’aiment beaucoup. Th ey love each other a lot.", answer: ["Ils s’aiment beaucoup. Th ey love each other a lot."] }
+            { type: "fill-blank", question: "Je ____ (se lever) à sept heures.", answer: "me lève" },
+            { type: "fill-blank", question: "Ils ____ (se parler) tous les jours.", answer: "se parlent" },
+            { type: "fill-blank", question: "Vous ____ (se dépêcher)!", answer: "vous dépêchez" }
         ]
     }
   },
@@ -608,9 +617,11 @@ export const levels = [
     description: "Master the rules and syntax of The passé composé.",
     lesson: `<h2>The passé composé</h2><p>Th ere are several forms that can be used to talk about the past in French. Th e most  common is the passé composé , called in English the compound past or the pres- ent perfect. Th e passé composé is one of the tenses colloquially used in French to  talk about past events. It refers to a single action in the past. It is built of two parts:  the auxiliary or helping verb, avoir or être, /H11001 a past participle. The past participle of regular verbs Th e past participle is formed by adding an ending to the verb stem. Regular past  participles take the following endings: -er verbs take -é: parler (to speak ) /L50478 parlé (spoken ) -ir verbs take -i: choisir (to choose ) /L50478 choisi (chosen ) -re verbs take -u: entendre (to hear ) /L50478 entendu (heard ) Note that the passé composé can ...</p>`,
     exercises: [
-        { id: "7-1", type: "translation", question: "Type this perfectly: Elle a pris une décision. /H20877 She has made a decision.", answer: ["Elle a pris une décision. /H20877 She has made a decision."] },
-        { id: "7-2", type: "translation", question: "Type this perfectly: Il a vendu sa voiture. He sold his car.", answer: ["Il a vendu sa voiture. He sold his car."] },
-        { id: "7-3", type: "translation", question: "Type this perfectly: Il n’a pas vendu sa voiture. He did not sell his car.", answer: ["Il n’a pas vendu sa voiture. He did not sell his car."] }
+      { id: "7-1", type: "mcq", question: "What is the passé composé of 'parler' for 'je'?", options: ["j'ai parlé", "j'ai parler", "je suis parlé", "j'avais parlé"], answer: 0, explanation: "Passé composé = avoir/être (present) + past participle. -er verbs take -é." },
+      { id: "7-2", type: "fill-blank", question: "Ils ____ (manger) au restaurant hier soir.", answer: "ont mangé", hint: "Manger is an -er verb: past participle is mangé. Use 'ont' for ils." },
+      { id: "7-3", type: "mcq", question: "Which verb uses ÊTRE (not avoir) in passé composé?", options: ["aller", "manger", "finir", "vendre"], answer: 0, explanation: "Verbs of motion like aller, venir, partir, arriver use être as auxiliary." },
+      { id: "7-4", type: "fill-blank", question: "Elle ____ (venir) hier. (She came yesterday.)", answer: "est venue", hint: "Venir uses être. The past participle venu agrees with a feminine subject: venue." },
+      { id: "7-5", type: "mcq", question: "How do you negate passé composé? Il ____ sa voiture.", options: ["n'a pas vendu", "n'a vendu pas", "pas a vendu", "a ne vendu pas"], answer: 0, explanation: "In passé composé, ne...pas wraps around the auxiliary: n'a pas vendu." }
     ],
     vocabulary: [
       {
@@ -714,8 +725,9 @@ export const levels = [
         intro: "The guardian of Mémoire demands perfection!",
         timeLimit: 30,
         questions: [
-            { type: "translation", question: "Type this perfectly: Ils ont dîné au restaurant. Th ey had dinner at the restaurant.", answer: ["Ils ont dîné au restaurant. Th ey had dinner at the restaurant."] },
-            { type: "translation", question: "Type this perfectly: Il a pris la bonne décision . He made the right decision.", answer: ["Il a pris la bonne décision . He made the right decision."] }
+            { type: "fill-blank", question: "Elle ____ (manger) une pomme.", answer: "a mangé" },
+            { type: "fill-blank", question: "Nous ____ (partir) à midi.", answer: "sommes partis" },
+            { type: "fill-blank", question: "Il ____ (prendre) le bus.", answer: "a pris" }
         ]
     }
   },
@@ -726,9 +738,11 @@ export const levels = [
     description: "Master the rules and syntax of The imparfait.",
     lesson: `<h2>The imparfait</h2><p>The imparfait Th e uses of the imparfait (imperfect ) are some of the most diffi cult aspects of  French grammar to master. While the passé composé is used to talk abo u t an  action that took place on a specifi c occasion in the past, the imparfait plays a dif- ferent role. It is used to describe a state of mind and being in the past as well as  continuous, repeated, or habitual past actions. T o form the imperfect, take the nous form of the present tense and remove  the -ons ending, which gives you the stem. Th en add the imparfait endings ( -ais,  -ais, -ait, -ions , -iez , -aient ) to this stem. For example: parler to speak nous parlons /L50478 parl- je parlais I spoke nous parlions we spoke tu parlais you spoke vous parliez you spoke il/elle parlait he/she spoke ils/elles parlaient th...</p>`,
     exercises: [
-        { id: "8-1", type: "translation", question: "Type this perfectly: Elle faisait… /H20877 She used to do . . .", answer: ["Elle faisait… /H20877 She used to do . . ."] },
-        { id: "8-2", type: "translation", question: "Type this perfectly: Il faisait trop chaud. It was too hot.", answer: ["Il faisait trop chaud. It was too hot."] },
-        { id: "8-3", type: "translation", question: "Type this perfectly: Il avait faim. He was hungry.", answer: ["Il avait faim. He was hungry."] }
+      { id: "8-1", type: "mcq", question: "What is the imparfait stem of 'parler' (from 'nous parlons')?", options: ["parl-", "parle-", "parler-", "parlons-"], answer: 0, explanation: "Remove -ons from the nous present form: parlons → parl-." },
+      { id: "8-2", type: "fill-blank", question: "Quand j'étais jeune, je ____ (jouer) au foot tous les jours.", answer: "jouais", hint: "Habitual past actions use imparfait. Stem: jou- + -ais." },
+      { id: "8-3", type: "mcq", question: "Which ending is correct for 'il/elle' in imparfait?", options: ["-ait", "-ais", "-aient", "-ions"], answer: 0, explanation: "Imparfait endings: -ais, -ais, -ait, -ions, -iez, -aient." },
+      { id: "8-4", type: "fill-blank", question: "Nous ____ (habiter) à Lyon quand j'étais enfant.", answer: "habitions", hint: "Nous imparfait = stem + -ions. Habiter stem: habit-." },
+      { id: "8-5", type: "mcq", question: "When would you use imparfait instead of passé composé?", options: ["To describe a habitual past action", "To narrate a single completed event", "To talk about the future", "To express a command"], answer: 0, explanation: "Imparfait describes habitual, repeated, or ongoing past states/actions." }
     ],
     vocabulary: [
       {
@@ -812,8 +826,9 @@ export const levels = [
         intro: "The guardian of Nostalgia demands perfection!",
         timeLimit: 30,
         questions: [
-            { type: "translation", question: "Type this perfectly: Elle ne savait pas quoi faire. She did not know what to do.", answer: ["Elle ne savait pas quoi faire. She did not know what to do."] },
-            { type: "translation", question: "Type this perfectly: Il semblait déprimé. He looked depressed.", answer: ["Il semblait déprimé. He looked depressed."] }
+            { type: "fill-blank", question: "Quand j'étais enfant, je ____ (jouer) au parc.", answer: "jouais" },
+            { type: "fill-blank", question: "Nous ____ (habiter) à Lyon.", answer: "habitions" },
+            { type: "fill-blank", question: "Elle ____ (être) professeure.", answer: "était" }
         ]
     }
   },
@@ -824,9 +839,11 @@ export const levels = [
     description: "Master the rules and syntax of The futur simple.",
     lesson: `<h2>The futur simple</h2><p>and  thefutur antérieur The futur simple You have become acquainted with the future in Chapter 4 when you studied the  futur immédiat . French has two other future constructions: the futur simple and  the futur antérieur . To form t he futur simple of most verbs, use the infi nitive as  the stem and add the endings -ai, -as, -a, -ons , -ez, -ont . For -re verbs, drop the e  from the infi nitive before adding the endings. Here are some examples: décider to decide je décider ai I’ll decide nous décider ons we’ll decide tu décider as you’ll decide vous décider ez you’ll decide il/elle décider a he’ll/she’ll decide ils/elles décider ont they’ll decide choisir to choose je choisir ai I’ll choose nous choisir ons we’ll choose tu choisir as you’ll choose vous choisir ez you’ll choose il/elle choi...</p>`,
     exercises: [
-        { id: "9-1", type: "translation", question: "Type this perfectly: Elle ira à Paris quand elle aura le temps. She’ll go to Paris when she has time.", answer: ["Elle ira à Paris quand elle aura le temps. She’ll go to Paris when she has time."] },
-        { id: "9-2", type: "translation", question: "Type this perfectly: Il nous dira lorsqu’il faudra parler. He’ll tell us when we have to talk.", answer: ["Il nous dira lorsqu’il faudra parler. He’ll tell us when we have to talk."] },
-        { id: "9-3", type: "translation", question: "Type this perfectly: Elle vous préviendra dès qu’elle aura She’ll inform you as soon as she gets the results.", answer: ["Elle vous préviendra dès qu’elle aura She’ll inform you as soon as she gets the results."] }
+      { id: "9-1", type: "mcq", question: "What is the futur simple of 'décider' for 'je'?", options: ["je déciderai", "je déciderais", "je décideré", "je décidai"], answer: 0, explanation: "Futur simple = infinitive + endings: -ai, -as, -a, -ons, -ez, -ont." },
+      { id: "9-2", type: "fill-blank", question: "Elle ____ (partir) demain matin.", answer: "partira", hint: "Partir futur: je partirai, tu partiras, il/elle partira. Stem = partir-." },
+      { id: "9-3", type: "mcq", question: "What is the irregular futur stem of 'aller'?", options: ["ir-", "all-", "aller-", "va-"], answer: 0, explanation: "Irregular future stems: aller→ir-, avoir→aur-, être→ser-, faire→fer-." },
+      { id: "9-4", type: "fill-blank", question: "Vous ____ (avoir) les résultats la semaine prochaine.", answer: "aurez", hint: "Avoir has an irregular future stem: aur-. Vous + -ez = aurez." },
+      { id: "9-5", type: "mcq", question: "When a clause begins with 'quand' about the future, the verb is in:", options: ["futur simple", "imparfait", "présent", "conditionnel"], answer: 0, explanation: "After quand/lorsque/dès que for future events, French uses futur simple (unlike English)." }
     ],
     vocabulary: [
       {
@@ -914,8 +931,9 @@ export const levels = [
         intro: "The guardian of Demain demands perfection!",
         timeLimit: 30,
         questions: [
-            { type: "translation", question: "Type this perfectly: Elle vous téléphonera aussitôt qu’elle She’ll call you as soon as she lands in London .", answer: ["Elle vous téléphonera aussitôt qu’elle She’ll call you as soon as she lands in London ."] },
-            { type: "translation", question: "Type this perfectly: Vous voudrez bien lui envoyer ma réponse. Please send him my answer.", answer: ["Vous voudrez bien lui envoyer ma réponse. Please send him my answer."] }
+            { type: "fill-blank", question: "Elle ____ (aller) à Paris la semaine prochaine.", answer: "ira" },
+            { type: "fill-blank", question: "Vous ____ (avoir) les résultats demain.", answer: "aurez" },
+            { type: "fill-blank", question: "Je ____ (faire) mes devoirs ce soir.", answer: "ferai" }
         ]
     }
   },
@@ -926,9 +944,11 @@ export const levels = [
     description: "Master the rules and syntax of The plus-que-parfait.",
     lesson: `<h2>The plus-que-parfait</h2><p>Th e plus-que-parfait (pluperfect ) indicates a past action that happened before  another past action started (in English, had done ). It can be seen as “past” past  tense.  Formation of the plus-que-parfait To form t he plus-que-parfait , use the forms of avoir or être in the imparfait /H11001  the past participle of the main verb.  Let’s review the imparfait of the auxiliaries être and avoir : être to be j’étais I was nous étions we were tu étais you were vous étiez you were il/elle était he/she was ils/elles étaient they were avoir to have j’avais I had nous avions we had tu avais you had vous aviez you had il/elle avait he/she had ils/elles avaient they had Il avait toujours fi ni avant He had always fi nished before  les autres. the others. Tu avais oublié l’anniversaire de You had fo...</p>`,
     exercises: [
-        { id: "10-1", type: "translation", question: "Type this perfectly: Il n’avait pas pu les joindre . He had not been able to reach them.", answer: ["Il n’avait pas pu les joindre . He had not been able to reach them."] },
-        { id: "10-2", type: "translation", question: "Type this perfectly: Je m’étais évanouie dans la pharmacie. I had fainted in the pharmacy.", answer: ["Je m’étais évanouie dans la pharmacie. I had fainted in the pharmacy."] },
-        { id: "10-3", type: "translation", question: "Type this perfectly: Vous vous étiez promenés le long du You had walked along the Saint-Martin canal.", answer: ["Vous vous étiez promenés le long du You had walked along the Saint-Martin canal."] }
+      { id: "10-1", type: "mcq", question: "How is the plus-que-parfait formed?", options: ["Imparfait of avoir/être + past participle", "Present of avoir/être + past participle", "Futur of avoir/être + past participle", "Passé composé of avoir/être"], answer: 0, explanation: "Plus-que-parfait = avoir/être (imparfait) + past participle. E.g., j'avais mangé." },
+      { id: "10-2", type: "fill-blank", question: "Il ____ (finir) avant les autres. (He had finished before the others.)", answer: "avait fini", hint: "Imparfait of avoir for il = avait. Past participle of finir = fini." },
+      { id: "10-3", type: "mcq", question: "What does 'Tu avais oublié ton livre' mean?", options: ["You had forgotten your book", "You forgot your book", "You will forget your book", "You were forgetting your book"], answer: 0, explanation: "Plus-que-parfait translates to 'had + past participle' in English." },
+      { id: "10-4", type: "fill-blank", question: "Elles ____ (partir) avant notre arrivée.", answer: "étaient parties", hint: "Partir uses être. Imparfait of être for elles = étaient. Participle 'parties' agrees: plural feminine." },
+      { id: "10-5", type: "mcq", question: "Which sentence uses plus-que-parfait correctly?", options: ["Il avait mangé quand j'ai appelé", "Il a mangé quand j'avais appelé", "Il mange quand j'avais appelé", "Il mangeait quand j'a appelé"], answer: 0, explanation: "Plus-que-parfait (avait mangé) shows the action that happened FIRST before another past event." }
     ],
     vocabulary: [
       {
@@ -1012,8 +1032,9 @@ export const levels = [
         intro: "The guardian of L'Ancien Temps demands perfection!",
         timeLimit: 30,
         questions: [
-            { type: "translation", question: "Type this perfectly: Nous nous étions embrassés sur le We had kissed on the Pont-Neuf.", answer: ["Nous nous étions embrassés sur le We had kissed on the Pont-Neuf."] },
-            { type: "translation", question: "Type this perfectly: Je ne m’étais pas rendu compte que I had not realized I was sick.", answer: ["Je ne m’étais pas rendu compte que I had not realized I was sick."] }
+            { type: "fill-blank", question: "Il ____ (finir) avant les autres.", answer: "avait fini" },
+            { type: "fill-blank", question: "Elles ____ (partir) quand je suis arrivé.", answer: "étaient parties" },
+            { type: "fill-blank", question: "Je ____ (manger) quand il a appelé.", answer: "avais mangé" }
         ]
     }
   },
@@ -1024,9 +1045,11 @@ export const levels = [
     description: "Master the rules and syntax of present conditional.",
     lesson: `<h2>Present conditional</h2><p>and the past conditional·11· The present conditional Th e présent du conditionnel (present conditional ) has many uses we’ll explore in  this chapter. It is formed by adding the endings of the imperfect to the future stem  of the verb. For -er and -ir verbs, the future stem is the entire infi nitive form. For  -re verbs, drop the fi nal -e from the infi nitive before adding the conditional end- ings. As you saw in Chapter 9, a number of irregular verbs have an irregular future stem. Th is same stem is used to form the present conditional. mettre to put je mettrais I would put nous mettrions we would put tu mettrais you would put vous mettriez you would put il/elle mettrait he/she would put ils/elles mettraient they would put faire to do je ferais I would do nous ferions we would do tu fera...</p>`,
     exercises: [
-        { id: "11-1", type: "translation", question: "Type this perfectly: Il aimerait avoir une tortue. He would like to have a turtle.", answer: ["Il aimerait avoir une tortue. He would like to have a turtle."] },
-        { id: "11-2", type: "translation", question: "Type this perfectly: Copyright © 200 8 by Annie H eminwa y. Click here for terms of use.", answer: ["Copyright © 200 8 by Annie H eminwa y. Click here for terms of use."] },
-        { id: "11-3", type: "translation", question: "Type this perfectly: Dans de telles circonstances, que In such circumstances, what would you do?", answer: ["Dans de telles circonstances, que In such circumstances, what would you do?"] }
+      { id: "11-1", type: "mcq", question: "The conditionnel présent is formed from:", options: ["Future stem + imparfait endings", "Infinitive + present endings", "Past participle + être", "Imparfait stem + future endings"], answer: 0, explanation: "Conditional = future stem + imparfait endings (-ais, -ais, -ait, -ions, -iez, -aient)." },
+      { id: "11-2", type: "fill-blank", question: "Il ____ (aimer) avoir une tortue. (He would like to have a turtle.)", answer: "aimerait", hint: "Aimer future stem = aimer-. Conditional for il = aimerait." },
+      { id: "11-3", type: "mcq", question: "What is 'I would do' in French?", options: ["Je ferais", "Je ferai", "Je faisais", "Je fais"], answer: 0, explanation: "Faire has an irregular future/conditional stem: fer-. Je + -ais = ferais." },
+      { id: "11-4", type: "fill-blank", question: "Nous ____ (aller) au cinéma, mais nous sommes fatigués.", answer: "irions", hint: "Aller conditional stem = ir-. Nous + -ions = irions." },
+      { id: "11-5", type: "mcq", question: "Which sentence expresses a polite request using conditional?", options: ["Je voudrais un café, s'il vous plaît.", "Je veux un café, s'il vous plaît.", "Je voulais un café, s'il vous plaît.", "Je vais vouloir un café."], answer: 0, explanation: "Conditional (voudrais) is used for polite requests, softer than the present tense (veux)." }
     ],
     vocabulary: [
       {
@@ -1186,8 +1209,9 @@ export const levels = [
         intro: "The guardian of Mirage demands perfection!",
         timeLimit: 30,
         questions: [
-            { type: "translation", question: "Type this perfectly: Mettre les verbes au présent du conditionnel.", answer: ["Mettre les verbes au présent du conditionnel."] },
-            { type: "translation", question: "Type this perfectly: Ce serait génial de pouvoir y aller It would be great to go together.", answer: ["Ce serait génial de pouvoir y aller It would be great to go together."] }
+            { type: "fill-blank", question: "Je ____ (aimer) aller en France.", answer: "aimerais" },
+            { type: "fill-blank", question: "Nous ____ (pouvoir) vous aider.", answer: "pourrions" },
+            { type: "fill-blank", question: "Elle ____ (vouloir) une augmentation.", answer: "voudrait" }
         ]
     }
   },
@@ -1198,9 +1222,11 @@ export const levels = [
     description: "Master the rules and syntax of Could.",
     lesson: `<h2>Could</h2><p>you solve this problem? Pourriez -vous annuler notre vol? Could you cancel our fl ight? Th e verb vouloir (to want ) is used to express wishes and desires. It is also used for a polite  request in the conditional form. je veux I want nous voulons we want tu veux you want vous voulez you want il/elle veut he/she wants ils/elles veulent they want Elle veut une augmentation. She wants a raise. Nous voulons une table près de la cheminée. We want a table by the fi replace. Je voudrais vous parler . I would like to speak with you. 3·9EXERCICE  Mettre au présent les verbes entre parenthèses.  1. Nous (vouloir) une chambre qui donne sur le jardin.  2. Je (ne pas pouvoir) assister à la réunion à quinze heures. 3. Je (vouloir) vous parler avant jeudi. 4. Nous (pouvoir) envoyer les documents par la p...</p>`,
     exercises: [
-        { id: "12-1", type: "translation", question: "Type this perfectly: Elle veut une augmentation. She wants a raise.", answer: ["Elle veut une augmentation. She wants a raise."] },
-        { id: "12-2", type: "translation", question: "Type this perfectly: Nous voulons une table près de la cheminée. We want a table by the fi replace.", answer: ["Nous voulons une table près de la cheminée. We want a table by the fi replace."] },
-        { id: "12-3", type: "translation", question: "Type this perfectly: Je voudrais vous parler . I would like to speak with you.", answer: ["Je voudrais vous parler . I would like to speak with you."] }
+      { id: "12-1", type: "mcq", question: "How do you politely say 'Could you help me?'", options: ["Pourriez-vous m'aider?", "Pouvez-vous m'aider?", "Puissiez-vous m'aider?", "Pouviez-vous m'aider?"], answer: 0, explanation: "Conditional of pouvoir (pourriez) is more polite than the present (pouvez)." },
+      { id: "12-2", type: "fill-blank", question: "Elle ____ (vouloir) te parler. (She would like to speak with you.)", answer: "voudrait", hint: "Vouloir conditional stem = voudr-. Elle + -ait = voudrait." },
+      { id: "12-3", type: "mcq", question: "What is the conditional stem of 'pouvoir'?", options: ["pourr-", "pouv-", "peuv-", "pouvr-"], answer: 0, explanation: "Pouvoir has an irregular conditional/future stem: pourr-." },
+      { id: "12-4", type: "fill-blank", question: "Nous ____ (pouvoir) envoyer les documents. (We could send the documents.)", answer: "pourrions", hint: "Pouvoir conditional stem = pourr-. Nous + -ions = pourrions." },
+      { id: "12-5", type: "mcq", question: "Elle veut ____. (She wants a raise.)", options: ["une augmentation", "un augmentation", "des augmentations", "une augmente"], answer: 0, explanation: "Augmentation is feminine: une augmentation." }
     ],
     vocabulary: [
       {
@@ -1308,8 +1334,9 @@ export const levels = [
         intro: "The guardian of Volonté demands perfection!",
         timeLimit: 30,
         questions: [
-            { type: "translation", question: "Type this perfectly: Elle ne va pas à l’école demain. She is not going to school tomorrow.", answer: ["Elle ne va pas à l’école demain. She is not going to school tomorrow."] },
-            { type: "translation", question: "Type this perfectly: Je vais au théâtre ce soir. I am going to the theater tonight.", answer: ["Je vais au théâtre ce soir. I am going to the theater tonight."] }
+            { type: "fill-blank", question: "____-vous m'aider? (Could you... polite)", answer: "Pourriez" },
+            { type: "fill-blank", question: "Il ____ (vouloir) te parler.", answer: "voudrait" },
+            { type: "fill-blank", question: "Nous ____ (vouloir) une table pour deux.", answer: "voudrions" }
         ]
     }
   },
@@ -1320,9 +1347,11 @@ export const levels = [
     description: "Master the rules and syntax of present subjunctive.",
     lesson: `<h2>Present subjunctive</h2><p>Th e subjunctive is a mood, not a tense. Th e mood of a verb determines how one  views an event. You have already studied verb tenses in the indicative mood ( le  présent , l’imparfait , and le futur ), stating objective facts, and in the conditional  mood, relating to possibilities. In Chapter 19 we will study the imperative mood  that gives commands. Th e subjunctive is another mood that refers to someone’s  opinion or deals with hypothetical actions. For most verbs, the present of the subjunctive is formed by adding the sub- junctive endings (- e, -es, -e, -ions , -iez , -ent ) to the stem. Th e stem for je, tu, il/ elle, ils/elles is found by dropping the -ent ending from the third-person plural  present indicative form ( ils/elles ). Note that the sound of the verb will be the same  f...</p>`,
     exercises: [
-        { id: "13-1", type: "translation", question: "Type this perfectly: Je veux acheter cet ordinateur. I want to buy this computer.", answer: ["Je veux acheter cet ordinateur. I want to buy this computer."] },
-        { id: "13-2", type: "translation", question: "Type this perfectly: Je veux que tu achètes cet ordinateur. I want you to buy this computer.", answer: ["Je veux que tu achètes cet ordinateur. I want you to buy this computer."] },
-        { id: "13-3", type: "translation", question: "Type this perfectly: Vous désirez suivre un cours You want to take a computer science class.", answer: ["Vous désirez suivre un cours You want to take a computer science class."] }
+      { id: "13-1", type: "mcq", question: "When is the subjunctive used?", options: ["After expressions of will, doubt, or emotion with 'que'", "To describe habitual past actions", "To make polite requests", "To form the future tense"], answer: 0, explanation: "The subjunctive is triggered by: vouloir que, douter que, être content que, il faut que, etc." },
+      { id: "13-2", type: "fill-blank", question: "Je veux que tu ____ (venir) à la fête.", answer: "viennes", hint: "Venir is irregular in subjunctive: que je vienne, tu viennes, il vienne." },
+      { id: "13-3", type: "mcq", question: "Which sentence triggers the subjunctive?", options: ["Il faut que nous partions.", "Il pense que nous partons.", "Il dit que nous partons.", "Il sait que nous partons."], answer: 0, explanation: "'Il faut que' always triggers the subjunctive. Penser/dire/savoir + que use indicative." },
+      { id: "13-4", type: "fill-blank", question: "Elle souhaite que vous ____ (finir) avant midi.", answer: "finissiez", hint: "Souhaiter que triggers subjunctive. Finir subjunctive vous = finissiez." },
+      { id: "13-5", type: "mcq", question: "What is the subjunctive of 'être' for 'il'?", options: ["soit", "est", "serait", "sera"], answer: 0, explanation: "Être has an irregular subjunctive: je sois, tu sois, il soit, nous soyons, vous soyez, ils soient." }
     ],
     vocabulary: [
       {
@@ -1426,8 +1455,9 @@ export const levels = [
         intro: "The guardian of Le Doute demands perfection!",
         timeLimit: 30,
         questions: [
-            { type: "translation", question: "Type this perfectly: Vous désirez que nous suivions un You want us to take a computer science course.", answer: ["Vous désirez que nous suivions un You want us to take a computer science course."] },
-            { type: "translation", question: "Type this perfectly: Elle souhaite que tu ailles en France. She wishes you would go to France.", answer: ["Elle souhaite que tu ailles en France. She wishes you would go to France."] }
+            { type: "fill-blank", question: "Il faut que tu ____ (venir).", answer: "viennes" },
+            { type: "fill-blank", question: "Elle veut que nous ____ (partir).", answer: "partions" },
+            { type: "fill-blank", question: "Je souhaite qu'il ____ (faire) beau.", answer: "fasse" }
         ]
     }
   },
@@ -1438,9 +1468,11 @@ export const levels = [
     description: "Master the rules and syntax of nitive mood.",
     lesson: `<h2>Nitive mood</h2><p>The inﬁ nitif présent You will come across the infi nitif , the infi nitive mood, on many occasions. It is  used more frequently in French than in English. Th e infi nitif can be used as the  subject of a verb. (Note that the...</p>`,
     exercises: [
-        { id: "14-1", type: "translation", question: "Type this perfectly: J'étudie nitive mood.", answer: ["J'étudie nitive mood."] },
-        { id: "14-2", type: "translation", question: "Type this perfectly: J'étudie nitive mood.", answer: ["J'étudie nitive mood."] },
-        { id: "14-3", type: "translation", question: "Type this perfectly: J'étudie nitive mood.", answer: ["J'étudie nitive mood."] }
+      { id: "14-1", type: "mcq", question: "Which sentence uses the infinitive as a subject?", options: ["Voyager est amusant.", "Il voyage souvent.", "Il a voyagé hier.", "En voyageant, il chante."], answer: 0, explanation: "The infinitive can function as the subject of a sentence, like a noun." },
+      { id: "14-2", type: "fill-blank", question: "Ne pas ____ (marcher) sur la pelouse. (Keep off the lawn.)", answer: "marcher", hint: "Negative infinitive instructions use: ne pas + infinitive." },
+      { id: "14-3", type: "mcq", question: "Which sentence uses 'demander de' correctly?", options: ["Elle m'a demandé de partir.", "Elle m'a demandé que je parte.", "Elle m'a demandé je parte.", "Elle m'a demandé partir."], answer: 0, explanation: "After demander à quelqu'un, use de + infinitive." },
+      { id: "14-4", type: "fill-blank", question: "J'entends les enfants ____ (chanter) dans le jardin.", answer: "chanter", hint: "After perception verbs (entendre, voir, écouter), use the infinitive." },
+      { id: "14-5", type: "mcq", question: "How do you negate an infinitive?", options: ["Place ne pas BEFORE the infinitive", "Place ne...pas around the infinitive", "Place pas after the infinitive", "Place ne after the infinitive"], answer: 0, explanation: "Both ne and pas come BEFORE the infinitive: ne pas partir, ne pas manger." }
     ],
     vocabulary: [
       {
@@ -1604,8 +1636,9 @@ export const levels = [
         intro: "The guardian of L'Origine demands perfection!",
         timeLimit: 30,
         questions: [
-            { type: "translation", question: "Type this perfectly: J'étudie nitive mood.", answer: ["J'étudie nitive mood."] },
-            { type: "translation", question: "Type this perfectly: J'étudie nitive mood.", answer: ["J'étudie nitive mood."] }
+            { type: "fill-blank", question: "Il a commencé ____ pleuvoir.", answer: "à" },
+            { type: "fill-blank", question: "Je lui ai demandé ____ partir.", answer: "de" },
+            { type: "fill-blank", question: "J'entends les oiseaux ____ (chanter).", answer: "chanter" }
         ]
     }
   },
@@ -1616,9 +1649,11 @@ export const levels = [
     description: "Master the rules and syntax of present participle.",
     lesson: `<h2>Present participle</h2><p>is used in English instead.) Faire la cuisine est son passe- Cooking is his favorite pastime. temps favori. Suivre des cours de cuisine est Taking cooking classes is fun. amusant. Voyager par le train est rapide. Traveling by train is fast. Apprendre une langue étrangère Learning a foreign language is very est très utile. useful. Th e infi nitif is also used for general instructions, prescriptions, public  notices, and proverbs (where the imperative is oft en used in English). Prendre une fois par jour. Take once a day. Ne pas se pencher par la fenêtre. Do not lean out of the window. Ne pas marcher sur la pelouse. Keep off the lawn. Lire le mode d’emploi avant Read the instructions before using. utilisation. Since a verb in the infi nitive mood is not conjugated, the negation ( ne… pas )  ...</p>`,
     exercises: [
-        { id: "15-1", type: "translation", question: "Type this perfectly: Je lui ai demandé de ne pas faire I asked her not to fry the fi sh.", answer: ["Je lui ai demandé de ne pas faire I asked her not to fry the fi sh."] },
-        { id: "15-2", type: "translation", question: "Type this perfectly: Elle m’a dit de ne pas mettre She told me not to put any oil in.", answer: ["Elle m’a dit de ne pas mettre She told me not to put any oil in."] },
-        { id: "15-3", type: "translation", question: "Type this perfectly: Elle a entendu le coq chanter . She heard the rooster crowing .", answer: ["Elle a entendu le coq chanter . She heard the rooster crowing ."] }
+      { id: "15-1", type: "mcq", question: "How is the present participle formed?", options: ["nous form minus -ons + -ant", "Infinitive + -ant", "je form + -ant", "Past participle + -ant"], answer: 0, explanation: "Present participle: take the nous form, remove -ons, add -ant. parlons → parlant." },
+      { id: "15-2", type: "fill-blank", question: "Il a répondu en ____ (sourire). (He answered while smiling.)", answer: "souriant", hint: "The gérondif = en + present participle. Sourire: nous sourions → souri- + ant = souriant." },
+      { id: "15-3", type: "mcq", question: "What does 'en travaillant' mean?", options: ["while working / by working", "after working", "before working", "to work"], answer: 0, explanation: "En + present participle (gérondif) expresses simultaneous action or means." },
+      { id: "15-4", type: "fill-blank", question: "Elle a fait ____ (rôtir) le poulet. (She had the chicken roasted.)", answer: "rôtir", hint: "Faire + infinitive is a causative construction meaning 'to have something done'." },
+      { id: "15-5", type: "mcq", question: "What is the present participle of 'avoir'?", options: ["ayant", "avantant", "avonnant", "havant"], answer: 0, explanation: "Avoir, être, and savoir have irregular present participles: ayant, étant, sachant." }
     ],
     vocabulary: [
       {
@@ -1778,8 +1813,9 @@ export const levels = [
         intro: "The guardian of Le Flux demands perfection!",
         timeLimit: 30,
         questions: [
-            { type: "translation", question: "Type this perfectly: Il a fait macérer la viande vingt-quatre He macerated the meat twenty-four hours.", answer: ["Il a fait macérer la viande vingt-quatre He macerated the meat twenty-four hours."] },
-            { type: "translation", question: "Type this perfectly: Elle a fait rôtir le poulet. She roasted the chicken.", answer: ["Elle a fait rôtir le poulet. She roasted the chicken."] }
+            { type: "fill-blank", question: "Il parle toujours en ____ (manger).", answer: "mangeant" },
+            { type: "fill-blank", question: "Elle a quitté la salle en ____ (courir).", answer: "courant" },
+            { type: "fill-blank", question: "Je prépare le dîner en ____ (écouter) la radio.", answer: "écoutant" }
         ]
     }
   },
@@ -1790,9 +1826,11 @@ export const levels = [
     description: "Master the rules and syntax of passé simple.",
     lesson: `<h2>Passé simple</h2><p>Th e passé simple (simple past, historical past ) is a verb tense used mainly in writ- ten French, for literary and historical material. It may also be heard during a for- mal speech. It is the equivalent of the passé composé , used to recount a specifi c  action in the past. When relating events, quality newspapers use the passé simple  for refi nement. Scandal sheets will oft en use it to convey a sense of drama. When  reading French literature of all periods, you will need to recognize the passé sim- ple to get a full appreciation of the text. Formation of the passé simple Th e passé simple of regular -er verbs is formed by adding the endings -ai, -as, -a,  -âmes , -âtes , -èrent to the infi nitive stem. répéter to repeat je répét ai I repeated nous répét âmes we repeated tu répét as yo...</p>`,
     exercises: [
-        { id: "16-1", type: "translation", question: "Type this perfectly: Elle pronon ça un discours. She made a speech.", answer: ["Elle pronon ça un discours. She made a speech."] },
-        { id: "16-2", type: "translation", question: "Type this perfectly: Je rempla çai le comédien malade. I replaced the sick actor.", answer: ["Je rempla çai le comédien malade. I replaced the sick actor."] },
-        { id: "16-3", type: "translation", question: "Type this perfectly: Il parta gea sa fortune. He shared his fortune.", answer: ["Il parta gea sa fortune. He shared his fortune."] }
+      { id: "16-1", type: "mcq", question: "The passé simple is mainly used in:", options: ["Written/literary French", "Everyday spoken French", "Questions about the future", "Informal conversations"], answer: 0, explanation: "The passé simple is a literary/historical tense, found in novels and formal texts." },
+      { id: "16-2", type: "fill-blank", question: "Il ____ (entrer) dans la salle sans frapper.", answer: "entra", hint: "Passé simple -er verbs: drop -er, add -ai/-as/-a/-âmes/-âtes/-èrent. Il → -a." },
+      { id: "16-3", type: "mcq", question: "What is the passé simple of 'ils finir'?", options: ["ils finirent", "ils finèrent", "ils finissèrent", "ils finaient"], answer: 0, explanation: "-ir verb passé simple: je finis, tu finis, il finit, nous finîmes, vous finîtes, ils finirent." },
+      { id: "16-4", type: "fill-blank", question: "Nous ____ (partir) à l'aube. (We left at dawn.)", answer: "partîmes", hint: "-ir verb passé simple for nous = stem + -îmes. Partir → part + îmes." },
+      { id: "16-5", type: "mcq", question: "Which is the passé simple of 'être' for 'il'?", options: ["fut", "était", "sera", "est"], answer: 0, explanation: "Être passé simple: je fus, tu fus, il fut, nous fûmes, vous fûtes, ils furent." }
     ],
     vocabulary: [
       {
@@ -1940,8 +1978,9 @@ export const levels = [
         intro: "The guardian of Le Grimoire demands perfection!",
         timeLimit: 30,
         questions: [
-            { type: "translation", question: "Type this perfectly: Nous déména geâmes de nombreuses fois. We moved many times.", answer: ["Nous déména geâmes de nombreuses fois. We moved many times."] },
-            { type: "translation", question: "Type this perfectly: On frappa à la porte et il se leva . Someone knocked on the door and he got up.", answer: ["On frappa à la porte et il se leva . Someone knocked on the door and he got up."] }
+            { type: "fill-blank", question: "Il ____ (entrer) dans la salle.", answer: "entra" },
+            { type: "fill-blank", question: "Ils ____ (finir) le projet.", answer: "finirent" },
+            { type: "fill-blank", question: "Elle ____ (prendre) la parole.", answer: "prit" }
         ]
     }
   },
@@ -1952,9 +1991,11 @@ export const levels = [
     description: "Master the rules and syntax of passive voice.",
     lesson: `<h2>Passive voice</h2><p>A sentence can either be in the active or the passive voice. In the active voice, the  subject performs the action, while in the voix passive (passive voice ), the subject is  acted upon. Th at is, in the passive voice, the subject and the object exchange roles.  Be aware that the passive voice is much more common in English than in French. In French, one tends to use the active voice. Compare the active and the passive voices. The active voice: Les croisés envahissent le pays. Th e crusaders are invading the   country. La souris mange le fromage. Th e mouse eats the cheese. The passive voice: Le pays est envahi par les croisés. Th e country is being invaded by   the crusaders. Le fromage est mangé par la souris. Th e cheese is being eaten by   the mouse. Formation of the passive voice Th ...</p>`,
     exercises: [
-        { id: "17-1", type: "translation", question: "Type this perfectly: Elle s’est fait faire un robe pour son She had a dress made for her wedding.", answer: ["Elle s’est fait faire un robe pour son She had a dress made for her wedding."] },
-        { id: "17-2", type: "translation", question: "Type this perfectly: Il s’est vu contraint d’accepter. He found himself forced to accept.", answer: ["Il s’est vu contraint d’accepter. He found himself forced to accept."] },
-        { id: "17-3", type: "translation", question: "Type this perfectly: Ils se sont laissés infl uencer très Th ey let themselves be infl uenced very easily.", answer: ["Ils se sont laissés infl uencer très Th ey let themselves be infl uenced very easily."] }
+      { id: "17-1", type: "mcq", question: "How is the passive voice formed in French?", options: ["être + past participle (agrees with subject)", "avoir + past participle", "se + infinitive", "être + infinitive"], answer: 0, explanation: "Passive = être (conjugated) + past participle. The participle agrees with the subject." },
+      { id: "17-2", type: "fill-blank", question: "Le livre ____ (écrire) par un auteur célèbre. (The book was written...)", answer: "a été écrit", hint: "Passive passé composé = a été + past participle. Écrire → écrit." },
+      { id: "17-3", type: "mcq", question: "What does 'par' introduce in a passive sentence?", options: ["The agent (who does the action)", "The object", "The time", "The purpose"], answer: 0, explanation: "In passive voice, 'par' introduces the agent: 'Le fromage est mangé par la souris.'" },
+      { id: "17-4", type: "fill-blank", question: "Les fenêtres ____ (ouvrir) par le vent. (The windows were opened by the wind.)", answer: "ont été ouvertes", hint: "Passive: ont été + past participle. Ouvrir → ouvert. Fenêtres is feminine plural: ouvertes." },
+      { id: "17-5", type: "mcq", question: "Which is the passive transformation of 'Le chat mange le fromage'?", options: ["Le fromage est mangé par le chat.", "Le fromage a mangé le chat.", "Le fromage mange le chat.", "Le chat est mangé le fromage."], answer: 0, explanation: "Passive: object becomes subject + être + past participle + par + original subject." }
     ],
     vocabulary: [
       {
@@ -2102,8 +2143,9 @@ export const levels = [
         intro: "The guardian of L'Éclipse demands perfection!",
         timeLimit: 30,
         questions: [
-            { type: "translation", question: "Type this perfectly: On vous demande au téléphone. You are wanted on the phone.", answer: ["On vous demande au téléphone. You are wanted on the phone."] },
-            { type: "translation", question: "Type this perfectly: Compare the active and the passive voices.", answer: ["Compare the active and the passive voices."] }
+            { type: "fill-blank", question: "Le gâteau ____ (manger) par les enfants.", answer: "a été mangé" },
+            { type: "fill-blank", question: "La lettre ____ (écrire) par Marie.", answer: "a été écrite" },
+            { type: "fill-blank", question: "Les fenêtres ____ (ouvrir) par le vent.", answer: "ont été ouvertes" }
         ]
     }
   },
@@ -2114,9 +2156,11 @@ export const levels = [
     description: "Master the rules and syntax of Indirect speech.",
     lesson: `<h2>Indirect speech</h2><p>Indirect speech is used, both in English and in French, to relate conversational  exchanges or information in the third person. Direct speech versus indirect speech I n d i r e c t s p e e c h ( le discours direct ), one says something or asks a question  directly. Quentin demande: Quentin asks:  « Où allez-vous? » “Where are you going?” Pierre dit: Pierre says:  « Le président est à Milan. » “Th e president is in Milan.” In indirect speech ( le discours indirect ), the words of one or more people  are reported or a question is asked indirectly. Th ere are no quotation marks. Quentin demande où vous allez . Quentin is asking where you are   going. Pierre dit que le président est Pierre is saying that the president à Milan . is in Milan. Verbs in the main clause of indirect speech are follo...</p>`,
     exercises: [
-        { id: "18-1", type: "translation", question: "Type this perfectly: Elle est en Inde. She is in India.", answer: ["Elle est en Inde. She is in India."] },
-        { id: "18-2", type: "translation", question: "Type this perfectly: Tu travailles pour France 2. You are working for France 2.", answer: ["Tu travailles pour France 2. You are working for France 2."] },
-        { id: "18-3", type: "translation", question: "Type this perfectly: Il pleut à Londres. It is raining in London .", answer: ["Il pleut à Londres. It is raining in London ."] }
+      { id: "18-1", type: "mcq", question: "How is a direct statement converted to indirect speech?", options: ["Add 'que' after the reporting verb", "Remove quotation marks only", "Add 'si' after the reporting verb", "No change is needed"], answer: 0, explanation: "Direct: Il dit: 'Je suis fatigué.' → Indirect: Il dit qu'il est fatigué. Add 'que'." },
+      { id: "18-2", type: "fill-blank", question: "Elle dit ____ elle est à Paris. (She says that she is in Paris.)", answer: "qu'", hint: "After a reporting verb (dire, expliquer), use 'que' (qu' before vowels)." },
+      { id: "18-3", type: "mcq", question: "How do you report 'Où allez-vous?' indirectly?", options: ["Il demande où vous allez.", "Il demande que vous allez.", "Il demande si vous allez où.", "Il demande où vous alliez."], answer: 0, explanation: "Indirect questions use où/quand/comment/si without inversion. No quotation marks." },
+      { id: "18-4", type: "fill-blank", question: "Pierre dit que le président ____ (être) à Milan. (He is currently there.)", answer: "est", hint: "When the reporting verb is present tense, the tense in the subordinate clause stays the same." },
+      { id: "18-5", type: "mcq", question: "When the main verb is past, 'Je suis content' (present) becomes:", options: ["il était content", "il est content", "il sera content", "il serait content"], answer: 0, explanation: "When reporting verb is past tense, the present tense shifts back to imparfait." }
     ],
     vocabulary: [
       {
@@ -2248,8 +2292,9 @@ export const levels = [
         intro: "The guardian of L'Écho demands perfection!",
         timeLimit: 30,
         questions: [
-            { type: "translation", question: "Type this perfectly: Ils ont élu le candidat de gauche. Th ey elected the candidate from the left .", answer: ["Ils ont élu le candidat de gauche. Th ey elected the candidate from the left ."] },
-            { type: "translation", question: "Type this perfectly: Elle a expliqué son programme. She explained her program.", answer: ["Elle a expliqué son programme. She explained her program."] }
+            { type: "fill-blank", question: "Il dit ____ il est fatigué.", answer: "qu'" },
+            { type: "fill-blank", question: "Elle demande où tu ____ (aller).", answer: "vas" },
+            { type: "fill-blank", question: "Il a dit ____ elle était malade.", answer: "qu'" }
         ]
     }
   },
@@ -2260,9 +2305,11 @@ export const levels = [
     description: "Master the rules and syntax of imperative mood.",
     lesson: `<h2>Imperative mood</h2><p>that gives commands. Th e subjunctive is another mood that refers to someone’s  opinion or deals with hypothetical actions. For most verbs, the present of the subjunctive is formed by adding the sub- junctive endings (- e, -es, -e, -ions , -iez , -ent ) to the stem. Th e stem for je, tu, il/ elle, ils/elles is found by dropping the -ent ending from the third-person plural  present indicative form ( ils/elles ). Note that the sound of the verb will be the same  for all these persons. Let’s look at the verb penser (to think ). Th e third-person plural: ils/elles  pensent . Th e stem: pens- je pens e I speak tu pens es you speak il/elle pens e he/she speaks ils/elles pens ent they speak Th e stem for the nous and vous subjunctive forms is found by dropping the  -ons from the fi rst-person plu...</p>`,
     exercises: [
-        { id: "19-1", type: "translation", question: "Type this perfectly: Je veux acheter cet ordinateur. I want to buy this computer.", answer: ["Je veux acheter cet ordinateur. I want to buy this computer."] },
-        { id: "19-2", type: "translation", question: "Type this perfectly: Je veux que tu achètes cet ordinateur. I want you to buy this computer.", answer: ["Je veux que tu achètes cet ordinateur. I want you to buy this computer."] },
-        { id: "19-3", type: "translation", question: "Type this perfectly: Vous désirez suivre un cours You want to take a computer science class.", answer: ["Vous désirez suivre un cours You want to take a computer science class."] }
+      { id: "19-1", type: "mcq", question: "Which is the correct imperative (tu form) of 'parler'?", options: ["Parle!", "Parles!", "Parlez!", "Parlons!"], answer: 0, explanation: "For -er verbs, the tu imperative drops the -s: parle (not parles)." },
+      { id: "19-2", type: "fill-blank", question: "____ (écouter/vous) attentivement! (Listen carefully!)", answer: "Écoutez", hint: "The vous imperative = vous present form without 'vous': écoutez." },
+      { id: "19-3", type: "mcq", question: "How do you say 'Let's eat!' in French?", options: ["Mangeons!", "Mangez!", "Mange!", "Manger!"], answer: 0, explanation: "The nous imperative is the same as the nous present form: mangeons." },
+      { id: "19-4", type: "fill-blank", question: "Ne ____ (partir) pas sans moi! (Don't leave without me! — tu form)", answer: "pars", hint: "Negative imperative: ne + verb + pas. Partir (tu): pars." },
+      { id: "19-5", type: "mcq", question: "What is the imperative of 'être' (vous form)?", options: ["Soyez!", "Êtes!", "Seriez!", "Serez!"], answer: 0, explanation: "Être has an irregular imperative: Sois! (tu), Soyons! (nous), Soyez! (vous)." }
     ],
     vocabulary: [
       {
@@ -2378,8 +2425,9 @@ export const levels = [
         intro: "The guardian of Le Commandement demands perfection!",
         timeLimit: 30,
         questions: [
-            { type: "translation", question: "Type this perfectly: Vous désirez que nous suivions un You want us to take a computer science course.", answer: ["Vous désirez que nous suivions un You want us to take a computer science course."] },
-            { type: "translation", question: "Type this perfectly: Elle souhaite que tu ailles en France. She wishes you would go to France.", answer: ["Elle souhaite que tu ailles en France. She wishes you would go to France."] }
+            { type: "fill-blank", question: "____ (écouter/tu) attentivement!", answer: "Écoute" },
+            { type: "fill-blank", question: "Ne ____ (parler/vous) pas!", answer: "parlez" },
+            { type: "fill-blank", question: "____ (être/nous) courageux!", answer: "Soyons" }
         ]
     }
   },
@@ -2390,9 +2438,11 @@ export const levels = [
     description: "Master the rules and syntax of Articles and nouns.",
     lesson: `<h2>Articles and nouns</h2><p>The deﬁ nite article with nouns Let’s fi rst look at the defi nite article. All nouns in French have a gender: masculine  or feminine, whether they refer to a person, an animal, a thing, or an abstract  notion. While English has only one defi nite article the, French uses le for mascu- line nouns and la for feminine nouns. Le and la are shortened to l’ before a singu- lar noun or adjective that begins with a vowel sound. Th e plural les is used for  both masculine and feminine. Masculine le village the village le pont the bridge Feminine la ville the city la région the region Plural les villages (m.pl.) the villages les villes (f.pl.) the cities Le and la become l’ in front of singular nouns starting with a vowel or a  mute h. Masculine l’océan the ocean l’ami the friend Feminine l’île the...</p>`,
     exercises: [
-        { id: "20-1", type: "translation", question: "Type this perfectly: Elle a acheté un vélo . She bought a bike.", answer: ["Elle a acheté un vélo . She bought a bike."] },
-        { id: "20-2", type: "translation", question: "Type this perfectly: Nous avons vu des lapins dans le jardin. We saw  rabbits in the garden.", answer: ["Nous avons vu des lapins dans le jardin. We saw  rabbits in the garden."] },
-        { id: "20-3", type: "translation", question: "Type this perfectly: Il a acheté des rideaux pour le salon. He bought  curtains for the living room.", answer: ["Il a acheté des rideaux pour le salon. He bought  curtains for the living room."] }
+      { id: "20-1", type: "mcq", question: "Which article goes with 'ami' (masculine, starts with vowel)?", options: ["l'ami", "la ami", "le ami", "les ami"], answer: 0, explanation: "Le/la become l' before a vowel or mute h. L'ami, l'île, l'homme." },
+      { id: "20-2", type: "fill-blank", question: "Je voudrais ____ café, s'il vous plaît. (I would like some coffee.)", answer: "du", hint: "Use the partitive article (du/de la/de l') for uncountable nouns: du café, de la soupe." },
+      { id: "20-3", type: "mcq", question: "What is the plural of 'le cheval' (horse)?", options: ["les chevaux", "les chevals", "les chevales", "des chevals"], answer: 0, explanation: "Nouns ending in -al form plurals in -aux: cheval → chevaux, journal → journaux." },
+      { id: "20-4", type: "fill-blank", question: "Elle a acheté ____ légumes au marché. (She bought some vegetables.)", answer: "des", hint: "Use 'des' (indefinite plural) when referring to an unspecified quantity." },
+      { id: "20-5", type: "mcq", question: "After a negation, 'des' and 'un/une' change to:", options: ["de (or d')", "les", "des", "un"], answer: 0, explanation: "After negation: Je mange des fruits → Je ne mange pas de fruits. Un/une also becomes de." }
     ],
     vocabulary: [
       {
@@ -2568,8 +2618,9 @@ export const levels = [
         intro: "The guardian of L'Identité demands perfection!",
         timeLimit: 30,
         questions: [
-            { type: "translation", question: "Type this perfectly: Il a un nouveau chien . He has a new dog.", answer: ["Il a un nouveau chien . He has a new dog."] },
-            { type: "translation", question: "Type this perfectly: Tu veux emprunter un de mes livres ? Do you want to borrow one of my books?", answer: ["Tu veux emprunter un de mes livres ? Do you want to borrow one of my books?"] }
+            { type: "fill-blank", question: "Je bois ____ café chaque matin.", answer: "du" },
+            { type: "fill-blank", question: "Elle a acheté ____ fleurs. (some)", answer: "des" },
+            { type: "fill-blank", question: "Il n'y a plus ____ pain. (any)", answer: "de" }
         ]
     }
   },
@@ -2580,9 +2631,11 @@ export const levels = [
     description: "Master the rules and syntax of All the pronouns.",
     lesson: `<h2>All the pronouns</h2><p>Subject pronouns Th ere are many types of pronouns in French. Let’s start with the subject pronouns  you have already used when conjugating verbs. je I tu you (singular familiar) il he, it (masculine) elle she, it (feminine) on one, we, they, people nous we vous you (singular formal and all plurals) ils they (masculine, or mixed masculine and feminine) elles they (feminine) Th e third-person pronouns apply to people, animals, or things. Bertrand est chirurgien. Bertrand is a surgeon. Il est chirurgien . He is a surgeon . Les trois sœurs jouent dans le salon. Th e three sisters are playing in   the living room. Elles jouent dans le salon . Th ey are playing in the living   room. Le chat est assis sur la chaise. Th e cat is sitting on the chair. Il est assis sur la chaise. It is sitting on t...</p>`,
     exercises: [
-        { id: "21-1", type: "translation", question: "Type this perfectly: Il est chirurgien . He is a surgeon .", answer: ["Il est chirurgien . He is a surgeon ."] },
-        { id: "21-2", type: "translation", question: "Type this perfectly: Il est assis sur la chaise. It is sitting on the chair.", answer: ["Il est assis sur la chaise. It is sitting on the chair."] },
-        { id: "21-3", type: "translation", question: "Type this perfectly: Elle est très polluée. It is very polluted.", answer: ["Elle est très polluée. It is very polluted."] }
+      { id: "21-1", type: "mcq", question: "Which pronoun replaces 'les enfants' in 'Je vois les enfants'?", options: ["Je les vois", "Je leur vois", "Je en vois", "Je vois les"], answer: 0, explanation: "Direct object pronoun: le (m.sg), la (f.sg), les (pl). Les enfants → les." },
+      { id: "21-2", type: "fill-blank", question: "Je ____ parle. (I speak to them — plural indirect object)", answer: "leur", hint: "Indirect object pronouns: lui (him/her), leur (them). Use 'leur' for plural." },
+      { id: "21-3", type: "mcq", question: "What does the pronoun 'y' replace?", options: ["A location or 'à + thing'", "A direct object person", "An indirect object person", "Possession"], answer: 0, explanation: "'Y' replaces a place or 'à + thing': Je vais à Paris → J'y vais." },
+      { id: "21-4", type: "fill-blank", question: "Il ____ a beaucoup. (There are a lot of them — of vegetables.)", answer: "en", hint: "'En' replaces 'de + noun' or a quantity. J'en veux = I want some." },
+      { id: "21-5", type: "mcq", question: "What is the stress pronoun for 'il'?", options: ["lui", "il", "son", "soi"], answer: 0, explanation: "Stress pronouns: moi, toi, lui, elle, nous, vous, eux, elles." }
     ],
     vocabulary: [
       {
@@ -2714,8 +2767,9 @@ export const levels = [
         intro: "The guardian of Le Substitut demands perfection!",
         timeLimit: 30,
         questions: [
-            { type: "translation", question: "Type this perfectly: On ne peut pas penser à tout. One cannot think of everything.", answer: ["On ne peut pas penser à tout. One cannot think of everything."] },
-            { type: "translation", question: "Type this perfectly: On va au cinéma cet après-midi? Shall we go to the movies this aft ernoon?", answer: ["On va au cinéma cet après-midi? Shall we go to the movies this aft ernoon?"] }
+            { type: "fill-blank", question: "Je ____ vois tous les jours. (les enfants)", answer: "les" },
+            { type: "fill-blank", question: "Il ____ parle. (à ses amis)", answer: "leur" },
+            { type: "fill-blank", question: "Elle ____ mange. (des fraises)", answer: "en" }
         ]
     }
   },
@@ -2726,9 +2780,11 @@ export const levels = [
     description: "Master the rules and syntax of Adjectives and comparisons.",
     lesson: `<h2>Adjectives and comparisons</h2><p>185Je déteste mon vieux canapé . I hate my old couch. Cette vieille maison est à vendre. Th is old house is for sale. Ce jeune chef est vraiment doué. Th is young chef is really talented. Cette jeune femme est écrivain. Th is young woman is a writer. Beware: Some adjectives have diff erent meanings, depending on whether they precede or follow  the noun. son ancien mari her former husband une statue ancienne an antique statue ma chère Carole my dear Carole un cadeau cher an expensive gift  Notre pauvre chien! Our poor dog! des pays pauvres poor countries sa propre idée his own idea une nappe propre a clean tablecloth une sale aff aire a nasty business une fenêtre sale a dirty window un grand homme an important man une femme grande a tall woman le dernier métro the last subway train l’an der...</p>`,
     exercises: [
-        { id: "22-1", type: "translation", question: "Type this perfectly: Elle a les yeux verts . She has green eyes.", answer: ["Elle a les yeux verts . She has green eyes."] },
-        { id: "22-2", type: "translation", question: "Type this perfectly: Il a acheté des chemises blanches . He bought some white shirts.", answer: ["Il a acheté des chemises blanches . He bought some white shirts."] },
-        { id: "22-3", type: "translation", question: "Type this perfectly: Elle a plus de temps que Valérie. She has more time than Valérie.", answer: ["Elle a plus de temps que Valérie. She has more time than Valérie."] }
+      { id: "22-1", type: "mcq", question: "How does 'grand' agree with a feminine noun?", options: ["grande", "grand", "grands", "grandez"], answer: 0, explanation: "Most adjectives add -e for feminine: grand → grande, petit → petite." },
+      { id: "22-2", type: "fill-blank", question: "Elle est ____ que son frère. (She is taller than her brother.)", answer: "plus grande", hint: "Comparison: plus + adjective (+ que) = more...than. Plus grande = taller." },
+      { id: "22-3", type: "mcq", question: "Where do most French adjectives go?", options: ["After the noun", "Before the noun", "Before or after equally", "At the end of the sentence"], answer: 0, explanation: "Most adjectives come AFTER the noun. BAGS adjectives (Beauty, Age, Goodness, Size) go before." },
+      { id: "22-4", type: "fill-blank", question: "C'est le ____ (bon) restaurant de la ville. (It's the best restaurant.)", answer: "meilleur", hint: "Bon has an irregular superlative: meilleur(e). Le meilleur = the best." },
+      { id: "22-5", type: "mcq", question: "How do you say 'She has as many toys as you'?", options: ["Elle a autant de jouets que toi.", "Elle a plus de jouets que toi.", "Elle a aussi de jouets comme toi.", "Elle a tant de jouets que toi."], answer: 0, explanation: "Equality comparison: autant de + noun + que = as many/much as." }
     ],
     vocabulary: [
       {
@@ -2836,8 +2892,9 @@ export const levels = [
         intro: "The guardian of L'Aura demands perfection!",
         timeLimit: 30,
         questions: [
-            { type: "translation", question: "Type this perfectly: Il a moins de chance que toi. He is less lucky than you are.", answer: ["Il a moins de chance que toi. He is less lucky than you are."] },
-            { type: "translation", question: "Type this perfectly: Elle a autant de jouets que toi. She has as many toys as you do.", answer: ["Elle a autant de jouets que toi. She has as many toys as you do."] }
+            { type: "fill-blank", question: "Elle est plus ____ que moi. (tall/grande)", answer: "grande" },
+            { type: "fill-blank", question: "C'est le ____ (best) restaurant.", answer: "meilleur" },
+            { type: "fill-blank", question: "Il a autant ____ chance que toi.", answer: "de" }
         ]
     }
   },
@@ -2848,9 +2905,11 @@ export const levels = [
     description: "Master the rules and syntax of Demonstrative adjectives.",
     lesson: `<h2>Demonstrative adjectives</h2><p>and pronouns Demonstrative adjectives Sometimes you need to be very specifi c when identifying things. To do so, you use  demonstrative adjectives ( this, that, these, those ). In French, demonstratives, like  all adjectives, agree in gender and number with the noun they modify. Masculine singular ce livre this book cet auteur this author cet homme this man Note that the demonstrative adjective ce adds a - t before a masculine singu- lar noun that starts with a vowel or a mute h (cet appartement, cet arbre ). Feminine singular cette lampe this lamp cette télévision this television cette histoire this story Masculine and feminine plural ces cahiers (m.pl.) these notebooks ces arbres (m.pl.) these trees ces chemises (f.pl.) these shirts ces homards (m.pl.) these lobsters To make a distinctio...</p>`,
     exercises: [
-        { id: "23-1", type: "translation", question: "Type this perfectly: Tu fais tes devoirs et elle fait les siens . You do your homework and she does hers.", answer: ["Tu fais tes devoirs et elle fait les siens . You do your homework and she does hers."] },
-        { id: "23-2", type: "translation", question: "Type this perfectly: Nous aimons votre chien et vous aimez We like your dog and you like ours.", answer: ["Nous aimons votre chien et vous aimez We like your dog and you like ours."] },
-        { id: "23-3", type: "translation", question: "Type this perfectly: Vous prenez vos billets et nous prenons You take your tickets and we take ours.", answer: ["Vous prenez vos billets et nous prenons You take your tickets and we take ours."] }
+      { id: "23-1", type: "mcq", question: "Which demonstrative goes before 'homme' (masculine, starts with vowel)?", options: ["cet homme", "ce homme", "cette homme", "ces homme"], answer: 0, explanation: "Before a masculine singular noun starting with vowel or mute h, use 'cet': cet homme, cet arbre." },
+      { id: "23-2", type: "fill-blank", question: "J'aime ____ (this/f.) robe. (I like this dress.)", answer: "cette", hint: "Feminine singular demonstrative = cette. Cette robe, cette table." },
+      { id: "23-3", type: "mcq", question: "What is the plural demonstrative for both genders?", options: ["ces", "ce", "cet", "cette"], answer: 0, explanation: "Ces is used for both masculine and feminine plural: ces livres, ces maisons." },
+      { id: "23-4", type: "fill-blank", question: "Je préfère ____ (these) chaussures. (I prefer these shoes.)", answer: "ces", hint: "Chaussures is feminine plural. The plural demonstrative is 'ces' for all genders." },
+      { id: "23-5", type: "mcq", question: "How do you say 'this book here' (to distinguish from another)?", options: ["ce livre-ci", "ce livre-là", "cet livre-ci", "ces livre-ci"], answer: 0, explanation: "Add -ci (here) or -là (there) after the noun to distinguish: ce livre-ci vs ce livre-là." }
     ],
     vocabulary: [
       {
@@ -2978,8 +3037,9 @@ export const levels = [
         intro: "The guardian of L'Index demands perfection!",
         timeLimit: 30,
         questions: [
-            { type: "translation", question: "Type this perfectly: Il a téléphoné à son avocat et elle a He called his lawyer and she called hers.", answer: ["Il a téléphoné à son avocat et elle a He called his lawyer and she called hers."] },
-            { type: "translation", question: "Type this perfectly: Elle a besoin de mon aide et tu as besoin She needs your help and you need hers.", answer: ["Elle a besoin de mon aide et tu as besoin She needs your help and you need hers."] }
+            { type: "fill-blank", question: "J'aime ____ (this) livre.", answer: "ce" },
+            { type: "fill-blank", question: "Regarde ____ (this/f.) robe!", answer: "cette" },
+            { type: "fill-blank", question: "Ils adorent ____ (these) chansons.", answer: "ces" }
         ]
     }
   },
@@ -2990,9 +3050,11 @@ export const levels = [
     description: "Master the rules and syntax of Relative pronouns.",
     lesson: `<h2>Relative pronouns</h2><p>qui and que can sometimes be followed by the subjunctive. If there is  some doubt about the existence of someone or the possible realization of something, the subjunc-tive may be used aft er the relative pronoun. Connaîtriez-vous quelqu’un qui sache Would you know someone who can speak parler le chinois couramment? Chinese fl uently? Il cherche quelqu’un qui puisse créer He is looking for someone who can create a un logiciel pour son entreprise. piece of soft ware for his company. 13·4EXERCICE  Indicatif ou subjonctif?  1. Il dit que leur page d’accueil (être) attrayante.  2. Elle doute qu’il (faire) chaud demain. 3. Ils sont heureux que leurs enfants (pouvoir) aller en Europe cet été. 4. Je pense que Maud (avoir) raison. 5. Je veux que tu (faire) la présentation jeudi. 6. Tu ne crois pas ...</p>`,
     exercises: [
-        { id: "24-1", type: "translation", question: "Type this perfectly: Nous sommes ravis qu’elle ait gagné We are delighted she won the gold medal.", answer: ["Nous sommes ravis qu’elle ait gagné We are delighted she won the gold medal."] },
-        { id: "24-2", type: "translation", question: "Type this perfectly: Je lui ai demandé de ne pas faire I asked her not to fry the fi sh.", answer: ["Je lui ai demandé de ne pas faire I asked her not to fry the fi sh."] },
-        { id: "24-3", type: "translation", question: "Type this perfectly: Elle m’a dit de ne pas mettre She told me not to put any oil in.", answer: ["Elle m’a dit de ne pas mettre She told me not to put any oil in."] }
+      { id: "24-1", type: "mcq", question: "Which relative pronoun is the SUBJECT of the relative clause?", options: ["qui", "que", "dont", "où"], answer: 0, explanation: "'Qui' is the subject pronoun: L'homme qui parle = The man who is speaking." },
+      { id: "24-2", type: "fill-blank", question: "Le film ____ j'ai vu était magnifique. (The film that I saw...)", answer: "que", hint: "'Que' is the direct object relative pronoun. I saw 'the film' → the film is the object." },
+      { id: "24-3", type: "mcq", question: "Which pronoun replaces 'de + noun'?", options: ["dont", "que", "qui", "où"], answer: 0, explanation: "'Dont' replaces 'de + noun': Le livre dont je parle = The book I'm talking about." },
+      { id: "24-4", type: "fill-blank", question: "Paris est la ville ____ j'habite. (Paris is the city where I live.)", answer: "où", hint: "'Où' is used as a relative pronoun for places: la ville où, le pays où." },
+      { id: "24-5", type: "mcq", question: "Complete: 'The woman ____ I met is French.'", options: ["que j'ai rencontrée", "qui j'ai rencontrée", "dont j'ai rencontrée", "où j'ai rencontrée"], answer: 0, explanation: "'Que' is used when the relative pronoun is the direct object. I met the woman → que." }
     ],
     vocabulary: [
       {
@@ -3136,8 +3198,9 @@ export const levels = [
         intro: "The guardian of Le Lien demands perfection!",
         timeLimit: 30,
         questions: [
-            { type: "translation", question: "Type this perfectly: Elle a entendu le coq chanter . She heard the rooster crowing .", answer: ["Elle a entendu le coq chanter . She heard the rooster crowing ."] },
-            { type: "translation", question: "Type this perfectly: Il a fait macérer la viande vingt-quatre He macerated the meat twenty-four hours.", answer: ["Il a fait macérer la viande vingt-quatre He macerated the meat twenty-four hours."] }
+            { type: "fill-blank", question: "Le film ____ j'ai vu était bien.", answer: "que" },
+            { type: "fill-blank", question: "L'homme ____ parle est mon père.", answer: "qui" },
+            { type: "fill-blank", question: "C'est la ville ____ j'habite.", answer: "où" }
         ]
     }
   },
@@ -3148,9 +3211,11 @@ export const levels = [
     description: "Master the rules and syntax of Adverbs and expressions.",
     lesson: `<h2>Adverbs and expressions</h2><p>of time, frequency,  and location Adverbs and expressions of time Th e following expressions are useful when talking about time: aujourd’hui today demain tomorrow hier yesterday  après-demain the day aft er tomorrow avant-hier the day before yesterday dans trois jours in three days (from today) dans une quinzaine in two weeks dans un mois in a month dans un an in a year la semaine prochaine next week la semaine dernière last week Il ira en France dans un an . He’ll go to France in a year. Je t’appellerai après-demain . I’ll call you the day aft er   tomorrow. Th e adverbs listed above are ordinarily used when you are speaking directly  to people, in what is known as direct style or direct speech. If you are discussing  past and future events, or telling a story, you are more likely to use ...</p>`,
     exercises: [
-        { id: "25-1", type: "translation", question: "Type this perfectly: Il ira en France dans un an . He’ll go to France in a year.", answer: ["Il ira en France dans un an . He’ll go to France in a year."] },
-        { id: "25-2", type: "translation", question: "Type this perfectly: Nous sommes partis le lendemain . We left the day aft er.", answer: ["Nous sommes partis le lendemain . We left the day aft er."] },
-        { id: "25-3", type: "translation", question: "Type this perfectly: Il assiste rarement aux réunions. He rarely attends meetings.", answer: ["Il assiste rarement aux réunions. He rarely attends meetings."] }
+      { id: "25-1", type: "mcq", question: "How is an adverb typically formed from an adjective in French?", options: ["Add -ment to the feminine form", "Add -ment to the masculine form", "Add -ément to the masculine form", "Add -amment to any form"], answer: 0, explanation: "Take the feminine form of the adjective + -ment: lent → lente → lentement." },
+      { id: "25-2", type: "fill-blank", question: "Il parle ____ (rapide → adverb). (He speaks quickly.)", answer: "rapidement", hint: "Rapide is the same in masculine and feminine. Rapide + ment = rapidement." },
+      { id: "25-3", type: "mcq", question: "What does 'souvent' mean?", options: ["often", "never", "always", "sometimes"], answer: 0, explanation: "Frequency adverbs: toujours (always), souvent (often), parfois (sometimes), jamais (never)." },
+      { id: "25-4", type: "fill-blank", question: "Il assiste ____ (rare → adverb) aux réunions.", answer: "rarement", hint: "Rare → rare (same m/f) + ment = rarement." },
+      { id: "25-5", type: "mcq", question: "Where does an adverb typically go in a simple present tense sentence?", options: ["After the conjugated verb", "Before the subject", "Before the verb", "At the very end always"], answer: 0, explanation: "In a simple tense, adverbs go after the conjugated verb: Il parle bien, Il mange souvent." }
     ],
     vocabulary: [
       {
@@ -3266,8 +3331,9 @@ export const levels = [
         intro: "The guardian of La Mesure demands perfection!",
         timeLimit: 30,
         questions: [
-            { type: "translation", question: "Type this perfectly: Il n’a pas revu sa sœur depuis dix ans. He has not seen his sister for ten years.", answer: ["Il n’a pas revu sa sœur depuis dix ans. He has not seen his sister for ten years."] },
-            { type: "translation", question: "Type this perfectly: Nous ne sommes pas allées à Madrid We have not been to Madrid for ten years.", answer: ["Nous ne sommes pas allées à Madrid We have not been to Madrid for ten years."] }
+            { type: "fill-blank", question: "Il parle trop ____ (rapide → adverb).", answer: "rapidement" },
+            { type: "fill-blank", question: "Il travaille ____ (sérieux → adverb).", answer: "sérieusement" },
+            { type: "fill-blank", question: "Elle répond ____ (lent → adverb).", answer: "lentement" }
         ]
     }
   },
@@ -3278,9 +3344,11 @@ export const levels = [
     description: "Master the rules and syntax of Numbers.",
     lesson: `<h2>Numbers</h2><p>The numbers 0 to 50 Let’s start with numbers from 0 to 50. Although consonants are generally silent in  French, they are pronounced in the following numbers: cinq , six, sept , huit , neuf ,  dix. With sept , the -p- is silent, but the fi nal - t is pronounced. Th e fi nal - x in six  and dix is pronounced like an s. When the numbers cinq , six, huit , and dix are followed by a word beginning  with a consonant, their fi nal consonant is mute (silent). zéro zero vingt twenty un one vingt et un twenty-one deux two vingt-deux twenty-two trois three vingt-trois twenty-three quatre four vingt-quatre twenty-four cinq fi ve vingt-cinq twenty-fi ve six six vingt-six twenty-six sept seven vingt-sept twenty-seven huit eight vingt-huit twenty-eight neuf nine vingt-neuf twenty-nine dix ten trente thir...</p>`,
     exercises: [
-        { id: "26-1", type: "translation", question: "Type this perfectly: Il a fi ni par lui dire la vérité. He fi nally told her the truth.", answer: ["Il a fi ni par lui dire la vérité. He fi nally told her the truth."] },
-        { id: "26-2", type: "translation", question: "Type this perfectly: Elle a fi ni par accepter. She fi nally accepted.", answer: ["Elle a fi ni par accepter. She fi nally accepted."] },
-        { id: "26-3", type: "translation", question: "Type this perfectly: Écrire les nombres suivants en toutes lettres.", answer: ["Écrire les nombres suivants en toutes lettres."] }
+      { id: "26-1", type: "mcq", question: "How do you say '21' in French?", options: ["vingt et un", "vingt-un", "vingt et une", "vingt-et-un"], answer: 0, explanation: "21, 31, 41, 51, 61, 71 all use 'et un': vingt et un, trente et un, etc." },
+      { id: "26-2", type: "fill-blank", question: "J'ai ____ (80) euros. (Hint: French for 80 = 4×20)", answer: "quatre-vingts", hint: "80 = quatre-vingts (four-twenties). Drop the -s when followed by another number." },
+      { id: "26-3", type: "mcq", question: "What is 70 in French?", options: ["soixante-dix", "septante", "soixante-et-dix", "soixante dix"], answer: 0, explanation: "70 = soixante-dix (60+10). 71 = soixante-et-onze, 79 = soixante-dix-neuf." },
+      { id: "26-4", type: "fill-blank", question: "Il a ____ (91) ans. (He is 91 years old.)", answer: "quatre-vingt-onze", hint: "91 = quatre-vingt-onze (80+11). Note: quatre-vingts drops the -s before another number." },
+      { id: "26-5", type: "mcq", question: "How do you say the ordinal 'first' (feminine) in French?", options: ["première", "premier", "prémière", "une"], answer: 0, explanation: "Ordinals: premier/première (1st), deuxième (2nd), troisième (3rd). Premier is irregular." }
     ],
     vocabulary: [
       {
@@ -3388,8 +3456,9 @@ export const levels = [
         intro: "The guardian of L'Infini demands perfection!",
         timeLimit: 30,
         questions: [
-            { type: "translation", question: "Type this perfectly: Copyright © 200 8 by Annie H eminwa y. Click here for terms of use.", answer: ["Copyright © 200 8 by Annie H eminwa y. Click here for terms of use."] },
-            { type: "translation", question: "Type this perfectly: Traduire en anglais les phrases suivantes.", answer: ["Traduire en anglais les phrases suivantes."] }
+            { type: "fill-blank", question: "Comment dit-on 80 en français?", answer: "quatre-vingts" },
+            { type: "fill-blank", question: "Comment dit-on 70 en français?", answer: "soixante-dix" },
+            { type: "fill-blank", question: "Comment dit-on 91 en français?", answer: "quatre-vingt-onze" }
         ]
     }
   },
@@ -3400,9 +3469,11 @@ export const levels = [
     description: "Master the rules and syntax of Pot pourri.",
     lesson: `<h2>Pot pourri</h2><p>·27· Copyright © 200 8 by Annie H eminwa y. Click here for terms of use.  commencer to begin, to start J’ai commencé un nouveau livre. I started a new book. Tu as bien commencé l’année? Did you start the year on the right foot? Il commence à pleuvoir. It’s starting to rain. Tout à coup, il a commencé à pleurer. Suddenly, he started crying. Elle a commencé par se présenter. She started by introducing herself. On va commencer par des escargots. We’ll start with snails. décider to decide C’est décidé . It’s (has been) decided. J’ai décidé d’ aller au cinéma. I decided to go to the movies. Nous avons décidé d ’aller au Japon. We decided to go to Japan. Ils se sont enfi n décidés à se marier. Th ey fi nally decided to get (got around to   getting) married. Décide-toi! Make up your mind! demande...</p>`,
     exercises: [
-        { id: "27-1", type: "translation", question: "Type this perfectly: Tu as bien commencé l’année? Did you start the year on the right foot?", answer: ["Tu as bien commencé l’année? Did you start the year on the right foot?"] },
-        { id: "27-2", type: "translation", question: "Type this perfectly: Il commence à pleuvoir. It’s starting to rain.", answer: ["Il commence à pleuvoir. It’s starting to rain."] },
-        { id: "27-3", type: "translation", question: "Type this perfectly: Elle a commencé par se présenter. She started by introducing herself.", answer: ["Elle a commencé par se présenter. She started by introducing herself."] }
+      { id: "27-1", type: "mcq", question: "Which preposition follows 'commencer' before an infinitive?", options: ["commencer à", "commencer de", "commencer pour", "commencer que"], answer: 0, explanation: "Commencer à + infinitive: Il commence à pleuvoir. (It starts to rain.)" },
+      { id: "27-2", type: "fill-blank", question: "Nous avons décidé ____ aller au Japon. (We decided to go to Japan.)", answer: "d'", hint: "Décider de + infinitive: décider de partir, décider d'aller (de → d' before vowel)." },
+      { id: "27-3", type: "mcq", question: "What does 'Il manque à sa famille' mean?", options: ["His family misses him", "He misses his family", "He is missing from work", "His family is missing"], answer: 0, explanation: "Manquer à = to be missed by. Il manque à sa famille = His family misses him." },
+      { id: "27-4", type: "fill-blank", question: "Elle a fini ____ accepter. (She finally accepted.)", answer: "par", hint: "Finir par + infinitive = to end up doing something. Elle a fini par accepter." },
+      { id: "27-5", type: "mcq", question: "Which construction means 'to ask someone to do something'?", options: ["demander à qn de + infinitive", "demander que + subjonctif", "demander qn + infinitive", "demander de + subjonctif"], answer: 0, explanation: "Demander à quelqu'un de faire: Je lui ai demandé de partir." }
     ],
     vocabulary: [
       {
@@ -3554,8 +3625,9 @@ export const levels = [
         intro: "The guardian of L'Oméga demands perfection!",
         timeLimit: 30,
         questions: [
-            { type: "translation", question: "Type this perfectly: On va commencer par des escargots. We’ll start with snails.", answer: ["On va commencer par des escargots. We’ll start with snails."] },
-            { type: "translation", question: "Type this perfectly: Nous avons décidé d ’aller au Japon. We decided to go to Japan.", answer: ["Nous avons décidé d ’aller au Japon. We decided to go to Japan."] }
+            { type: "fill-blank", question: "Il a commencé ____ pleuvoir.", answer: "à" },
+            { type: "fill-blank", question: "Elle a fini ____ accepter.", answer: "par" },
+            { type: "fill-blank", question: "J'ai décidé ____ rester.", answer: "de" }
         ]
     }
   }

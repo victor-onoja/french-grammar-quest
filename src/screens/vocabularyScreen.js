@@ -1,5 +1,6 @@
 import { levels } from '../data/levels.js';
 import { gameState } from '../engine/gameState.js';
+import { checkAnswer } from '../engine/answerUtils.js';
 
 export function renderVocabularyScreen(container, navigateTo, params) {
     const levelId = params.levelId;
@@ -203,10 +204,8 @@ export function renderVocabularyScreen(container, navigateTo, params) {
         const submitBtn = document.getElementById('vocab-submit');
         const feedbackEl = document.getElementById('vocab-feedback');
 
-        const checkAnswer = () => {
-            const val = inputEl.value.trim().toLowerCase();
-            const correct = word.french.toLowerCase().replace(/[.,!]/g, '');
-            const isCorrect = val === correct;
+        const checkAnswer_ = () => {
+            const isCorrect = checkAnswer(inputEl.value, word.french);
 
             inputEl.disabled = true;
             submitBtn.disabled = true;
@@ -228,15 +227,18 @@ export function renderVocabularyScreen(container, navigateTo, params) {
             }
         };
 
-        submitBtn.onclick = checkAnswer;
-        inputEl.onkeypress = (e) => { if (e.key === 'Enter') checkAnswer(); };
+        submitBtn.onclick = checkAnswer_;
+        inputEl.onkeypress = (e) => { if (e.key === 'Enter') checkAnswer_(); };
         setTimeout(() => inputEl.focus(), 100);
     }
 
     function renderResults() {
         const passed = testScore >= shuffledVocab.length * 0.8;
         const xpGained = testScore * 5;
-        if (passed) gameState.addXP(xpGained);
+        if (passed) {
+            gameState.addXP(xpGained);
+            gameState.completeVocab(levelId);
+        }
 
         container.innerHTML = `
             <div class="vocab-results fade-in text-center max-w-500 mx-auto">

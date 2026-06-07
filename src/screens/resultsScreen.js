@@ -22,24 +22,40 @@ export function renderResultsScreen(container, navigateTo, params) {
 
   gameState.recoverLives();
 
+  const vocabDone = gameState.isVocabCompleted(levelId);
+  const showDockPrompt = success && !vocabDone && levelId < 27;
+
   container.innerHTML = `
     <div class="results-screen fade-in text-center mx-auto" style="max-width: 500px">
       <div class="glass-panel pad-2 rounded">
         <h1 class="${success ? 'gradient-text text-glow' : 'error-text'}">${title}</h1>
         <p class="mb-2">${message}</p>
-        
+
         ${success ? `
           <div class="stars big-stars mb-2">
             ${Array(3).fill(0).map((_, i) =>
-    `<span class="star ${i < stars ? 'earned' : 'empty'}">★</span>`
-  ).join('')}
+              `<span class="star ${i < stars ? 'earned' : 'empty'}">★</span>`
+            ).join('')}
           </div>
         ` : ''}
 
-        <button id="map-btn" class="btn btn-primary w-100">RETURN TO GALAXY MAP</button>
+        ${showDockPrompt ? `
+          <div class="dock-prompt glass-panel mb-2">
+            <p>⚓ Complete the <strong>Supply Dock</strong> to unlock the next sector!</p>
+          </div>
+          <button id="dock-btn" class="btn btn-primary w-100 mb-2 glow-effect">GO TO SUPPLY DOCK</button>
+        ` : ''}
+
+        <button id="map-btn" class="btn ${showDockPrompt ? 'btn-secondary' : 'btn-primary'} w-100">RETURN TO GALAXY MAP</button>
       </div>
     </div>
   `;
+
+  if (showDockPrompt) {
+    document.getElementById('dock-btn').addEventListener('click', () => {
+      navigateTo('vocab', { levelId });
+    });
+  }
 
   document.getElementById('map-btn').addEventListener('click', () => {
     navigateTo('map');

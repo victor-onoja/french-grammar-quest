@@ -10,8 +10,9 @@ export class GameState {
             unlockedLevels: [1],
             xp: 0,
             lives: 3,
-            stars: {}, // levelId -> 1,2,3
-            streaks: 0
+            stars: {},       // levelId -> 1,2,3
+            streaks: 0,
+            vocabCompleted: {} // levelId -> true
         };
     }
 
@@ -59,10 +60,32 @@ export class GameState {
 
     completeLevel(levelId, stars) {
         this.state.stars[levelId] = Math.max(this.state.stars[levelId] || 0, stars);
-        if (!this.state.unlockedLevels.includes(levelId + 1) && levelId < 27) {
+        this._tryUnlockNext(levelId);
+        this.saveState();
+    }
+
+    completeVocab(levelId) {
+        this.state.vocabCompleted = this.state.vocabCompleted || {};
+        this.state.vocabCompleted[levelId] = true;
+        this._tryUnlockNext(levelId);
+        this.saveState();
+    }
+
+    isVocabCompleted(levelId) {
+        return !!(this.state.vocabCompleted && this.state.vocabCompleted[levelId]);
+    }
+
+    isLevelBeaten(levelId) {
+        return (this.state.stars[levelId] || 0) > 0;
+    }
+
+    _tryUnlockNext(levelId) {
+        if (levelId >= 27) return;
+        const levelBeaten = this.isLevelBeaten(levelId);
+        const vocabDone = this.isVocabCompleted(levelId);
+        if (levelBeaten && vocabDone && !this.state.unlockedLevels.includes(levelId + 1)) {
             this.state.unlockedLevels.push(levelId + 1);
         }
-        this.saveState();
     }
 }
 

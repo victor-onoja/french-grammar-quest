@@ -502,6 +502,41 @@ h4 {
     box-shadow: 0 0 15px var(--primary-cyan);
 }
 
+.dock-btn.dock-required {
+    background: rgba(255, 215, 0, 0.2);
+    border-color: var(--primary-gold);
+    color: var(--primary-gold);
+    animation: dockPulse 1.5s ease-in-out infinite;
+}
+
+.dock-btn.dock-required:hover {
+    background: var(--primary-gold);
+    color: black;
+    box-shadow: 0 0 15px var(--primary-gold);
+}
+
+.dock-btn.dock-done {
+    background: rgba(0, 255, 153, 0.15);
+    border-color: var(--success);
+    color: var(--success);
+    cursor: default;
+    opacity: 0.8;
+}
+
+@keyframes dockPulse {
+    0%, 100% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.4); }
+    50% { box-shadow: 0 0 18px rgba(255, 215, 0, 0.9); }
+}
+
+.dock-prompt {
+    border: 1px solid var(--primary-gold);
+    padding: 1rem;
+    border-radius: 10px;
+    background: rgba(255, 215, 0, 0.08);
+    color: var(--primary-gold);
+    font-size: 0.95rem;
+}
+
 .btn-sm {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;

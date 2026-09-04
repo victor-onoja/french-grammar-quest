@@ -9,6 +9,11 @@ export function renderGalaxyMap(container, navigateTo) {
       <h1 class="gradient-text">Galaxie Française</h1>
       <p class="subtitle">Select a planetary mission.</p>
       <div class="planets-container"></div>
+      <footer class="site-credit">
+        <p>Lessons and vocabulary adapted from <em>Practice Makes Perfect: Complete French Grammar</em> by Annie Heminway (McGraw-Hill, 2008).</p>
+        <p>An independent study project, not affiliated with or endorsed by the author or publisher.</p>
+        <p><a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></p>
+      </footer>
     </div>
   `;
 

@@ -822,3 +822,19 @@ h4 {
   height: 1px;
   background: rgba(255, 255, 255, 0.12);
 }
+
+/* Source acknowledgement on the home screen */
+.site-credit {
+  margin: 3rem auto 0;
+  max-width: 400px;
+  padding: 0 1rem;
+  color: var(--text-muted);
+  font-size: 0.76rem;
+  line-height: 1.55;
+  opacity: 0.75;
+}
+
+.site-credit p { margin-bottom: 0.4rem; }
+.site-credit em { color: var(--text-main); font-style: italic; }
+.site-credit a { color: var(--primary-cyan); text-decoration: none; }
+.site-credit a:hover { text-decoration: underline; }

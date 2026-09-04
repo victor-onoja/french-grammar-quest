@@ -1,4 +1,5 @@
 import { gameState } from '../engine/gameState.js';
+import { lastLevelId } from '../data/levels.js';
 
 export function renderResultsScreen(container, navigateTo, params) {
   const { levelId, success, reason } = params;
@@ -23,11 +24,11 @@ export function renderResultsScreen(container, navigateTo, params) {
   gameState.recoverLives();
 
   const vocabDone = gameState.isVocabCompleted(levelId);
-  const showDockPrompt = success && !vocabDone && levelId < 27;
+  const showDockPrompt = success && !vocabDone && levelId < lastLevelId;
 
   container.innerHTML = `
-    <div class="results-screen fade-in text-center mx-auto" style="max-width: 500px">
-      <div class="glass-panel pad-2 rounded">
+    <div class="results-screen fade-in text-center mx-auto max-w-500">
+      <div class="glass-panel p-2 rounded">
         <h1 class="${success ? 'gradient-text text-glow' : 'error-text'}">${title}</h1>
         <p class="mb-2">${message}</p>
 

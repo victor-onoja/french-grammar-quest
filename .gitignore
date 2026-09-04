@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Source material kept locally, not distributed with the app
+practice-makes-perfect-complete-french-grammar.pdf
+ch4.txt
+
+# Local Supabase credentials
+.env
+.env.local

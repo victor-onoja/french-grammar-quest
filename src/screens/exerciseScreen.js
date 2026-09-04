@@ -1,23 +1,33 @@
 import { levels } from '../data/levels.js';
 import { gameState } from '../engine/gameState.js';
 import { checkAnswer } from '../engine/answerUtils.js';
+import { shuffle } from '../engine/shuffle.js';
 
 export function renderExerciseScreen(container, navigateTo, params) {
   const levelId = params.levelId;
   const level = levels.find(l => l.id === levelId);
 
-  if (!level || !level.exercises) return;
+  if (!level || !level.exercises) {
+    container.innerHTML = '<p>Mission data corrupted.</p>';
+    return;
+  }
+
+  // A level attempt is a fresh run: hearts spent on an earlier sector (or on an
+  // attempt the player walked out of) must not cap the stars available here,
+  // since the star rating is derived from the hearts left at the end.
+  gameState.recoverLives();
 
   let currentExerciseIndex = 0;
-  let sessionExercises = [...level.exercises];
+  // Copy each exercise: display state is written onto these objects, and
+  // `level.exercises` is shared module data that would otherwise be mutated.
+  let sessionExercises = level.exercises.map(ex => ({ ...ex }));
 
-  sessionExercises.forEach(ex => {
-    if (ex.type === 'mcq') {
-      const correctOption = ex.options[ex.answer];
-      ex.displayOptions = [...ex.options].sort(() => Math.random() - 0.5);
-      ex.correctDisplayIndex = ex.displayOptions.indexOf(correctOption);
-    }
-  });
+  function prepareOptions(ex) {
+    if (ex.type !== 'mcq' || ex.displayOptions) return;
+    const correctOption = ex.options[ex.answer];
+    ex.displayOptions = shuffle(ex.options);
+    ex.correctDisplayIndex = ex.displayOptions.indexOf(correctOption);
+  }
 
   const ruleHtml = level.rule ? `
     <details class="rule-card glass-panel mb-2">
@@ -40,6 +50,7 @@ export function renderExerciseScreen(container, navigateTo, params) {
     }
 
     const ex = sessionExercises[currentExerciseIndex];
+    prepareOptions(ex);
     const progressPercent = (currentExerciseIndex / sessionExercises.length) * 100;
 
     container.innerHTML = `
@@ -48,7 +59,7 @@ export function renderExerciseScreen(container, navigateTo, params) {
           <div class="progress-bar" style="width: ${progressPercent}%"></div>
         </div>
         ${ruleHtml}
-        <div class="glass-panel pad-2 rounded mb-2 text-center">
+        <div class="glass-panel p-2 rounded mb-2 text-center">
           <h3 class="mb-2">${ex.question}</h3>
           <div id="interactive-area" class="mb-2"></div>
           <div id="feedback-area" class="feedback-area hidden"></div>
@@ -56,7 +67,7 @@ export function renderExerciseScreen(container, navigateTo, params) {
       </div>
     `;
 
-    const interactiveArea = document.getElementById('interactive-area');
+    const interactiveArea = container.querySelector('#interactive-area');
 
     if (ex.type === 'mcq') {
       const grid = document.createElement('div');
@@ -76,11 +87,13 @@ export function renderExerciseScreen(container, navigateTo, params) {
         <button id="submit-btn" class="btn btn-primary w-100">SUBMIT</button>
       `;
 
-      const submitBtn = document.getElementById('submit-btn');
-      const inputEl = document.getElementById('answer-input');
+      const submitBtn = container.querySelector('#submit-btn');
+      const inputEl = container.querySelector('#answer-input');
 
       const checkTypeAnswer = () => {
-        handleAnswer(checkAnswer(inputEl.value, ex.answer), null, ex.answer);
+        // An empty submission is a stray Enter, not a wrong answer.
+        if (!inputEl.value.trim()) return;
+        handleAnswer(checkAnswer(inputEl.value, ex.answer), null);
       };
 
       submitBtn.onclick = checkTypeAnswer;
@@ -91,11 +104,11 @@ export function renderExerciseScreen(container, navigateTo, params) {
     }
   }
 
-  function handleAnswer(isCorrect, selectedBtn, correctAnswerText = '') {
-    const feedback = document.getElementById('feedback-area');
+  function handleAnswer(isCorrect, selectedBtn) {
+    const feedback = container.querySelector('#feedback-area');
     feedback.classList.remove('hidden');
 
-    document.querySelectorAll('.option-btn, .text-input, #submit-btn').forEach(el => {
+    container.querySelectorAll('.option-btn, .text-input, #submit-btn').forEach(el => {
       el.disabled = true;
       if (el.classList.contains('option-btn')) el.classList.add('disabled');
     });
@@ -112,7 +125,9 @@ export function renderExerciseScreen(container, navigateTo, params) {
     } else {
       if (selectedBtn) selectedBtn.classList.add('wrong');
       const ex = sessionExercises[currentExerciseIndex];
-      const correctStr = Array.isArray(ex.answer) ? ex.answer[0] : (ex.type === 'mcq' ? ex.displayOptions[ex.correctDisplayIndex] : ex.answer);
+      const correctStr = ex.type === 'mcq'
+        ? ex.displayOptions[ex.correctDisplayIndex]
+        : (Array.isArray(ex.answer) ? ex.answer[0] : ex.answer);
 
       let hintHtml = ex.hint ? `<p class="hint-text text-sm">${ex.hint}</p>` : '';
       let explanationHtml = ex.explanation ? `<p class="explanation-text text-sm mt-1">💡 ${ex.explanation}</p>` : '';
@@ -125,10 +140,14 @@ export function renderExerciseScreen(container, navigateTo, params) {
         <button id="next-btn" class="btn btn-primary mt-1">CONTINUE</button>
       `;
 
-      sessionExercises.push({ ...ex });
+      // Re-ask it later, without the shuffle it was just shown in.
+      const retry = { ...ex };
+      delete retry.displayOptions;
+      delete retry.correctDisplayIndex;
+      sessionExercises.push(retry);
       gameState.loseLife();
 
-      document.getElementById('next-btn').onclick = () => {
+      container.querySelector('#next-btn').onclick = () => {
         currentExerciseIndex++;
         renderCurrentExercise();
       };

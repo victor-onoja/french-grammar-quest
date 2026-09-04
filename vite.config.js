@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-    base: '/french-grammar-quest/',
+    base: '/frenchgalaxyquest/',
     server: {
         port: 3000,
         allowedHosts: true,

@@ -77,7 +77,15 @@ h4 {
   margin-top: 1rem;
 }
 
-.pad-2 {
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
   padding: 2rem;
 }
 
@@ -91,6 +99,10 @@ h4 {
 
 .max-w-500 {
   max-width: 500px;
+}
+
+.max-w-600 {
+  max-width: 600px;
 }
 
 .mx-auto {
@@ -184,7 +196,7 @@ h4 {
 }
 
 .planet-card.unlocked:hover {
-  transform: scale(1.05) translateY(-5px) !important;
+  transform: scale(1.05) translateY(-5px);
 }
 
 .planet-icon {
@@ -341,7 +353,62 @@ h4 {
   border-color: var(--danger);
 }
 
+/* Lesson body: styles the HTML injected from the level data, which the
+   global reset would otherwise flatten into one unspaced block. */
+.lesson-content h2 {
+  font-size: 1.2rem;
+  color: var(--primary-cyan);
+  margin-bottom: 0.75rem;
+}
+
+.lesson-content p {
+  margin-bottom: 0.85rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.lesson-content ul,
+.lesson-content ol {
+  margin: 0 0 0.85rem 0;
+  padding-left: 1.5rem;
+}
+
+.lesson-content li {
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.lesson-content strong {
+  color: var(--text-main);
+}
+
+.lesson-content em {
+  color: var(--primary-gold);
+  font-style: normal;
+}
+
+.lesson-content .vocab-tip {
+  border-left: 3px solid var(--primary-gold);
+  padding: 0.5rem 0.85rem;
+  background: rgba(255, 215, 0, 0.06);
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 0;
+}
+
 /* Feedback */
+.feedback-area {
+  margin-top: 1rem;
+}
+
+.hint-text {
+  margin-top: 0.75rem;
+}
+
+.danger-text {
+  color: var(--danger);
+}
+
 .success-text {
   color: var(--success);
   font-weight: bold;
@@ -367,6 +434,13 @@ h4 {
 .boss-header {
   border: 2px solid var(--primary-magenta);
   box-shadow: inset 0 0 20px rgba(255, 0, 85, 0.2);
+}
+
+.boss-title {
+  font-size: 1.05rem;
+  line-height: 1.4;
+  color: var(--primary-magenta);
+  margin-bottom: 0.5rem;
 }
 
 .timer-display {
@@ -633,3 +707,99 @@ h4 {
 }
 
 .h-2 { height: 2rem; }
+/* Narrow phones: the app is a 600px column, but the boss/matching screens
+   pack two columns and long French phrases into it. */
+@media (max-width: 480px) {
+  .p-2 { padding: 1.25rem; }
+
+  .btn {
+    padding: 0.85rem 1.25rem;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+  }
+
+  .vocab-french { font-size: 1.9rem; }
+  .vocab-target { font-size: 1.6rem; }
+  .timer-display { font-size: 1.6rem; }
+  .big-stars .star { font-size: 2.2rem; }
+
+  .matching-grid { gap: 0.75rem; }
+
+  .match-item {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.8rem;
+    min-height: 52px;
+  }
+
+  .planets-container { padding: 1.5rem 0.75rem; }
+
+  .planet-card {
+    gap: 1rem;
+    padding: 0.85rem 1rem;
+    border-radius: 24px;
+    width: 100%;
+    /* The decorative stagger costs more than it gives at this width. */
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .planet-icon { font-size: 2rem; }
+  .planet-info h3 { font-size: 0.95rem; }
+}
+
+/* Cloud save */
+.app-header {
+  position: sticky;
+}
+
+.sync-btn {
+  line-height: 1;
+}
+
+.sync-panel {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0.75rem;
+  width: min(320px, calc(100vw - 1.5rem));
+  padding: 1rem;
+  border-radius: 12px;
+  background: rgba(12, 12, 26, 0.97);
+  z-index: 200;
+  text-align: left;
+}
+
+.sync-line {
+  font-size: 0.85rem;
+  line-height: 1.45;
+  margin-bottom: 0.75rem;
+}
+
+.sync-panel .sync-line:last-child {
+  margin-bottom: 0;
+  margin-top: 0.75rem;
+  min-height: 1.2em;
+}
+
+.sync-panel .text-input {
+  font-size: 1rem;
+  padding: 0.7rem;
+}
+
+.sync-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0.85rem 0;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sync-divider::before,
+.sync-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.12);
+}

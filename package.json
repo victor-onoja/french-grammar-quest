@@ -2,7 +2,7 @@
   "name": "french-grammar-quest",
   "private": true,
   "version": "1.0.0",
-  "homepage": "https://victor-onoja.github.io/french-grammar-quest",
+  "homepage": "https://victoronojaodoh.com/frenchgalaxyquest",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -16,6 +16,6 @@
     "vite": "^5.0.0"
   },
   "dependencies": {
-    "lucide": "^0.320.0"
+    "@supabase/supabase-js": "^2.115.0"
   }
 }

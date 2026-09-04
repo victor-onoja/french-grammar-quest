@@ -11,7 +11,7 @@ export function renderLessonScreen(container, navigateTo, params) {
 
   container.innerHTML = `
     <div class="lesson-screen fade-in">
-      <div class="glass-panel pad-2 rounded mx-auto" style="max-width: 500px">
+      <div class="glass-panel p-2 rounded mx-auto max-w-500">
         <h2 class="gradient-text mb-1">Planet ${level.planet}</h2>
         <h3 class="mb-2">${level.title}</h3>
         

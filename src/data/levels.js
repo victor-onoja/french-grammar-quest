@@ -1519,7 +1519,7 @@ export const levels = [
             },
       {
             "french": "cuire",
-            "english": "to cook"
+            "english": "to cook (to bake)"
             },
       {
             "french": "décortiquer",
@@ -1531,7 +1531,7 @@ export const levels = [
             },
       {
             "french": "écraser",
-            "english": "to crush"
+            "english": "to crush, to squash"
             },
       {
             "french": "écumer",
@@ -1551,7 +1551,7 @@ export const levels = [
             },
       {
             "french": "faire la cuisine",
-            "english": "to cook"
+            "english": "to do the cooking"
             },
       {
             "french": "faire revenir",
@@ -1619,7 +1619,7 @@ export const levels = [
             },
       {
             "french": "piler",
-            "english": "to crush"
+            "english": "to crush (to pound)"
             },
       {
             "french": "pocher",
@@ -1693,7 +1693,7 @@ export const levels = [
             },
       {
             "french": "remporter une victoire",
-            "english": "to win"
+            "english": "to win a victory"
             },
       {
             "french": "battre",
@@ -1701,7 +1701,7 @@ export const levels = [
             },
       {
             "french": "un vainqueur",
-            "english": "winner"
+            "english": "victor"
             },
       {
             "french": "un gagnant",
@@ -1895,11 +1895,11 @@ export const levels = [
             },
       {
             "french": "une peinture",
-            "english": "painting"
+            "english": "painting (the paint)"
             },
       {
             "french": "un tableau",
-            "english": "painting"
+            "english": "painting (a picture)"
             },
       {
             "french": "une aquarelle",
@@ -2101,7 +2101,7 @@ export const levels = [
             },
       {
             "french": "un assassin",
-            "english": "murderer"
+            "english": "assassin"
             },
       {
             "french": "un meurtrier",
@@ -3127,11 +3127,11 @@ export const levels = [
             },
       {
             "french": "une penderie",
-            "english": "wardrobe"
+            "english": "wardrobe (closet)"
             },
       {
             "french": "une armoire",
-            "english": "wardrobe"
+            "english": "wardrobe (cabinet)"
             },
       {
             "french": "une armoire à pharmacie",
@@ -3659,3 +3659,7 @@ export const levels = [
     }
   }
 ];
+
+// Levels are numbered 1..N contiguously; screens gate "is there a next sector?"
+// on this rather than a hardcoded number.
+export const lastLevelId = levels[levels.length - 1].id;

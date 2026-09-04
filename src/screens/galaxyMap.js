@@ -1,4 +1,4 @@
-import { levels } from '../data/levels.js';
+import { levels, lastLevelId } from '../data/levels.js';
 import { gameState } from '../engine/gameState.js';
 
 export function renderGalaxyMap(container, navigateTo) {
@@ -22,7 +22,7 @@ export function renderGalaxyMap(container, navigateTo) {
     const hasVocab = level.vocabulary && level.vocabulary.length > 0;
 
     // Dock state: required (beaten but vocab not done), done, or default
-    const dockRequired = levelBeaten && !vocabDone && hasVocab && level.id < 27;
+    const dockRequired = levelBeaten && !vocabDone && hasVocab && level.id < lastLevelId;
     const dockClass = vocabDone ? 'dock-done' : (dockRequired ? 'dock-required' : '');
     const dockIcon = vocabDone ? '✓' : '⚓';
     const dockTitle = vocabDone
@@ -32,8 +32,11 @@ export function renderGalaxyMap(container, navigateTo) {
     const planetEl = document.createElement('div');
     planetEl.className = `planet-card glass-panel ${isUnlocked ? 'unlocked glow-effect' : 'locked'}`;
 
-    const offset = (index % 2 === 0) ? '20px' : '-20px';
-    planetEl.style.transform = `translateX(${offset})`;
+    // Staggered with margins, not transform: the hover rule animates transform
+    // and would otherwise snap the card back to centre on mouseover.
+    const stagger = '2.5rem';
+    if (index % 2 === 0) planetEl.style.marginLeft = stagger;
+    else planetEl.style.marginRight = stagger;
 
     planetEl.innerHTML = `
       <div class="planet-icon">${isUnlocked ? '🌍' : '🔒'}</div>

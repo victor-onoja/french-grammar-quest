@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="French Galaxy Quest">
+  <defs>
+    <linearGradient id="planet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00F0FF"/>
+      <stop offset="1" stop-color="#FF0055"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B0B1E"/>
+      <stop offset="1" stop-color="#04040C"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="120" height="120" rx="26" fill="url(#ground)"/>
+
+  <!-- orbit, back half -->
+  <g transform="rotate(-22 60 60)">
+    <ellipse cx="60" cy="60" rx="46" ry="17" fill="none" stroke="#FFD700" stroke-width="4.5" opacity="0.95"/>
+  </g>
+
+  <!-- planet -->
+  <circle cx="60" cy="60" r="23.5" fill="url(#planet)"/>
+
+  <!-- orbit, front half drawn over the planet so the ring reads as a ring -->
+  <g transform="rotate(-22 60 60)">
+    <path d="M 14 60 A 46 17 0 0 0 106 60" fill="none" stroke="#FFD700" stroke-width="4.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- accent aigu: the French mark, doubling as a comet -->
+  <path d="M 80 21 L 95 34" stroke="#FFFFFF" stroke-width="7.5" stroke-linecap="round"/>
+</svg>

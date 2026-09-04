@@ -1,3 +1,22 @@
+/* Self-hosted so no request reaches Google and no visitor IP leaves with it.
+   Variable weight axes: one file per family covers every weight in use.
+   Outfit and Space Grotesk are both SIL Open Font License 1.1. */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300 800;
+  font-display: swap;
+  src: url('./fonts/outfit-latin.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('./fonts/space-grotesk-latin.woff2') format('woff2');
+}
+
 :root {
   /* Afrofuturist Color Palette */
   --bg-dark: #070714;
